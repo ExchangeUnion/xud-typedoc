@@ -1,0 +1,344 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>xud</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">xud</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> xud</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="exchange-union">Exchange Union</h1>
+				<p><a href="https://travis-ci.org/ExchangeUnion/xud"><img src="https://travis-ci.org/ExchangeUnion/xud.svg?branch=master" alt="Build Status"></a> <a href="https://gitter.im/exchangeunion/Lobby"><img src="https://img.shields.io/badge/chat-on%20gitter-rose.svg" alt="Gitter chat"></a></p>
+				<p><a href="https://www.exchangeunion.com/">Exchange Union</a> (XU) is a decentralized exchange layer built on the <a href="http://lightning.network/">Lightning</a> and <a href="https://raiden.network/">Raiden</a> networks to enable trustless and instant cryptocurrency swaps and order fulfillment between exchanges.</p>
+				<p>This repo contains the early stages of the Exchange Union Daemon (&quot;xud&quot;) which encompasses the following components:</p>
+				<ul>
+					<li>Integration with <a href="https://github.com/lightningnetwork/lnd">lnd</a> and <a href="https://github.com/raiden-network/raiden">raiden</a> nodes.</li>
+					<li>Orderbook data stored in a local mysql/mariadb database.</li>
+					<li>Peer-to-peer networking with other XU nodes via TCP.</li>
+					<li>A JSON-RPC API to serve other applications and a command-line interface.</li>
+				</ul>
+				<p>Contributions, feedback, and questions are welcome.</p>
+				<h2 id="install">Install</h2>
+				<p>First, clone the repository from GitHub and install dependencies.</p>
+				<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/ExchangeUnion/xud
+<span class="hljs-built_in">cd</span> xud
+npm install
+</code></pre>
+				<p>Xud uses <a href="https://www.mysql.com/">MySQL</a> or <a href="https://mariadb.org/">MariaDB</a>. You will have to install one of those and create a user and database grant all permissions for the new database to the new user.</p>
+				<h2 id="starting-the-daemon">Starting the Daemon</h2>
+				<pre><code class="lang-bash">~/xud $ <span class="hljs-built_in">cd</span> bin
+~/xud/bin $ ./xud
+2018-3-2 11:36:06 - info: config loaded
+2018-3-2 11:36:06 - info: connected to database
+2018-3-2 11:36:06 - info: P2P server listening on port 8885
+2018-3-2 11:36:06 - info: RPC server listening on port 8886
+</code></pre>
+				<h2 id="command-line-interface">Command-Line Interface</h2>
+				<p>Spawn a new <code>xud</code> process</p>
+				<pre><code class="lang-bash">~/xud/bin $ ./xud
+Options:
+  -r, --rpc.port                                        [number] [default: 8886]
+  -p, --p2p.port                                        [number] [default: 8885]
+</code></pre>
+				<p>Interact with an <code>xud</code> process, identified by its <code>rpc</code> port</p>
+				<pre><code class="lang-bash">~/xud/bin $ ./xucli --<span class="hljs-built_in">help</span>
+xucli [<span class="hljs-built_in">command</span>]
+
+Commands:
+  xucli connect &lt;host&gt; [port]                    connect to an xu node
+  xucli getinfo                                  get general info from the xud node
+  xucli getorders                                get orders from the orderbook
+  xucli getpairs                                 get orderbook<span class="hljs-string">'s available pairs
+  xucli placeorder &lt;pair_id&gt; &lt;price&gt; &lt;quantity&gt;  place an order
+  xucli shutdown                                 gracefully shutdown the xud node
+  xucli tokenswap &lt;identifier&gt; &lt;role&gt;            perform a raiden token swap
+  &lt;sending_amount&gt; &lt;sending_token&gt;
+  &lt;receiving_amount&gt; &lt;receiving_token&gt;
+
+Options:
+  --version      Show version number                                   [boolean]
+  --help         Show help                                             [boolean]
+  -r, --rpc.port                                        [number] [default: 8886]</span>
+</code></pre>
+				<h2 id="configuration">Configuration</h2>
+				<p>The configuration file uses <a href="https://github.com/toml-lang/toml">TOML</a> and by default is located at  <code>~/.xud/xud.conf</code> on Linux or <code>AppData\Local\Xud\xud.conf</code> on Windows. Default settings which can be overridden are shown below.</p>
+				<pre><code class="lang-toml"><span class="hljs-section">[rpc]</span>
+<span class="hljs-attr">port</span> = <span class="hljs-number">8886</span>
+<span class="hljs-section">
+[db]</span>
+<span class="hljs-attr">username</span> = <span class="hljs-string">"xud"</span>
+<span class="hljs-attr">password</span> = null
+<span class="hljs-attr">database</span> = <span class="hljs-string">"xud"</span>
+<span class="hljs-attr">port</span> = <span class="hljs-number">3306</span>
+<span class="hljs-attr">host</span> = <span class="hljs-string">"localhost"</span>
+<span class="hljs-section">
+[p2p]</span>
+<span class="hljs-attr">listen</span> = <span class="hljs-literal">true</span>
+<span class="hljs-attr">port</span> = <span class="hljs-number">8885</span>
+<span class="hljs-section">
+[lnd]</span>
+<span class="hljs-attr">disable</span> = <span class="hljs-literal">false</span>
+<span class="hljs-attr">rpcprotopath</span> = <span class="hljs-string">"lndrpc.proto"</span>
+<span class="hljs-section">
+[raiden]</span>
+<span class="hljs-attr">disable</span> = <span class="hljs-literal">false</span>
+<span class="hljs-attr">port</span> = <span class="hljs-number">5001</span>
+</code></pre>
+				<h2 id="database-initialization">Database Initialization</h2>
+				<p>To initialize the database with default testing data, run the following command:</p>
+				<pre><code class="lang-bash">npm run db:init
+</code></pre>
+				<h2 id="documentation">Documentation</h2>
+				<p><a href="https://exchangeunion.github.io/xud-typedoc/">Read the TypeDoc here</a>.</p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_baseclient_.html">"<wbr>Base<wbr>Client"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_config_.html">"<wbr>Config"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_logger_.html">"<wbr>Logger"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_xud_.html">"<wbr>Xud"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_command_.html">"cli/command"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_connect_.html">"cli/commands/connect"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_getinfo_.html">"cli/commands/getinfo"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_getorders_.html">"cli/commands/getorders"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_getpairs_.html">"cli/commands/getpairs"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_placeorder_.html">"cli/commands/placeorder"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_shutdown_.html">"cli/commands/shutdown"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_tokenswap_.html">"cli/commands/tokenswap"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_constants_enums_.html">"constants/enums"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_constants_errorcodesprefix_.html">"constants/error<wbr>Codes<wbr>Prefix"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_db_db_.html">"db/DB"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_db_baserepository_.html">"db/base<wbr>Repository"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_db_models_currency_.html">"db/models/<wbr>Currency"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_db_models_order_.html">"db/models/<wbr>Order"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_db_models_pair_.html">"db/models/<wbr>Pair"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_db_models_peer_.html">"db/models/<wbr>Peer"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_lndclient_lndclient_.html">"lndclient/<wbr>Lnd<wbr>Client"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_lndclient_errors_.html">"lndclient/errors"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_orderbook_matchesprocessor_.html">"orderbook/<wbr>Matches<wbr>Processor"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_orderbook_matchingengine_.html">"orderbook/<wbr>Matching<wbr>Engine"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_orderbook_orderbook_.html">"orderbook/<wbr>Order<wbr>Book"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_orderbook_orderbookrepository_.html">"orderbook/<wbr>Order<wbr>Book<wbr>Repository"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_orderbook_errors_.html">"orderbook/errors"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_p2p_.html">"p2p/<wbr>P2P"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_p2prepository_.html">"p2p/<wbr>P2PRepository"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_p2pserver_.html">"p2p/<wbr>P2PServer"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_peer_.html">"p2p/<wbr>Peer"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_raidenclient_raidenclient_.html">"raidenclient/<wbr>Raiden<wbr>Client"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_raidenclient_errors_.html">"raidenclient/errors"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_rpc_rpcmethods_.html">"rpc/<wbr>Rpc<wbr>Methods"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_rpc_rpcserver_.html">"rpc/<wbr>Rpc<wbr>Server"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_utils_utils_.html">"utils/utils"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_xuclient_xuclient_.html">"xuclient/XUClient"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
