@@ -70,17 +70,23 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_raidenclient_errors_.html#codesprefix" class="tsd-kind-icon">codes<wbr>Prefix</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_raidenclient_errors_.html#errors" class="tsd-kind-icon">errors</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_raidenclient_errors_.html#errorcodes" class="tsd-kind-icon">error<wbr>Codes</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module"><a href="_raidenclient_errors_.html#errors" class="tsd-kind-icon">errors</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="codesprefix" class="tsd-anchor"></a>
@@ -88,19 +94,272 @@
 					<div class="tsd-signature tsd-kind-icon">codes<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;errorCodesPrefix.RAIDEN</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/56e5e53/lib/raidenclient/errors.ts#L3">raidenclient/errors.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L3">raidenclient/errors.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
-					<a name="errors" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> errors</h3>
-					<div class="tsd-signature tsd-kind-icon">errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="errorcodes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> error<wbr>Codes</h3>
+					<div class="tsd-signature tsd-kind-icon">error<wbr>Codes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/56e5e53/lib/raidenclient/errors.ts#L4">raidenclient/errors.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L4">raidenclient/errors.ts:4</a></li>
 						</ul>
 					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.insufficient_balance" class="tsd-anchor"></a>
+						<h3>INSUFFICIENT_<wbr>BALANCE</h3>
+						<div class="tsd-signature tsd-kind-icon">INSUFFICIENT_<wbr>BALANCE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.2&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L6">raidenclient/errors.ts:6</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.invalid" class="tsd-anchor"></a>
+						<h3>INVALID</h3>
+						<div class="tsd-signature tsd-kind-icon">INVALID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.4&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L8">raidenclient/errors.ts:8</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.raiden_is_disabled" class="tsd-anchor"></a>
+						<h3>RAIDEN_<wbr>IS_<wbr>DISABLED</h3>
+						<div class="tsd-signature tsd-kind-icon">RAIDEN_<wbr>IS_<wbr>DISABLED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.1&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L5">raidenclient/errors.ts:5</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.server_error" class="tsd-anchor"></a>
+						<h3>SERVER_<wbr>ERROR</h3>
+						<div class="tsd-signature tsd-kind-icon">SERVER_<wbr>ERROR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.5&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L9">raidenclient/errors.ts:9</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.timeout" class="tsd-anchor"></a>
+						<h3>TIMEOUT</h3>
+						<div class="tsd-signature tsd-kind-icon">TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.3&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L7">raidenclient/errors.ts:7</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.unexpected" class="tsd-anchor"></a>
+						<h3>UNEXPECTED</h3>
+						<div class="tsd-signature tsd-kind-icon">UNEXPECTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.6&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L10">raidenclient/errors.ts:10</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module">
+					<a name="errors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> errors</h3>
+					<div class="tsd-signature tsd-kind-icon">errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L13">raidenclient/errors.ts:13</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="errors.insufficient_balance-1" class="tsd-anchor"></a>
+						<h3>INSUFFICIENT_<wbr>BALANCE</h3>
+						<div class="tsd-signature tsd-kind-icon">INSUFFICIENT_<wbr>BALANCE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L18">raidenclient/errors.ts:18</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.insufficient_balance-1.code" class="tsd-anchor"></a>
+							<h3>code</h3>
+							<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;errorCodes.INSUFFICIENT_BALANCE</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L20">raidenclient/errors.ts:20</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.insufficient_balance-1.message" class="tsd-anchor"></a>
+							<h3>message</h3>
+							<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;insufficient balance to perform request&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L19">raidenclient/errors.ts:19</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="errors.invalid-1" class="tsd-anchor"></a>
+						<h3>INVALID</h3>
+						<div class="tsd-signature tsd-kind-icon">INVALID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L26">raidenclient/errors.ts:26</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.invalid-1.code-1" class="tsd-anchor"></a>
+							<h3>code</h3>
+							<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;errorCodes.INVALID</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L28">raidenclient/errors.ts:28</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.invalid-1.message-1" class="tsd-anchor"></a>
+							<h3>message</h3>
+							<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;request is conflicting or otherwise invalid&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L27">raidenclient/errors.ts:27</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="errors.raiden_is_disabled-1" class="tsd-anchor"></a>
+						<h3>RAIDEN_<wbr>IS_<wbr>DISABLED</h3>
+						<div class="tsd-signature tsd-kind-icon">RAIDEN_<wbr>IS_<wbr>DISABLED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L14">raidenclient/errors.ts:14</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.raiden_is_disabled-1.code-2" class="tsd-anchor"></a>
+							<h3>code</h3>
+							<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;errorCodes.RAIDEN_IS_DISABLED</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L16">raidenclient/errors.ts:16</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.raiden_is_disabled-1.message-2" class="tsd-anchor"></a>
+							<h3>message</h3>
+							<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;raiden is disabled&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L15">raidenclient/errors.ts:15</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="errors.server_error-1" class="tsd-anchor"></a>
+						<h3>SERVER_<wbr>ERROR</h3>
+						<div class="tsd-signature tsd-kind-icon">SERVER_<wbr>ERROR<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L30">raidenclient/errors.ts:30</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.server_error-1.code-3" class="tsd-anchor"></a>
+							<h3>code</h3>
+							<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;errorCodes.SERVER_ERROR</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L32">raidenclient/errors.ts:32</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.server_error-1.message-3" class="tsd-anchor"></a>
+							<h3>message</h3>
+							<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;raiden server error&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L31">raidenclient/errors.ts:31</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="errors.timeout-1" class="tsd-anchor"></a>
+						<h3>TIMEOUT</h3>
+						<div class="tsd-signature tsd-kind-icon">TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L22">raidenclient/errors.ts:22</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.timeout-1.code-4" class="tsd-anchor"></a>
+							<h3>code</h3>
+							<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;errorCodes.TIMEOUT</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L24">raidenclient/errors.ts:24</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.timeout-1.message-4" class="tsd-anchor"></a>
+							<h3>message</h3>
+							<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;request timed out&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L23">raidenclient/errors.ts:23</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="errors.unexpected-1" class="tsd-anchor"></a>
+						<h3>UNEXPECTED</h3>
+						<div class="tsd-signature tsd-kind-icon">UNEXPECTED<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L34">raidenclient/errors.ts:34</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.unexpected-1.code-5" class="tsd-anchor"></a>
+							<h3>code</h3>
+							<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;errorCodes.UNEXPECTED</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L36">raidenclient/errors.ts:36</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="errors.unexpected-1.message-5" class="tsd-anchor"></a>
+							<h3>message</h3>
+							<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;unexpected error during raiden request&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/raidenclient/errors.ts#L35">raidenclient/errors.ts:35</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -120,7 +379,10 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_raidenclient_errors_.html#codesprefix" class="tsd-kind-icon">codes<wbr>Prefix</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_raidenclient_errors_.html#errorcodes" class="tsd-kind-icon">error<wbr>Codes</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
 						<a href="_raidenclient_errors_.html#errors" class="tsd-kind-icon">errors</a>
 					</li>
 				</ul>

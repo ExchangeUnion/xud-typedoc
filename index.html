@@ -65,88 +65,26 @@
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
 				<h1 id="exchange-union">Exchange Union</h1>
-				<p><a href="https://travis-ci.org/ExchangeUnion/xud"><img src="https://travis-ci.org/ExchangeUnion/xud.svg?branch=master" alt="Build Status"></a> <a href="https://gitter.im/exchangeunion/Lobby"><img src="https://img.shields.io/badge/chat-on%20gitter-rose.svg" alt="Gitter chat"></a></p>
+				<p><a href="https://gitter.im/exchangeunion/Lobby"><img src="https://img.shields.io/badge/chat-on%20gitter-rose.svg" alt="Gitter chat"></a>
+					<a href="https://travis-ci.org/ExchangeUnion/xud"><img src="https://travis-ci.org/ExchangeUnion/xud.svg?branch=master" alt="Build Status"></a>
+				<a href="https://www.codacy.com/app/sangaman/xud?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ExchangeUnion/xud&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/87238907485845eb879bd61c65561775" alt="Codacy Badge"></a></p>
 				<p><a href="https://www.exchangeunion.com/">Exchange Union</a> (XU) is a decentralized exchange layer built on the <a href="http://lightning.network/">Lightning</a> and <a href="https://raiden.network/">Raiden</a> networks to enable trustless and instant cryptocurrency swaps and order fulfillment between exchanges.</p>
-				<p>This repo contains the early stages of the Exchange Union Daemon (&quot;xud&quot;) which encompasses the following components:</p>
+				<p>This repo contains the early stages of the Exchange Union Daemon (<code>xud</code>) which encompasses the following components:</p>
 				<ul>
 					<li>Integration with <a href="https://github.com/lightningnetwork/lnd">lnd</a> and <a href="https://github.com/raiden-network/raiden">raiden</a> nodes.</li>
-					<li>Orderbook data stored in a local mysql/mariadb database.</li>
-					<li>Peer-to-peer networking with other XU nodes via TCP.</li>
-					<li>A JSON-RPC API to serve other applications and a command-line interface.</li>
+					<li>Order book data stored in a local mysql/mariadb database.</li>
+					<li>Peer-to-peer networking with other XU nodes</li>
+					<li>A gRPC API with web proxy to serve other applications, also accessible by command-line interface.</li>
 				</ul>
 				<p>Contributions, feedback, and questions are welcome.</p>
-				<h2 id="install">Install</h2>
-				<p>First, clone the repository from GitHub and install dependencies.</p>
-				<pre><code class="lang-bash">git <span class="hljs-built_in">clone</span> https://github.com/ExchangeUnion/xud
-<span class="hljs-built_in">cd</span> xud
-npm install
-</code></pre>
-				<p>Xud uses <a href="https://www.mysql.com/">MySQL</a> or <a href="https://mariadb.org/">MariaDB</a>. You will have to install one of those and create a user and database grant all permissions for the new database to the new user.</p>
-				<h2 id="starting-the-daemon">Starting the Daemon</h2>
-				<pre><code class="lang-bash">~/xud $ <span class="hljs-built_in">cd</span> bin
-~/xud/bin $ ./xud
-2018-3-2 11:36:06 - info: config loaded
-2018-3-2 11:36:06 - info: connected to database
-2018-3-2 11:36:06 - info: P2P server listening on port 8885
-2018-3-2 11:36:06 - info: RPC server listening on port 8886
-</code></pre>
-				<h2 id="command-line-interface">Command-Line Interface</h2>
-				<p>Spawn a new <code>xud</code> process</p>
-				<pre><code class="lang-bash">~/xud/bin $ ./xud
-Options:
-  -r, --rpc.port                                        [number] [default: 8886]
-  -p, --p2p.port                                        [number] [default: 8885]
-</code></pre>
-				<p>Interact with an <code>xud</code> process, identified by its <code>rpc</code> port</p>
-				<pre><code class="lang-bash">~/xud/bin $ ./xucli --<span class="hljs-built_in">help</span>
-xucli [<span class="hljs-built_in">command</span>]
-
-Commands:
-  xucli connect &lt;host&gt; [port]                    connect to an xu node
-  xucli getinfo                                  get general info from the xud node
-  xucli getorders                                get orders from the orderbook
-  xucli getpairs                                 get orderbook<span class="hljs-string">'s available pairs
-  xucli placeorder &lt;pair_id&gt; &lt;price&gt; &lt;quantity&gt;  place an order
-  xucli shutdown                                 gracefully shutdown the xud node
-  xucli tokenswap &lt;identifier&gt; &lt;role&gt;            perform a raiden token swap
-  &lt;sending_amount&gt; &lt;sending_token&gt;
-  &lt;receiving_amount&gt; &lt;receiving_token&gt;
-
-Options:
-  --version      Show version number                                   [boolean]
-  --help         Show help                                             [boolean]
-  -r, --rpc.port                                        [number] [default: 8886]</span>
-</code></pre>
-				<h2 id="configuration">Configuration</h2>
-				<p>The configuration file uses <a href="https://github.com/toml-lang/toml">TOML</a> and by default is located at  <code>~/.xud/xud.conf</code> on Linux or <code>AppData\Local\Xud\xud.conf</code> on Windows. Default settings which can be overridden are shown below.</p>
-				<pre><code class="lang-toml"><span class="hljs-section">[rpc]</span>
-<span class="hljs-attr">port</span> = <span class="hljs-number">8886</span>
-<span class="hljs-section">
-[db]</span>
-<span class="hljs-attr">username</span> = <span class="hljs-string">"xud"</span>
-<span class="hljs-attr">password</span> = null
-<span class="hljs-attr">database</span> = <span class="hljs-string">"xud"</span>
-<span class="hljs-attr">port</span> = <span class="hljs-number">3306</span>
-<span class="hljs-attr">host</span> = <span class="hljs-string">"localhost"</span>
-<span class="hljs-section">
-[p2p]</span>
-<span class="hljs-attr">listen</span> = <span class="hljs-literal">true</span>
-<span class="hljs-attr">port</span> = <span class="hljs-number">8885</span>
-<span class="hljs-section">
-[lnd]</span>
-<span class="hljs-attr">disable</span> = <span class="hljs-literal">false</span>
-<span class="hljs-attr">rpcprotopath</span> = <span class="hljs-string">"lndrpc.proto"</span>
-<span class="hljs-section">
-[raiden]</span>
-<span class="hljs-attr">disable</span> = <span class="hljs-literal">false</span>
-<span class="hljs-attr">port</span> = <span class="hljs-number">5001</span>
-</code></pre>
-				<h2 id="database-initialization">Database Initialization</h2>
-				<p>To initialize the database with default testing data, run the following command:</p>
-				<pre><code class="lang-bash">npm run db:init
-</code></pre>
-				<h2 id="documentation">Documentation</h2>
-				<p><a href="https://exchangeunion.github.io/xud-typedoc/">Read the TypeDoc here</a>.</p>
+				<h2 id="instructions-for-developers-testers">Instructions for Developers &amp; Testers</h2>
+				<p><a href="instructions-for-devs.md">Here</a> (Manual setup).</p>
+				<h2 id="instructions-for-exchanges-users-wip-untested-">Instructions for Exchanges &amp; Users (WIP, untested)</h2>
+				<p><a href="instructions-for-exchanges.md">Here</a> (Using Docker).</p>
+				<h2 id="code-documentation">Code Documentation</h2>
+				<p>Read the <a href="https://exchangeunion.github.io/xud-typedoc/">TypeDoc here</a>.</p>
+				<h2 id="development-testing-discussion">Development &amp; Testing Discussion</h2>
+				<p><a href="https://gitter.im/exchangeunion/Lobby"><img src="https://img.shields.io/badge/chat-on%20gitter-rose.svg" alt="Gitter chat"></a></p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -168,10 +106,25 @@ Options:
 						<a href="modules/_xud_.html">"<wbr>Xud"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_bootstrap_.html">"bootstrap"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_cli_command_.html">"cli/command"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_cancelorder_.html">"cli/commands/cancelorder"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_channelbalance_.html">"cli/commands/channelbalance"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="modules/_cli_commands_connect_.html">"cli/commands/connect"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_disconnect_.html">"cli/commands/disconnect"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_executeswap_.html">"cli/commands/executeswap"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_cli_commands_getinfo_.html">"cli/commands/getinfo"</a>
@@ -183,16 +136,25 @@ Options:
 						<a href="modules/_cli_commands_getpairs_.html">"cli/commands/getpairs"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_cli_commands_placeorder_.html">"cli/commands/placeorder"</a>
+						<a href="modules/_cli_commands_listpeers_.html">"cli/commands/listpeers"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_orders_buy_.html">"cli/commands/orders/buy"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_commands_orders_sell_.html">"cli/commands/orders/sell"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_cli_commands_shutdown_.html">"cli/commands/shutdown"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_cli_commands_tokenswap_.html">"cli/commands/tokenswap"</a>
+						<a href="modules/_cli_commands_subscribepeerorders_.html">"cli/commands/subscribepeerorders"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_constants_enums_.html">"constants/enums"</a>
+						<a href="modules/_cli_commands_subscribeswaps_.html">"cli/commands/subscribeswaps"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_cli_utils_.html">"cli/utils"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_constants_errorcodesprefix_.html">"constants/error<wbr>Codes<wbr>Prefix"</a>
@@ -201,19 +163,25 @@ Options:
 						<a href="modules/_db_db_.html">"db/DB"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_db_baserepository_.html">"db/base<wbr>Repository"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
 						<a href="modules/_db_models_currency_.html">"db/models/<wbr>Currency"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_db_models_order_.html">"db/models/<wbr>Order"</a>
+						<a href="modules/_db_models_node_.html">"db/models/<wbr>Node"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_db_models_pair_.html">"db/models/<wbr>Pair"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_db_models_peer_.html">"db/models/<wbr>Peer"</a>
+						<a href="modules/_grpc_grpcserver_.html">"grpc/<wbr>Grpc<wbr>Server"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_grpc_grpcservice_.html">"grpc/<wbr>Grpc<wbr>Service"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_grpc_errors_.html">"grpc/errors"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_grpc_webproxy_grpcwebproxyserver_.html">"grpc/webproxy/<wbr>Grpc<wbr>Web<wbr>Proxy<wbr>Server"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_lndclient_lndclient_.html">"lndclient/<wbr>Lnd<wbr>Client"</a>
@@ -222,7 +190,7 @@ Options:
 						<a href="modules/_lndclient_errors_.html">"lndclient/errors"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_orderbook_matchesprocessor_.html">"orderbook/<wbr>Matches<wbr>Processor"</a>
+						<a href="modules/_nodekey_nodekey_.html">"nodekey/<wbr>Node<wbr>Key"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_orderbook_matchingengine_.html">"orderbook/<wbr>Matching<wbr>Engine"</a>
@@ -237,16 +205,76 @@ Options:
 						<a href="modules/_orderbook_errors_.html">"orderbook/errors"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_p2p_p2p_.html">"p2p/<wbr>P2P"</a>
+						<a href="modules/_p2p_nodelist_.html">"p2p/<wbr>Node<wbr>List"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_p2p_p2prepository_.html">"p2p/<wbr>P2PRepository"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_p2p_p2pserver_.html">"p2p/<wbr>P2PServer"</a>
+						<a href="modules/_p2p_parser_.html">"p2p/<wbr>Parser"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_p2p_peer_.html">"p2p/<wbr>Peer"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_peerlist_.html">"p2p/<wbr>Peer<wbr>List"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_pool_.html">"p2p/<wbr>Pool"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_errors_.html">"p2p/errors"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_packet_.html">"p2p/packets/<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_packettype_.html">"p2p/packets/<wbr>Packet<wbr>Type"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_index_.html">"p2p/packets/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_dealrequestpacket_.html">"p2p/packets/types/<wbr>Deal<wbr>Request<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_dealresponsepacket_.html">"p2p/packets/types/<wbr>Deal<wbr>Response<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_getnodespacket_.html">"p2p/packets/types/<wbr>Get<wbr>Nodes<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_getorderspacket_.html">"p2p/packets/types/<wbr>Get<wbr>Orders<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_hellopacket_.html">"p2p/packets/types/<wbr>Hello<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_nodespacket_.html">"p2p/packets/types/<wbr>Nodes<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_orderinvalidationpacket_.html">"p2p/packets/types/<wbr>Order<wbr>Invalidation<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_orderpacket_.html">"p2p/packets/types/<wbr>Order<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_orderspacket_.html">"p2p/packets/types/<wbr>Orders<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_pingpacket_.html">"p2p/packets/types/<wbr>Ping<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_pongpacket_.html">"p2p/packets/types/<wbr>Pong<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_swaprequestpacket_.html">"p2p/packets/types/<wbr>Swap<wbr>Request<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_swapresponsepacket_.html">"p2p/packets/types/<wbr>Swap<wbr>Response<wbr>Packet"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_p2p_packets_types_index_.html">"p2p/packets/types/index"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_raidenclient_raidenclient_.html">"raidenclient/<wbr>Raiden<wbr>Client"</a>
@@ -255,16 +283,37 @@ Options:
 						<a href="modules/_raidenclient_errors_.html">"raidenclient/errors"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_rpc_rpcmethods_.html">"rpc/<wbr>Rpc<wbr>Methods"</a>
+						<a href="modules/_service_service_.html">"service/<wbr>Service"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="modules/_rpc_rpcserver_.html">"rpc/<wbr>Rpc<wbr>Server"</a>
+						<a href="modules/_service_errors_.html">"service/errors"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_swaps_swaps_.html">"swaps/<wbr>Swaps"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_types_db_.html">"types/db"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_types_enums_.html">"types/enums"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_types_index_.html">"types/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_types_matchingengine_.html">"types/matching<wbr>Engine"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_types_orders_.html">"types/orders"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_types_p2p_.html">"types/p2p"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_utils_addressutils_.html">"utils/address<wbr>Utils"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_utils_utils_.html">"utils/utils"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="modules/_xuclient_xuclient_.html">"xuclient/XUClient"</a>
 					</li>
 				</ul>
 			</nav>

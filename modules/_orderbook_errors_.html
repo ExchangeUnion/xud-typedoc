@@ -70,17 +70,23 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
+						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_orderbook_errors_.html#codesprefix" class="tsd-kind-icon">codes<wbr>Prefix</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_orderbook_errors_.html#errors" class="tsd-kind-icon">errors</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_orderbook_errors_.html#errorcodes" class="tsd-kind-icon">error<wbr>Codes</a></li>
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module"><a href="_orderbook_errors_.html#errors" class="tsd-kind-icon">errors</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group ">
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="codesprefix" class="tsd-anchor"></a>
@@ -88,19 +94,155 @@
 					<div class="tsd-signature tsd-kind-icon">codes<wbr>Prefix<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;errorCodesPrefix.ORDERBOOK</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/56e5e53/lib/orderbook/errors.ts#L3">orderbook/errors.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L3">orderbook/errors.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
-					<a name="errors" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> errors</h3>
-					<div class="tsd-signature tsd-kind-icon">errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="errorcodes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> error<wbr>Codes</h3>
+					<div class="tsd-signature tsd-kind-icon">error<wbr>Codes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/56e5e53/lib/orderbook/errors.ts#L4">orderbook/errors.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L4">orderbook/errors.ts:4</a></li>
 						</ul>
 					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.duplicate_order" class="tsd-anchor"></a>
+						<h3>DUPLICATE_<wbr>ORDER</h3>
+						<div class="tsd-signature tsd-kind-icon">DUPLICATE_<wbr>ORDER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.2&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L6">orderbook/errors.ts:6</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.invalid_pair_id" class="tsd-anchor"></a>
+						<h3>INVALID_<wbr>PAIR_<wbr>ID</h3>
+						<div class="tsd-signature tsd-kind-icon">INVALID_<wbr>PAIR_<wbr>ID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.1&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L5">orderbook/errors.ts:5</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
+						<a name="errorcodes.order_not_found" class="tsd-anchor"></a>
+						<h3>ORDER_<wbr>NOT_<wbr>FOUND</h3>
+						<div class="tsd-signature tsd-kind-icon">ORDER_<wbr>NOT_<wbr>FOUND<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;codesPrefix.concat(&#x27;.3&#x27;)</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L7">orderbook/errors.ts:7</a></li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module">
+					<a name="errors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> errors</h3>
+					<div class="tsd-signature tsd-kind-icon">errors<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L10">orderbook/errors.ts:10</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="errors.duplicate_order-1" class="tsd-anchor"></a>
+						<h3>DUPLICATE_<wbr>ORDER</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">DUPLICATE_<wbr>ORDER<span class="tsd-signature-symbol">(</span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L15">orderbook/errors.ts:15</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>localId: <span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="errors.invalid_pair_id-1" class="tsd-anchor"></a>
+						<h3>INVALID_<wbr>PAIR_<wbr>ID</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">INVALID_<wbr>PAIR_<wbr>ID<span class="tsd-signature-symbol">(</span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L11">orderbook/errors.ts:11</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>pairId: <span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-object-literal">
+						<a name="errors.order_not_found-1" class="tsd-anchor"></a>
+						<h3>ORDER_<wbr>NOT_<wbr>FOUND</h3>
+						<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-object-literal">
+							<li class="tsd-signature tsd-kind-icon">ORDER_<wbr>NOT_<wbr>FOUND<span class="tsd-signature-symbol">(</span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<ul>
+										<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/errors.ts#L19">orderbook/errors.ts:19</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>orderId: <span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>code<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
 				</section>
 			</section>
 		</div>
@@ -120,7 +262,10 @@
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_orderbook_errors_.html#codesprefix" class="tsd-kind-icon">codes<wbr>Prefix</a>
 					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_orderbook_errors_.html#errorcodes" class="tsd-kind-icon">error<wbr>Codes</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
 						<a href="_orderbook_errors_.html#errors" class="tsd-kind-icon">errors</a>
 					</li>
 				</ul>
