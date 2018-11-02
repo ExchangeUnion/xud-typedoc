@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;cli/commands/subscribeswaps&quot; | xud</title>
+	<title>&quot;cli/commands/unban&quot; | xud</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -53,13 +53,13 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="_cli_commands_subscribeswaps_.html">&quot;cli/commands/subscribeswaps&quot;</a>
+					<a href="_cli_commands_unban_.html">&quot;cli/commands/unban&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;cli/commands/subscribeswaps&quot;</h1>
+			<h1>External module &quot;cli/commands/unban&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,14 +73,20 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_cli_commands_subscribeswaps_.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_cli_commands_subscribeswaps_.html#describe" class="tsd-kind-icon">describe</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_cli_commands_unban_.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_cli_commands_unban_.html#describe" class="tsd-kind-icon">describe</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_cli_commands_subscribeswaps_.html#handler" class="tsd-kind-icon">handler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_cli_commands_unban_.html#handler" class="tsd-kind-icon">handler</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Object literals</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-object-literal tsd-parent-kind-external-module"><a href="_cli_commands_unban_.html#builder" class="tsd-kind-icon">builder</a></li>
 							</ul>
 						</section>
 					</div>
@@ -91,20 +97,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="command" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"subscribeswaps"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;subscribeswaps&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"unban &lt;node_pub_key&gt; [reconnect]"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;unban &lt;node_pub_key&gt; [reconnect]&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/subscribeswaps.ts#L5">cli/commands/subscribeswaps.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L5">cli/commands/unban.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="describe" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> describe</h3>
-					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"subscribe to executed swaps"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;subscribe to executed swaps&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"unban an xud node"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;unban an xud node&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/subscribeswaps.ts#L7">cli/commands/subscribeswaps.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L7">cli/commands/unban.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -121,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/subscribeswaps.ts#L9">cli/commands/subscribeswaps.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L21">cli/commands/unban.ts:21</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -135,28 +141,114 @@
 					</ul>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Object literals</h2>
+				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module">
+					<a name="builder" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> builder</h3>
+					<div class="tsd-signature tsd-kind-icon">builder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L9">cli/commands/unban.ts:9</a></li>
+						</ul>
+					</aside>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="builder.node_pub_key" class="tsd-anchor"></a>
+						<h3>node_<wbr>pub_<wbr>key</h3>
+						<div class="tsd-signature tsd-kind-icon">node_<wbr>pub_<wbr>key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L10">cli/commands/unban.ts:10</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="builder.node_pub_key.description" class="tsd-anchor"></a>
+							<h3>description</h3>
+							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;NodePubKey of the node to unban&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L11">cli/commands/unban.ts:11</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="builder.node_pub_key.type" class="tsd-anchor"></a>
+							<h3>type</h3>
+							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;string&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L12">cli/commands/unban.ts:12</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
+						<a name="builder.reconnect" class="tsd-anchor"></a>
+						<h3>reconnect</h3>
+						<div class="tsd-signature tsd-kind-icon">reconnect<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L14">cli/commands/unban.ts:14</a></li>
+							</ul>
+						</aside>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="builder.reconnect.default" class="tsd-anchor"></a>
+							<h3>default</h3>
+							<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;true</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L17">cli/commands/unban.ts:17</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="builder.reconnect.description-1" class="tsd-anchor"></a>
+							<h3>description</h3>
+							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Whether to reconnect after unbanning&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L15">cli/commands/unban.ts:15</a></li>
+								</ul>
+							</aside>
+						</section>
+						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
+							<a name="builder.reconnect.type-1" class="tsd-anchor"></a>
+							<h3>type</h3>
+							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;boolean&quot;</span></div>
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/unban.ts#L16">cli/commands/unban.ts:16</a></li>
+								</ul>
+							</aside>
+						</section>
+					</section>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_cli_commands_subscribeswaps_.html">"cli/commands/subscribeswaps"</a>
+						<a href="_cli_commands_unban_.html">"cli/commands/unban"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="_cli_commands_subscribeswaps_.html#command" class="tsd-kind-icon">command</a>
+						<a href="_cli_commands_unban_.html#command" class="tsd-kind-icon">command</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="_cli_commands_subscribeswaps_.html#describe" class="tsd-kind-icon">describe</a>
+						<a href="_cli_commands_unban_.html#describe" class="tsd-kind-icon">describe</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_cli_commands_subscribeswaps_.html#handler" class="tsd-kind-icon">handler</a>
+						<a href="_cli_commands_unban_.html#handler" class="tsd-kind-icon">handler</a>
+					</li>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module">
+						<a href="_cli_commands_unban_.html#builder" class="tsd-kind-icon">builder</a>
 					</li>
 				</ul>
 			</nav>

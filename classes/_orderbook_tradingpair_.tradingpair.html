@@ -1,0 +1,991 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TradingPair | xud</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">xud</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../index.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/_orderbook_tradingpair_.html">&quot;orderbook/TradingPair&quot;</a>
+				</li>
+				<li>
+					<a href="_orderbook_tradingpair_.tradingpair.html">TradingPair</a>
+				</li>
+			</ul>
+			<h1>Class TradingPair</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A class to represent a trading pair.
+						responsible for managing all active orders, and for matching orders according to their price and quantity.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">TradingPair</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_tradingpair_.tradingpair.html#logger" class="tsd-kind-icon">logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_tradingpair_.tradingpair.html#nomatching" class="tsd-kind-icon">nomatching</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#ownorders" class="tsd-kind-icon">own<wbr>Orders</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#pairid" class="tsd-kind-icon">pair<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#peersorders" class="tsd-kind-icon">peers<wbr>Orders</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#queues" class="tsd-kind-icon">queues</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_orderbook_tradingpair_.tradingpair.html#addorder" class="tsd-kind-icon">add<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#addownorder" class="tsd-kind-icon">add<wbr>Own<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#addpeerorder" class="tsd-kind-icon">add<wbr>Peer<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private"><a href="_orderbook_tradingpair_.tradingpair.html#getorder" class="tsd-kind-icon">get<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_orderbook_tradingpair_.tradingpair.html#getordermap" class="tsd-kind-icon">get<wbr>Order<wbr>Map</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private"><a href="_orderbook_tradingpair_.tradingpair.html#getorders" class="tsd-kind-icon">get<wbr>Orders</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#getownorder" class="tsd-kind-icon">get<wbr>Own<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#getownorders" class="tsd-kind-icon">get<wbr>Own<wbr>Orders</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#getpeerorder" class="tsd-kind-icon">get<wbr>Peer<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#getpeersorders" class="tsd-kind-icon">get<wbr>Peers<wbr>Orders</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#match" class="tsd-kind-icon">match</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private"><a href="_orderbook_tradingpair_.tradingpair.html#removeorder" class="tsd-kind-icon">remove<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#removeownorder" class="tsd-kind-icon">remove<wbr>Own<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#removepeerorder" class="tsd-kind-icon">remove<wbr>Peer<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_tradingpair_.tradingpair.html#removepeerorders" class="tsd-kind-icon">remove<wbr>Peer<wbr>Orders</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_orderbook_tradingpair_.tradingpair.html#createpriorityqueue" class="tsd-kind-icon">create<wbr>Priority<wbr>Queue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_orderbook_tradingpair_.tradingpair.html#getmatchingquantity" class="tsd-kind-icon">get<wbr>Matching<wbr>Quantity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_orderbook_tradingpair_.tradingpair.html#getorderspriorityqueuecomparator" class="tsd-kind-icon">get<wbr>Orders<wbr>Priority<wbr>Queue<wbr>Comparator</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_orderbook_tradingpair_.tradingpair.html#splitorderbyquantity" class="tsd-kind-icon">split<wbr>Order<wbr>ByQuantity</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Trading<wbr>Pair<span class="tsd-signature-symbol">(</span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a>, pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, nomatching<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_orderbook_tradingpair_.tradingpair.html" class="tsd-signature-type">TradingPair</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L41">orderbook/TradingPair.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>logger: <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></h5>
+								</li>
+								<li>
+									<h5>pairId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> nomatching: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_orderbook_tradingpair_.tradingpair.html" class="tsd-signature-type">TradingPair</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="logger" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> logger</h3>
+					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L43">orderbook/TradingPair.ts:43</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="nomatching" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> nomatching</h3>
+					<div class="tsd-signature tsd-kind-icon">nomatching<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L43">orderbook/TradingPair.ts:43</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="ownorders" class="tsd-anchor"></a>
+					<h3>own<wbr>Orders</h3>
+					<div class="tsd-signature tsd-kind-icon">own<wbr>Orders<span class="tsd-signature-symbol">:</span> <a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">orders.StampedOwnOrder</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L39">orderbook/TradingPair.ts:39</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A pair of maps between active own orders ids and orders for the buy and sell sides of this trading pair.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="pairid" class="tsd-anchor"></a>
+					<h3>pair<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">pair<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L43">orderbook/TradingPair.ts:43</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="peersorders" class="tsd-anchor"></a>
+					<h3>peers<wbr>Orders</h3>
+					<div class="tsd-signature tsd-kind-icon">peers<wbr>Orders<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L41">orderbook/TradingPair.ts:41</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map between peerPubKey and a pair of maps between active peer orders ids and orders for the buy and sell sides of this trading pair.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="queues" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> queues</h3>
+					<div class="tsd-signature tsd-kind-icon">queues<span class="tsd-signature-symbol">:</span> <a href="../modules/_orderbook_tradingpair_.html#ordersidesqueues" class="tsd-signature-type">OrderSidesQueues</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L37">orderbook/TradingPair.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A pair of priority queues for the buy and sell sides of this trading pair</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="addorder" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Order<span class="tsd-signature-symbol">(</span>order<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a>, maps<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L124">orderbook/TradingPair.ts:124</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>order: <a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h5>
+								</li>
+								<li>
+									<h5>maps: <a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addownorder" class="tsd-anchor"></a>
+					<h3>add<wbr>Own<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Own<wbr>Order<span class="tsd-signature-symbol">(</span>order<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L120">orderbook/TradingPair.ts:120</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>order: <a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addpeerorder" class="tsd-anchor"></a>
+					<h3>add<wbr>Peer<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Peer<wbr>Order<span class="tsd-signature-symbol">(</span>order<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L107">orderbook/TradingPair.ts:107</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Add peer order</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>order: <a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>false if it&#39;s a duplicated order, otherwise true</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+					<a name="getorder" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Order&lt;T&gt;<span class="tsd-signature-symbol">(</span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, maps<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L266">orderbook/TradingPair.ts:266</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>maps: <a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getordermap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Order<wbr>Map</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Order<wbr>Map<span class="tsd-signature-symbol">(</span>order<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#ordermap" class="tsd-signature-type">OrderMap</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L211">orderbook/TradingPair.ts:211</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>order: <a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_orderbook_tradingpair_.html#ordermap" class="tsd-signature-type">OrderMap</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+					<a name="getorders" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Orders</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Orders&lt;T&gt;<span class="tsd-signature-symbol">(</span>lists<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#ordersidesarrays" class="tsd-signature-type">OrderSidesArrays</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L221">orderbook/TradingPair.ts:221</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">orders.StampedOrder</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>lists: <a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_orderbook_tradingpair_.html#ordersidesarrays" class="tsd-signature-type">OrderSidesArrays</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getownorder" class="tsd-anchor"></a>
+					<h3>get<wbr>Own<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Own<wbr>Order<span class="tsd-signature-symbol">(</span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L243">orderbook/TradingPair.ts:243</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getownorders" class="tsd-anchor"></a>
+					<h3>get<wbr>Own<wbr>Orders</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Own<wbr>Orders<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#ordersidesarrays" class="tsd-signature-type">OrderSidesArrays</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L239">orderbook/TradingPair.ts:239</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_orderbook_tradingpair_.html#ordersidesarrays" class="tsd-signature-type">OrderSidesArrays</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getpeerorder" class="tsd-anchor"></a>
+					<h3>get<wbr>Peer<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Peer<wbr>Order<span class="tsd-signature-symbol">(</span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L252">orderbook/TradingPair.ts:252</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>peerPubKey: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getpeersorders" class="tsd-anchor"></a>
+					<h3>get<wbr>Peers<wbr>Orders</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Peers<wbr>Orders<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#ordersidesarrays" class="tsd-signature-type">OrderSidesArrays</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L228">orderbook/TradingPair.ts:228</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_orderbook_tradingpair_.html#ordersidesarrays" class="tsd-signature-type">OrderSidesArrays</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="match" class="tsd-anchor"></a>
+					<h3>match</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">match<span class="tsd-signature-symbol">(</span>takerOrder<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">matchingEngine.MatchingResult</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L274">orderbook/TradingPair.ts:274</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Match an order against its opposite queue. Matched maker orders will be removed from the repository</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>takerOrder: <a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">matchingEngine.MatchingResult</span></h4>
+							<p>a <a href="../modules/_types_matchingengine_.html#matchingresult">MatchingResult</a> with the matches as well as the remaining, unmatched portion of the order</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+					<a name="removeorder" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> remove<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Order&lt;T&gt;<span class="tsd-signature-symbol">(</span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, maps<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span>, quantityToRemove<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L184">orderbook/TradingPair.ts:184</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>maps: <a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-signature-type">OrderSidesMaps</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> quantityToRemove: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>fully<wbr>Removed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removeownorder" class="tsd-anchor"></a>
+					<h3>remove<wbr>Own<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Own<wbr>Order<span class="tsd-signature-symbol">(</span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, quantityToRemove<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L180">orderbook/TradingPair.ts:180</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes all or part of an own order.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> quantityToRemove: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the quantity to remove, if undefined or if greater than or equal to the available
+											quantity then the entire order is removed</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<p>true if the entire order was removed, or false if only part of the order was removed</p>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>fully<wbr>Removed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>order<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removepeerorder" class="tsd-anchor"></a>
+					<h3>remove<wbr>Peer<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Peer<wbr>Order<span class="tsd-signature-symbol">(</span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, quantityToRemove<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L166">orderbook/TradingPair.ts:166</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes all or part of a peer order.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orderId: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>peerPubKey: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> quantityToRemove: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the quantity to remove, if undefined or if greater than or equal to the available
+											quantity then the entire order is removed</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<p>the removed order or order portion, otherwise undefined if the order wasn&#39;t found</p>
+							<ul class="tsd-parameters">
+								<li class="tsd-parameter">
+									<h5>fully<wbr>Removed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li class="tsd-parameter">
+									<h5>order<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a></h5>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removepeerorders" class="tsd-anchor"></a>
+					<h3>remove<wbr>Peer<wbr>Orders</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Peer<wbr>Orders<span class="tsd-signature-symbol">(</span>peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L143">orderbook/TradingPair.ts:143</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Remove all orders given a peer pubKey.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>peerPubKey: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="createpriorityqueue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Priority<wbr>Queue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Priority<wbr>Queue<span class="tsd-signature-symbol">(</span>orderingDirection<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.orderingdirection.html" class="tsd-signature-type">OrderingDirection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FastPriorityQueue</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L59">orderbook/TradingPair.ts:59</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orderingDirection: <a href="../enums/_types_enums_.orderingdirection.html" class="tsd-signature-type">OrderingDirection</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">FastPriorityQueue</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getmatchingquantity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Matching<wbr>Quantity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Matching<wbr>Quantity<span class="tsd-signature-symbol">(</span>buyOrder<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a>, sellOrder<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L82">orderbook/TradingPair.ts:82</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the matching quantity between two orders.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>buyOrder: <a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h5>
+								</li>
+								<li>
+									<h5>sellOrder: <a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the smaller of the quantity between the two orders if their price matches, 0 otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="getorderspriorityqueuecomparator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> get<wbr>Orders<wbr>Priority<wbr>Queue<wbr>Comparator</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Orders<wbr>Priority<wbr>Queue<wbr>Comparator<span class="tsd-signature-symbol">(</span>orderingDirection<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.orderingdirection.html" class="tsd-signature-type">OrderingDirection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L64">orderbook/TradingPair.ts:64</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>orderingDirection: <a href="../enums/_types_enums_.orderingdirection.html" class="tsd-signature-type">OrderingDirection</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="splitorderbyquantity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> split<wbr>Order<wbr>ByQuantity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">split<wbr>Order<wbr>ByQuantity<span class="tsd-signature-symbol">(</span>order<span class="tsd-signature-symbol">: </span><a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a>, matchingQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_tradingpair_.html#splitorder" class="tsd-signature-type">SplitOrder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L93">orderbook/TradingPair.ts:93</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Split an order by quantity into a matched portion and a remaining portion.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>order: <a href="../modules/_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h5>
+								</li>
+								<li>
+									<h5>matchingQuantity: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/_orderbook_tradingpair_.html#splitorder" class="tsd-signature-type">SplitOrder</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../index.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_orderbook_tradingpair_.html">"orderbook/<wbr>Trading<wbr>Pair"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_orderbook_tradingpair_.tradingpair.html" class="tsd-kind-icon">Trading<wbr>Pair</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_orderbook_tradingpair_.tradingpair.html#logger" class="tsd-kind-icon">logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_orderbook_tradingpair_.tradingpair.html#nomatching" class="tsd-kind-icon">nomatching</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#ownorders" class="tsd-kind-icon">own<wbr>Orders</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#pairid" class="tsd-kind-icon">pair<wbr>Id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#peersorders" class="tsd-kind-icon">peers<wbr>Orders</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#queues" class="tsd-kind-icon">queues</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_orderbook_tradingpair_.tradingpair.html#addorder" class="tsd-kind-icon">add<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#addownorder" class="tsd-kind-icon">add<wbr>Own<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#addpeerorder" class="tsd-kind-icon">add<wbr>Peer<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getorder" class="tsd-kind-icon">get<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getordermap" class="tsd-kind-icon">get<wbr>Order<wbr>Map</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getorders" class="tsd-kind-icon">get<wbr>Orders</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getownorder" class="tsd-kind-icon">get<wbr>Own<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getownorders" class="tsd-kind-icon">get<wbr>Own<wbr>Orders</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getpeerorder" class="tsd-kind-icon">get<wbr>Peer<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getpeersorders" class="tsd-kind-icon">get<wbr>Peers<wbr>Orders</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#match" class="tsd-kind-icon">match</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-private">
+								<a href="_orderbook_tradingpair_.tradingpair.html#removeorder" class="tsd-kind-icon">remove<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#removeownorder" class="tsd-kind-icon">remove<wbr>Own<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#removepeerorder" class="tsd-kind-icon">remove<wbr>Peer<wbr>Order</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_tradingpair_.tradingpair.html#removepeerorders" class="tsd-kind-icon">remove<wbr>Peer<wbr>Orders</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="_orderbook_tradingpair_.tradingpair.html#createpriorityqueue" class="tsd-kind-icon">create<wbr>Priority<wbr>Queue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getmatchingquantity" class="tsd-kind-icon">get<wbr>Matching<wbr>Quantity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_orderbook_tradingpair_.tradingpair.html#getorderspriorityqueuecomparator" class="tsd-kind-icon">get<wbr>Orders<wbr>Priority<wbr>Queue<wbr>Comparator</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_orderbook_tradingpair_.tradingpair.html#splitorderbyquantity" class="tsd-kind-icon">split<wbr>Order<wbr>ByQuantity</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../modules/_orderbook_tradingpair_.html#ordermap" class="tsd-kind-icon">Order<wbr>Map</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../modules/_orderbook_tradingpair_.html#ordersidesarrays" class="tsd-kind-icon">Order<wbr>Sides<wbr>Arrays</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported">
+						<a href="../modules/_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-kind-icon">Order<wbr>Sides<wbr>Maps</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_orderbook_tradingpair_.html#ordersidesqueues" class="tsd-kind-icon">Order<wbr>Sides<wbr>Queues</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_orderbook_tradingpair_.html#splitorder" class="tsd-kind-icon">Split<wbr>Order</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

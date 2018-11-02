@@ -53,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="_types_orders_.html">&quot;types/orders&quot;</a>
@@ -73,18 +73,22 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#currency" class="tsd-kind-icon">Currency</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_types_orders_.html#local" class="tsd-kind-icon">Local</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_types_orders_.html#marketorder" class="tsd-kind-icon">Market<wbr>Order</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_types_orders_.html#order" class="tsd-kind-icon">Order</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#orderidentifier" class="tsd-kind-icon">Order<wbr>Identifier</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#orderportion" class="tsd-kind-icon">Order<wbr>Portion</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#outgoingorder" class="tsd-kind-icon">Outgoing<wbr>Order</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#ownmarketorder" class="tsd-kind-icon">Own<wbr>Market<wbr>Order</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#ownorder" class="tsd-kind-icon">Own<wbr>Order</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#pair" class="tsd-kind-icon">Pair</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_types_orders_.html#remote" class="tsd-kind-icon">Remote</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_types_orders_.html#stamp" class="tsd-kind-icon">Stamp</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#stampedorder" class="tsd-kind-icon">Stamped<wbr>Order</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#stampedownorder" class="tsd-kind-icon">Stamped<wbr>Own<wbr>Order</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#stampedpeerorder" class="tsd-kind-icon">Stamped<wbr>Peer<wbr>Order</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_types_orders_.html#swapresult" class="tsd-kind-icon">Swap<wbr>Result</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -92,6 +96,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_types_orders_.html#isownorder" class="tsd-kind-icon">is<wbr>Own<wbr>Order</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_types_orders_.html#ispeerorder" class="tsd-kind-icon">is<wbr>Peer<wbr>Order</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_types_orders_.html#isstampedownorder" class="tsd-kind-icon">is<wbr>Stamped<wbr>Own<wbr>Order</a></li>
 							</ul>
 						</section>
 					</div>
@@ -99,18 +104,80 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="currency" class="tsd-anchor"></a>
+					<h3>Currency</h3>
+					<div class="tsd-signature tsd-kind-icon">Currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L80">types/orders.ts:80</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>decimal<wbr>Places<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The number of places to the right of the decimal point of the smallest subunit of the currency, For example, BTC, LTC, and others
+											where the smallest subunits (satoshis) are 0.00000001 full units (bitcoins) have 8 decimal places. ETH has 18. This can be thought
+										of as the base 10 exponent of the smallest subunit expressed as a positive integer.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The ticker symbol for this currency such as BTC, LTC, ETH, etc...</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>swap<wbr>Client<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.swapclients.html" class="tsd-signature-type">SwapClients</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The payment channel network client to use for executing swaps.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> token<wbr>Address<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The contract address for layered tokens such as ERC20.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="local" class="tsd-anchor"></a>
 					<h3>Local</h3>
 					<div class="tsd-signature tsd-kind-icon">Local<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L14">types/orders.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L21">types/orders.ts:21</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Properties that apply only to orders placed by the local xud.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> hold<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The amount of an order that is on hold pending swap exectuion.</p>
+									</div>
+								</div>
+							</li>
 							<li class="tsd-parameter">
 								<h5>local<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
@@ -128,12 +195,25 @@
 					<div class="tsd-signature tsd-kind-icon">Market<wbr>Order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L1">types/orders.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L5">types/orders.ts:5</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An order without a price that is intended to match against any available orders on the opposite side of the book for its trading pair.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>is<wbr>Buy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Whether the order is a buy (if <code>true</code>) or a sell (if <code>false</code>).</p>
+									</div>
+								</div>
+							</li>
 							<li class="tsd-parameter">
 								<h5>pair<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
@@ -159,12 +239,12 @@
 					<div class="tsd-signature tsd-kind-icon">Order<span class="tsd-signature-symbol">:</span> <a href="_types_orders_.html#marketorder" class="tsd-signature-type">MarketOrder</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L9">types/orders.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L15">types/orders.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>A limit order with a specified price.</p>
+							<p>A limit order with a specified price that will enter the order book if it is not immediately matched.</p>
 						</div>
 					</div>
 				</section>
@@ -174,22 +254,44 @@
 					<div class="tsd-signature tsd-kind-icon">Order<wbr>Identifier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L44">types/orders.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L56">types/orders.ts:56</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Properties that can be used to uniquely identify and fetch an order within an order book.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>order<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The global identifier for this order on the XU network.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>pair<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-							</li>
 						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="orderportion" class="tsd-anchor"></a>
+					<h3>Order<wbr>Portion</h3>
+					<div class="tsd-signature tsd-kind-icon">Order<wbr>Portion<span class="tsd-signature-symbol">:</span> <a href="_types_orders_.html#orderidentifier" class="tsd-signature-type">OrderIdentifier</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L63">types/orders.ts:63</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A reference to a portion of an existing order.</p>
+						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -198,12 +300,12 @@
 					<div class="tsd-signature tsd-kind-icon">Outgoing<wbr>Order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Exclude</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">keyof StampedOwnOrder</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"localId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"createdAt"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L42">types/orders.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L53">types/orders.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>An outgoing version of a local order without the localId and createdAt timestamp</p>
+							<p>An outgoing version of a local own order without the localId and createdAt timestamp</p>
 						</div>
 					</div>
 				</section>
@@ -213,7 +315,7 @@
 					<div class="tsd-signature tsd-kind-icon">Own<wbr>Market<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="_types_orders_.html#marketorder" class="tsd-signature-type">MarketOrder</a><span class="tsd-signature-symbol"> &amp; </span><a href="_types_orders_.html#local" class="tsd-signature-type">Local</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L31">types/orders.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L42">types/orders.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -223,9 +325,30 @@
 					<div class="tsd-signature tsd-kind-icon">Own<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="_types_orders_.html#order" class="tsd-signature-type">Order</a><span class="tsd-signature-symbol"> &amp; </span><a href="_types_orders_.html#local" class="tsd-signature-type">Local</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L33">types/orders.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L44">types/orders.ts:44</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="pair" class="tsd-anchor"></a>
+					<h3>Pair</h3>
+					<div class="tsd-signature tsd-kind-icon">Pair<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L95">types/orders.ts:95</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>base<wbr>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>quote<wbr>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="remote" class="tsd-anchor"></a>
@@ -233,9 +356,14 @@
 					<div class="tsd-signature tsd-kind-icon">Remote<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L19">types/orders.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L29">types/orders.ts:29</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Properties that apply only to orders placed by remote peers.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -256,9 +384,14 @@
 					<div class="tsd-signature tsd-kind-icon">Stamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L24">types/orders.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L35">types/orders.ts:35</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Properties that uniquely identify an order and make it ready for sending to peers.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -287,7 +420,7 @@
 					<div class="tsd-signature tsd-kind-icon">Stamped<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="_types_orders_.html#stampedownorder" class="tsd-signature-type">StampedOwnOrder</a><span class="tsd-signature-symbol"> | </span><a href="_types_orders_.html#stampedpeerorder" class="tsd-signature-type">StampedPeerOrder</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L39">types/orders.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L50">types/orders.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -297,7 +430,7 @@
 					<div class="tsd-signature tsd-kind-icon">Stamped<wbr>Own<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="_types_orders_.html#ownorder" class="tsd-signature-type">OwnOrder</a><span class="tsd-signature-symbol"> &amp; </span><a href="_types_orders_.html#stamp" class="tsd-signature-type">Stamp</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L35">types/orders.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L46">types/orders.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -307,9 +440,51 @@
 					<div class="tsd-signature tsd-kind-icon">Stamped<wbr>Peer<wbr>Order<span class="tsd-signature-symbol">:</span> <a href="_types_orders_.html#order" class="tsd-signature-type">Order</a><span class="tsd-signature-symbol"> &amp; </span><a href="_types_orders_.html#remote" class="tsd-signature-type">Remote</a><span class="tsd-signature-symbol"> &amp; </span><a href="_types_orders_.html#stamp" class="tsd-signature-type">Stamp</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L37">types/orders.ts:37</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L48">types/orders.ts:48</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="swapresult" class="tsd-anchor"></a>
+					<h3>Swap<wbr>Result</h3>
+					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L68">types/orders.ts:68</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>amount<wbr>Received<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>amount<wbr>Sent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>local<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>order<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>pair<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>peer<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>r_<wbr>hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>role<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a></h5>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -324,7 +499,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L50">types/orders.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L102">types/orders.ts:102</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -347,7 +522,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/types/orders.ts#L54">types/orders.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L110">types/orders.ts:110</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -360,13 +535,36 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="isstampedownorder" class="tsd-anchor"></a>
+					<h3>is<wbr>Stamped<wbr>Own<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Stamped<wbr>Own<wbr>Order<span class="tsd-signature-symbol">(</span>order<span class="tsd-signature-symbol">: </span><a href="_types_orders_.html#ownorder" class="tsd-signature-type">OwnOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/orders.ts#L106">types/orders.ts:106</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>order: <a href="_types_orders_.html#ownorder" class="tsd-signature-type">OwnOrder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_types_orders_.html">"types/orders"</a>
@@ -375,6 +573,9 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_types_orders_.html#currency" class="tsd-kind-icon">Currency</a>
+					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_types_orders_.html#local" class="tsd-kind-icon">Local</a>
 					</li>
@@ -388,6 +589,9 @@
 						<a href="_types_orders_.html#orderidentifier" class="tsd-kind-icon">Order<wbr>Identifier</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_types_orders_.html#orderportion" class="tsd-kind-icon">Order<wbr>Portion</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_types_orders_.html#outgoingorder" class="tsd-kind-icon">Outgoing<wbr>Order</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -395,6 +599,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_types_orders_.html#ownorder" class="tsd-kind-icon">Own<wbr>Order</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_types_orders_.html#pair" class="tsd-kind-icon">Pair</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_types_orders_.html#remote" class="tsd-kind-icon">Remote</a>
@@ -411,11 +618,17 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_types_orders_.html#stampedpeerorder" class="tsd-kind-icon">Stamped<wbr>Peer<wbr>Order</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_types_orders_.html#swapresult" class="tsd-kind-icon">Swap<wbr>Result</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_types_orders_.html#isownorder" class="tsd-kind-icon">is<wbr>Own<wbr>Order</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_types_orders_.html#ispeerorder" class="tsd-kind-icon">is<wbr>Peer<wbr>Order</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_types_orders_.html#isstampedownorder" class="tsd-kind-icon">is<wbr>Stamped<wbr>Own<wbr>Order</a>
 					</li>
 				</ul>
 			</nav>

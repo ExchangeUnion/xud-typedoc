@@ -53,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="_cli_commands_getorders_.html">&quot;cli/commands/getorders&quot;</a>
@@ -97,10 +97,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="command" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"getorders &lt;pair_id&gt; [max_results]"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;getorders &lt;pair_id&gt; [max_results]&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"getorders [pair_id]"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;getorders [pair_id]&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L5">cli/commands/getorders.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/getorders.ts#L5">cli/commands/getorders.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -110,7 +110,7 @@
 					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"get orders from the order book"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;get orders from the order book&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L7">cli/commands/getorders.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/getorders.ts#L7">cli/commands/getorders.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L20">cli/commands/getorders.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/getorders.ts#L15">cli/commands/getorders.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -149,65 +149,25 @@
 					<div class="tsd-signature tsd-kind-icon">builder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L9">cli/commands/getorders.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/getorders.ts#L9">cli/commands/getorders.ts:9</a></li>
 						</ul>
 					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
-						<a name="builder.max_results" class="tsd-anchor"></a>
-						<h3>max_<wbr>results</h3>
-						<div class="tsd-signature tsd-kind-icon">max_<wbr>results<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L13">cli/commands/getorders.ts:13</a></li>
-							</ul>
-						</aside>
-						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-							<a name="builder.max_results.default" class="tsd-anchor"></a>
-							<h3>default</h3>
-							<div class="tsd-signature tsd-kind-icon">default<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10</span></div>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L14">cli/commands/getorders.ts:14</a></li>
-								</ul>
-							</aside>
-						</section>
-						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-							<a name="builder.max_results.description" class="tsd-anchor"></a>
-							<h3>description</h3>
-							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;max # of orders to return, 0 &#x3D; no limit&quot;</span></div>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L15">cli/commands/getorders.ts:15</a></li>
-								</ul>
-							</aside>
-						</section>
-						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-							<a name="builder.max_results.type" class="tsd-anchor"></a>
-							<h3>type</h3>
-							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;number&quot;</span></div>
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L16">cli/commands/getorders.ts:16</a></li>
-								</ul>
-							</aside>
-						</section>
-					</section>
 					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
 						<a name="builder.pair_id" class="tsd-anchor"></a>
 						<h3>pair_<wbr>id</h3>
 						<div class="tsd-signature tsd-kind-icon">pair_<wbr>id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L10">cli/commands/getorders.ts:10</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/getorders.ts#L10">cli/commands/getorders.ts:10</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-							<a name="builder.pair_id.type-1" class="tsd-anchor"></a>
+							<a name="builder.pair_id.type" class="tsd-anchor"></a>
 							<h3>type</h3>
 							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;string&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/cli/commands/getorders.ts#L11">cli/commands/getorders.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/cli/commands/getorders.ts#L11">cli/commands/getorders.ts:11</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -219,7 +179,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_cli_commands_getorders_.html">"cli/commands/getorders"</a>

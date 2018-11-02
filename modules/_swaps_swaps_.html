@@ -53,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="_swaps_swaps_.html">&quot;swaps/Swaps&quot;</a>
@@ -79,7 +79,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_swaps_swaps_.html#swapdeal" class="tsd-kind-icon">Swap<wbr>Deal</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_swaps_swaps_.html#ordertoaccept" class="tsd-kind-icon">Order<wbr>ToAccept</a></li>
 							</ul>
 						</section>
 					</div>
@@ -88,135 +88,25 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="swapdeal" class="tsd-anchor"></a>
-					<h3>Swap<wbr>Deal</h3>
-					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Deal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<a name="ordertoaccept" class="tsd-anchor"></a>
+					<h3>Order<wbr>ToAccept</h3>
+					<div class="tsd-signature tsd-kind-icon">Order<wbr>ToAccept<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/swaps/Swaps.ts#L13">swaps/Swaps.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/swaps/Swaps.ts#L17">swaps/Swaps.ts:17</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> competion<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<h5>local<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5>create<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<h5>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5>deal<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> execute<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> maker<wbr>Amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The number of satoshis (or equivalent) the maker is expecting to receive.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5>maker<wbr>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The currency the maker is expecting to receive.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> maker<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>Maker&#39;s lnd pubkey on the maker currency&#39;s network.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5>my<wbr>Role<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.swapdealrole.html" class="tsd-signature-type">SwapDealRole</a></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The role of the local node in the swap.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5>order<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>Global order id in the XU network.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5>pair<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The trading pair of the order.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5>peer<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The xud node pub key of the counterparty to this swap deal.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5>proposed<wbr>Quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The quantity of the order to execute as proposed by the taker. Negative when the taker is selling.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The accepted quantity of the order to execute as accepted by the maker. Negative when the taker is selling.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> r_<wbr>hash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The hash of the preimage.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> r_<wbr>preimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> taker<wbr>Amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The number of satoshis (or equivalent) the taker is expecting to receive.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5>taker<wbr>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The currency the taker is expecting to receive.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5>taker<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>Taker&#39;s lnd pubkey on the taker currency&#39;s network.</p>
-									</div>
-								</div>
+								<h5>quantity<wbr>ToAccept<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -227,7 +117,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_swaps_swaps_.html">"swaps/<wbr>Swaps"</a>
@@ -240,7 +130,7 @@
 						<a href="../classes/_swaps_swaps_.swaps.html" class="tsd-kind-icon">Swaps</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_swaps_swaps_.html#swapdeal" class="tsd-kind-icon">Swap<wbr>Deal</a>
+						<a href="_swaps_swaps_.html#ordertoaccept" class="tsd-kind-icon">Order<wbr>ToAccept</a>
 					</li>
 				</ul>
 			</nav>

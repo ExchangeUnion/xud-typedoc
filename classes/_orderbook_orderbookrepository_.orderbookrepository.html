@@ -53,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/_orderbook_orderbookrepository_.html">&quot;orderbook/OrderBookRepository&quot;</a>
@@ -98,7 +98,10 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_orderbookrepository_.orderbookrepository.html#addcurrencies" class="tsd-kind-icon">add<wbr>Currencies</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_orderbookrepository_.orderbookrepository.html#addcurrency" class="tsd-kind-icon">add<wbr>Currency</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_orderbookrepository_.orderbookrepository.html#addpair" class="tsd-kind-icon">add<wbr>Pair</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_orderbookrepository_.orderbookrepository.html#addpairs" class="tsd-kind-icon">add<wbr>Pairs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_orderbookrepository_.orderbookrepository.html#getcurrencies" class="tsd-kind-icon">get<wbr>Currencies</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_orderbook_orderbookrepository_.orderbookrepository.html#getpairs" class="tsd-kind-icon">get<wbr>Pairs</a></li>
 							</ul>
 						</section>
@@ -117,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/OrderBookRepository.ts#L6">orderbook/OrderBookRepository.ts:6</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L6">orderbook/OrderBookRepository.ts:6</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -142,7 +145,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/OrderBookRepository.ts#L8">orderbook/OrderBookRepository.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L8">orderbook/OrderBookRepository.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -152,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">models<span class="tsd-signature-symbol">:</span> <a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/OrderBookRepository.ts#L8">orderbook/OrderBookRepository.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L8">orderbook/OrderBookRepository.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -169,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/OrderBookRepository.ts#L14">orderbook/OrderBookRepository.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L22">orderbook/OrderBookRepository.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -183,6 +186,52 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addcurrency" class="tsd-anchor"></a>
+					<h3>add<wbr>Currency</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Currency<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">db.CurrencyFactory</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L18">orderbook/OrderBookRepository.ts:18</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>currency: <span class="tsd-signature-type">db.CurrencyFactory</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addpair" class="tsd-anchor"></a>
+					<h3>add<wbr>Pair</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Pair<span class="tsd-signature-symbol">(</span>pair<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">db.PairFactory</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L26">orderbook/OrderBookRepository.ts:26</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pair: <span class="tsd-signature-type">db.PairFactory</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="addpairs" class="tsd-anchor"></a>
 					<h3>add<wbr>Pairs</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -192,7 +241,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/OrderBookRepository.ts#L18">orderbook/OrderBookRepository.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L30">orderbook/OrderBookRepository.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -206,19 +255,36 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getpairs" class="tsd-anchor"></a>
-					<h3>get<wbr>Pairs</h3>
+					<a name="getcurrencies" class="tsd-anchor"></a>
+					<h3>get<wbr>Currencies</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Pairs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Currencies<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/orderbook/OrderBookRepository.ts#L10">orderbook/OrderBookRepository.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L14">orderbook/OrderBookRepository.ts:14</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getpairs" class="tsd-anchor"></a>
+					<h3>get<wbr>Pairs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Pairs<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/OrderBookRepository.ts#L10">orderbook/OrderBookRepository.ts:10</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -228,7 +294,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_orderbook_orderbookrepository_.html">"orderbook/<wbr>Order<wbr>Book<wbr>Repository"</a>
@@ -255,7 +321,16 @@
 								<a href="_orderbook_orderbookrepository_.orderbookrepository.html#addcurrencies" class="tsd-kind-icon">add<wbr>Currencies</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_orderbookrepository_.orderbookrepository.html#addcurrency" class="tsd-kind-icon">add<wbr>Currency</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_orderbookrepository_.orderbookrepository.html#addpair" class="tsd-kind-icon">add<wbr>Pair</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_orderbook_orderbookrepository_.orderbookrepository.html#addpairs" class="tsd-kind-icon">add<wbr>Pairs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_orderbook_orderbookrepository_.orderbookrepository.html#getcurrencies" class="tsd-kind-icon">get<wbr>Currencies</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_orderbook_orderbookrepository_.orderbookrepository.html#getpairs" class="tsd-kind-icon">get<wbr>Pairs</a>

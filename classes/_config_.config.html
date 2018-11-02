@@ -53,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/_config_.html">&quot;Config&quot;</a>
@@ -90,17 +90,18 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#db" class="tsd-kind-icon">db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#initdb" class="tsd-kind-icon">init<wbr>Db</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#instanceid" class="tsd-kind-icon">instance<wbr>Id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#dbpath" class="tsd-kind-icon">dbpath</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#initdb" class="tsd-kind-icon">initdb</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#instanceid" class="tsd-kind-icon">instanceid</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#lndbtc" class="tsd-kind-icon">lndbtc</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#lndltc" class="tsd-kind-icon">lndltc</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#loglevel" class="tsd-kind-icon">log<wbr>Level</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#logpath" class="tsd-kind-icon">log<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#loglevel" class="tsd-kind-icon">loglevel</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#logpath" class="tsd-kind-icon">logpath</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#network" class="tsd-kind-icon">network</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#nomatching" class="tsd-kind-icon">nomatching</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#p2p" class="tsd-kind-icon">p2p</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#raiden" class="tsd-kind-icon">raiden</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#rpc" class="tsd-kind-icon">rpc</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#testdb" class="tsd-kind-icon">test<wbr>Db</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#webproxy" class="tsd-kind-icon">webproxy</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#xudir" class="tsd-kind-icon">xudir</a></li>
 							</ul>
@@ -109,9 +110,12 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_config_.config.html#createlogdir" class="tsd-kind-icon">create<wbr>Log<wbr>Dir</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_config_.config.html#getdefaultdbpath" class="tsd-kind-icon">get<wbr>Default<wbr>DbPath</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_config_.config.html#getdefaultloglevel" class="tsd-kind-icon">get<wbr>Default<wbr>Log<wbr>Level</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_config_.config.html#getdefaultlogpath" class="tsd-kind-icon">get<wbr>Default<wbr>Log<wbr>Path</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_config_.config.html#load" class="tsd-kind-icon">load</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_config_.config.html#updatedefaultpaths" class="tsd-kind-icon">update<wbr>Default<wbr>Paths</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_config_.config.html#updatemacaroonpaths" class="tsd-kind-icon">update<wbr>Macaroon<wbr>Paths</a></li>
 							</ul>
 						</section>
 					</div>
@@ -129,7 +133,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L25">Config.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L29">Config.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_config_.config.html" class="tsd-signature-type">Config</a></h4>
@@ -140,32 +144,42 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="db" class="tsd-anchor"></a>
-					<h3>db</h3>
-					<div class="tsd-signature tsd-kind-icon">db<span class="tsd-signature-symbol">:</span> <a href="../modules/_db_db_.html#dbconfig" class="tsd-signature-type">DBConfig</a></div>
+					<a name="dbpath" class="tsd-anchor"></a>
+					<h3>dbpath</h3>
+					<div class="tsd-signature tsd-kind-icon">dbpath<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L17">Config.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L27">Config.ts:27</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The file path for the database, or &#39;:memory:&#39; if the database should be kept in memory.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="initdb" class="tsd-anchor"></a>
-					<h3>init<wbr>Db</h3>
-					<div class="tsd-signature tsd-kind-icon">init<wbr>Db<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<h3>initdb</h3>
+					<div class="tsd-signature tsd-kind-icon">initdb<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L25">Config.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L25">Config.ts:25</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether to intialize a new database with default values.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="instanceid" class="tsd-anchor"></a>
-					<h3>instance<wbr>Id</h3>
-					<div class="tsd-signature tsd-kind-icon">instance<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<h3>instanceid</h3>
+					<div class="tsd-signature tsd-kind-icon">instanceid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L24">Config.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L23">Config.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -175,7 +189,7 @@
 					<div class="tsd-signature tsd-kind-icon">lndbtc<span class="tsd-signature-symbol">:</span> <a href="../modules/_lndclient_lndclient_.html#lndclientconfig" class="tsd-signature-type">LndClientConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L20">Config.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L19">Config.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -185,29 +199,54 @@
 					<div class="tsd-signature tsd-kind-icon">lndltc<span class="tsd-signature-symbol">:</span> <a href="../modules/_lndclient_lndclient_.html#lndclientconfig" class="tsd-signature-type">LndClientConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L21">Config.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L20">Config.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="loglevel" class="tsd-anchor"></a>
-					<h3>log<wbr>Level</h3>
-					<div class="tsd-signature tsd-kind-icon">log<wbr>Level<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<h3>loglevel</h3>
+					<div class="tsd-signature tsd-kind-icon">loglevel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L15">Config.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L15">Config.ts:15</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="logpath" class="tsd-anchor"></a>
-					<h3>log<wbr>Path</h3>
-					<div class="tsd-signature tsd-kind-icon">log<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<h3>logpath</h3>
+					<div class="tsd-signature tsd-kind-icon">logpath<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L16">Config.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L16">Config.ts:16</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="network" class="tsd-anchor"></a>
+					<h3>network</h3>
+					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <a href="../enums/_types_enums_.network.html" class="tsd-signature-type">Network</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L17">Config.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="nomatching" class="tsd-anchor"></a>
+					<h3>nomatching</h3>
+					<div class="tsd-signature tsd-kind-icon">nomatching<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L29">Config.ts:29</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Whether matching will be disabled</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="p2p" class="tsd-anchor"></a>
@@ -215,7 +254,7 @@
 					<div class="tsd-signature tsd-kind-icon">p2p<span class="tsd-signature-symbol">:</span> <a href="../modules/_p2p_pool_.html#poolconfig" class="tsd-signature-type">PoolConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L13">Config.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L13">Config.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -225,7 +264,7 @@
 					<div class="tsd-signature tsd-kind-icon">raiden<span class="tsd-signature-symbol">:</span> <a href="../modules/_raidenclient_raidenclient_.html#raidenclientconfig" class="tsd-signature-type">RaidenClientConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L22">Config.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L21">Config.ts:21</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -235,7 +274,7 @@
 					<div class="tsd-signature tsd-kind-icon">rpc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L19">Config.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L18">Config.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -254,22 +293,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="testdb" class="tsd-anchor"></a>
-					<h3>test<wbr>Db</h3>
-					<div class="tsd-signature tsd-kind-icon">test<wbr>Db<span class="tsd-signature-symbol">:</span> <a href="../modules/_db_db_.html#dbconfig" class="tsd-signature-type">DBConfig</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L18">Config.ts:18</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="webproxy" class="tsd-anchor"></a>
 					<h3>webproxy</h3>
 					<div class="tsd-signature tsd-kind-icon">webproxy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L23">Config.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L22">Config.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -290,7 +319,7 @@
 					<div class="tsd-signature tsd-kind-icon">xudir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L14">Config.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L14">Config.ts:14</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -307,7 +336,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L136">Config.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L157">Config.ts:157</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -321,6 +350,23 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getdefaultdbpath" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Default<wbr>DbPath</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>DbPath<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L184">Config.ts:184</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="getdefaultloglevel" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Default<wbr>Log<wbr>Level</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -330,7 +376,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L148">Config.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L192">Config.ts:192</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -347,7 +393,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L144">Config.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L188">Config.ts:188</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -364,7 +410,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/Config.ts#L101">Config.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L105">Config.ts:105</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -377,13 +423,65 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updatedefaultpaths" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Default<wbr>Paths</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Default<wbr>Paths<span class="tsd-signature-symbol">(</span>xudir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L169">Config.ts:169</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates the default values for all fields derived from the xu directory when a custom
+									xu directory is specified by the config file or command line arguments.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xudir: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updatemacaroonpaths" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>Macaroon<wbr>Paths</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>Macaroon<wbr>Paths<span class="tsd-signature-symbol">(</span>network<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/Config.ts#L177">Config.ts:177</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>network: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_config_.html">"<wbr>Config"</a>
@@ -401,13 +499,13 @@
 								<a href="_config_.config.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_config_.config.html#db" class="tsd-kind-icon">db</a>
+								<a href="_config_.config.html#dbpath" class="tsd-kind-icon">dbpath</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_config_.config.html#initdb" class="tsd-kind-icon">init<wbr>Db</a>
+								<a href="_config_.config.html#initdb" class="tsd-kind-icon">initdb</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_config_.config.html#instanceid" class="tsd-kind-icon">instance<wbr>Id</a>
+								<a href="_config_.config.html#instanceid" class="tsd-kind-icon">instanceid</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_config_.config.html#lndbtc" class="tsd-kind-icon">lndbtc</a>
@@ -416,10 +514,16 @@
 								<a href="_config_.config.html#lndltc" class="tsd-kind-icon">lndltc</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_config_.config.html#loglevel" class="tsd-kind-icon">log<wbr>Level</a>
+								<a href="_config_.config.html#loglevel" class="tsd-kind-icon">loglevel</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_config_.config.html#logpath" class="tsd-kind-icon">log<wbr>Path</a>
+								<a href="_config_.config.html#logpath" class="tsd-kind-icon">logpath</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_config_.config.html#network" class="tsd-kind-icon">network</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_config_.config.html#nomatching" class="tsd-kind-icon">nomatching</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_config_.config.html#p2p" class="tsd-kind-icon">p2p</a>
@@ -431,9 +535,6 @@
 								<a href="_config_.config.html#rpc" class="tsd-kind-icon">rpc</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_config_.config.html#testdb" class="tsd-kind-icon">test<wbr>Db</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_config_.config.html#webproxy" class="tsd-kind-icon">webproxy</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -443,6 +544,9 @@
 								<a href="_config_.config.html#createlogdir" class="tsd-kind-icon">create<wbr>Log<wbr>Dir</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_config_.config.html#getdefaultdbpath" class="tsd-kind-icon">get<wbr>Default<wbr>DbPath</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_config_.config.html#getdefaultloglevel" class="tsd-kind-icon">get<wbr>Default<wbr>Log<wbr>Level</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -450,6 +554,12 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_config_.config.html#load" class="tsd-kind-icon">load</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_config_.config.html#updatedefaultpaths" class="tsd-kind-icon">update<wbr>Default<wbr>Paths</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_config_.config.html#updatemacaroonpaths" class="tsd-kind-icon">update<wbr>Macaroon<wbr>Paths</a>
 							</li>
 						</ul>
 					</li>

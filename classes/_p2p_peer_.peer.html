@@ -53,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/_p2p_peer_.html">&quot;p2p/Peer&quot;</a>
@@ -150,8 +150,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_p2p_peer_.peer.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_peer_.peer.html#emiterror" class="tsd-kind-icon">emit<wbr>Error</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_peer_.peer.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_peer_.peer.html#finalizeopen" class="tsd-kind-icon">finalize<wbr>Open</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_peer_.peer.html#fulfillresponseentry" class="tsd-kind-icon">fulfill<wbr>Response<wbr>Entry</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_peer_.peer.html#getlndpubkey" class="tsd-kind-icon">get<wbr>Lnd<wbr>Pub<wbr>Key</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_peer_.peer.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_peer_.peer.html#getoraddpendingresponseentry" class="tsd-kind-icon">get<wbr>OrAdd<wbr>Pending<wbr>Response<wbr>Entry</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_peer_.peer.html#getstatus" class="tsd-kind-icon">get<wbr>Status</a></li>
@@ -173,7 +173,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_peer_.peer.html#rawlisteners" class="tsd-kind-icon">raw<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_peer_.peer.html#removealllisteners" class="tsd-kind-icon">remove<wbr>All<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_peer_.peer.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_peer_.peer.html#sendhello" class="tsd-kind-icon">send<wbr>Hello</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_peer_.peer.html#sendnodes" class="tsd-kind-icon">send<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_peer_.peer.html#sendorders" class="tsd-kind-icon">send<wbr>Orders</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_peer_.peer.html#sendpacket" class="tsd-kind-icon">send<wbr>Packet</a></li>
@@ -201,9 +200,11 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L92">p2p/Peer.ts:92</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L97">p2p/Peer.ts:97</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -211,6 +212,11 @@
 								</li>
 								<li>
 									<h5>address: <a href="../modules/_types_p2p_.html#address" class="tsd-signature-type">Address</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>The socket address for the connection to this peer.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a></h4>
@@ -226,9 +232,14 @@
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_p2p_.html#address" class="tsd-signature-type">Address</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L94">p2p/Peer.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L102">p2p/Peer.ts:102</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The socket address for the connection to this peer.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="banscore" class="tsd-anchor"></a>
@@ -236,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">ban<wbr>Score<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L54">p2p/Peer.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L56">p2p/Peer.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -246,7 +257,7 @@
 					<div class="tsd-signature tsd-kind-icon">closed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L48">p2p/Peer.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L50">p2p/Peer.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -256,7 +267,7 @@
 					<div class="tsd-signature tsd-kind-icon">connect<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L53">p2p/Peer.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L55">p2p/Peer.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -266,7 +277,7 @@
 					<div class="tsd-signature tsd-kind-icon">connect<wbr>Timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NodeJS.Timer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L49">p2p/Peer.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L51">p2p/Peer.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -276,7 +287,7 @@
 					<div class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L44">p2p/Peer.ts:44</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L46">p2p/Peer.ts:46</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -286,7 +297,7 @@
 					<div class="tsd-signature tsd-kind-icon">handshake<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../modules/_types_p2p_.html#handshakestate" class="tsd-signature-type">HandshakeState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L57">p2p/Peer.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L59">p2p/Peer.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -296,7 +307,7 @@
 					<div class="tsd-signature tsd-kind-icon">inbound<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L43">p2p/Peer.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L45">p2p/Peer.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -306,7 +317,7 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Recv<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L55">p2p/Peer.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L57">p2p/Peer.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -316,7 +327,7 @@
 					<div class="tsd-signature tsd-kind-icon">last<wbr>Send<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L56">p2p/Peer.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L58">p2p/Peer.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -326,7 +337,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L94">p2p/Peer.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L102">p2p/Peer.ts:102</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -336,7 +347,7 @@
 					<div class="tsd-signature tsd-kind-icon">opened<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L45">p2p/Peer.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L47">p2p/Peer.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -346,7 +357,7 @@
 					<div class="tsd-signature tsd-kind-icon">packet<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L59">p2p/Peer.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L61">p2p/Peer.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -361,7 +372,7 @@
 					<div class="tsd-signature tsd-kind-icon">parser<span class="tsd-signature-symbol">:</span> <a href="_p2p_parser_.parser.html" class="tsd-signature-type">Parser</a><span class="tsd-signature-symbol"> =&nbsp;new Parser(Packet.PROTOCOL_DELIMITER)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L47">p2p/Peer.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L49">p2p/Peer.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -371,7 +382,7 @@
 					<div class="tsd-signature tsd-kind-icon">ping<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NodeJS.Timer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L51">p2p/Peer.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L53">p2p/Peer.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -381,7 +392,7 @@
 					<div class="tsd-signature tsd-kind-icon">response<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_p2p_peer_.pendingresponseentry.html" class="tsd-signature-type">PendingResponseEntry</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L52">p2p/Peer.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L54">p2p/Peer.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -391,7 +402,7 @@
 					<div class="tsd-signature tsd-kind-icon">socket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Socket</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L46">p2p/Peer.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L48">p2p/Peer.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -401,17 +412,17 @@
 					<div class="tsd-signature tsd-kind-icon">stall<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NodeJS.Timer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L50">p2p/Peer.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L52">p2p/Peer.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="connection_retries_max_delay" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> CONNECTION_<wbr>RETRIES_<wbr>MAX_<wbr>DELAY</h3>
-					<div class="tsd-signature tsd-kind-icon">CONNECTION_<wbr>RETRIES_<wbr>MAX_<wbr>DELAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;3600000</span></div>
+					<div class="tsd-signature tsd-kind-icon">CONNECTION_<wbr>RETRIES_<wbr>MAX_<wbr>DELAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3600000</span><span class="tsd-signature-symbol"> =&nbsp;3600000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L71">p2p/Peer.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L73">p2p/Peer.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -423,10 +434,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="connection_retries_max_period" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> CONNECTION_<wbr>RETRIES_<wbr>MAX_<wbr>PERIOD</h3>
-					<div class="tsd-signature tsd-kind-icon">CONNECTION_<wbr>RETRIES_<wbr>MAX_<wbr>PERIOD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;604800000</span></div>
+					<div class="tsd-signature tsd-kind-icon">CONNECTION_<wbr>RETRIES_<wbr>MAX_<wbr>PERIOD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">604800000</span><span class="tsd-signature-symbol"> =&nbsp;604800000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L73">p2p/Peer.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L75">p2p/Peer.ts:75</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -438,10 +449,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="connection_retries_min_delay" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> CONNECTION_<wbr>RETRIES_<wbr>MIN_<wbr>DELAY</h3>
-					<div class="tsd-signature tsd-kind-icon">CONNECTION_<wbr>RETRIES_<wbr>MIN_<wbr>DELAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;5000</span></div>
+					<div class="tsd-signature tsd-kind-icon">CONNECTION_<wbr>RETRIES_<wbr>MIN_<wbr>DELAY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">5000</span><span class="tsd-signature-symbol"> =&nbsp;5000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L69">p2p/Peer.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L71">p2p/Peer.ts:71</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -453,10 +464,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="connection_timeout" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> CONNECTION_<wbr>TIMEOUT</h3>
-					<div class="tsd-signature tsd-kind-icon">CONNECTION_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10000</span></div>
+					<div class="tsd-signature tsd-kind-icon">CONNECTION_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10000</span><span class="tsd-signature-symbol"> =&nbsp;10000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L67">p2p/Peer.ts:67</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L69">p2p/Peer.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -468,10 +479,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="ping_interval" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> PING_<wbr>INTERVAL</h3>
-					<div class="tsd-signature tsd-kind-icon">PING_<wbr>INTERVAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;30000</span></div>
+					<div class="tsd-signature tsd-kind-icon">PING_<wbr>INTERVAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">30000</span><span class="tsd-signature-symbol"> =&nbsp;30000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L63">p2p/Peer.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L65">p2p/Peer.ts:65</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -483,10 +494,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="response_timeout" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> RESPONSE_<wbr>TIMEOUT</h3>
-					<div class="tsd-signature tsd-kind-icon">RESPONSE_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10000</span></div>
+					<div class="tsd-signature tsd-kind-icon">RESPONSE_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10000</span><span class="tsd-signature-symbol"> =&nbsp;10000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L65">p2p/Peer.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L67">p2p/Peer.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -498,10 +509,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="stall_interval" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> STALL_<wbr>INTERVAL</h3>
-					<div class="tsd-signature tsd-kind-icon">STALL_<wbr>INTERVAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;5000</span></div>
+					<div class="tsd-signature tsd-kind-icon">STALL_<wbr>INTERVAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">5000</span><span class="tsd-signature-symbol"> =&nbsp;5000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L61">p2p/Peer.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L63">p2p/Peer.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -517,7 +528,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from EventEmitter.defaultMaxListeners</p>
 						<ul>
-							<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:916</li>
+							<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:916</li>
 						</ul>
 					</aside>
 				</section>
@@ -534,7 +545,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L79">p2p/Peer.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L82">p2p/Peer.ts:82</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_types_p2p_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span>
@@ -554,7 +565,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L83">p2p/Peer.ts:83</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L86">p2p/Peer.ts:86</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_p2p_peer_.html#peerinfo" class="tsd-signature-type">PeerInfo</a></h4>
@@ -571,9 +582,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L75">p2p/Peer.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L78">p2p/Peer.ts:78</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The hex-encoded node public key for this peer, or undefined if it is still not known.</p>
+								</div>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
 								<span class="tsd-signature-symbol"> | </span>
 								<span class="tsd-signature-type">undefined</span>
@@ -596,7 +612,7 @@
 								<p>Inherited from EventEmitter.addListener</p>
 								<p>Overrides EventEmitter.addListener</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:918</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:918</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -640,7 +656,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L379">p2p/Peer.ts:379</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L389">p2p/Peer.ts:389</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -674,7 +690,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L466">p2p/Peer.ts:466</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L474">p2p/Peer.ts:474</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -691,13 +707,13 @@
 					<a name="bindsocket" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> bind<wbr>Socket</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">bind<wbr>Socket<span class="tsd-signature-symbol">(</span>socket<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Socket</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">bind<wbr>Socket<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L430">p2p/Peer.ts:430</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L440">p2p/Peer.ts:440</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -705,12 +721,6 @@
 									<p>Binds listeners to a newly connected socket for <code>error</code>, <code>close</code>, and <code>data</code> events.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>socket: <span class="tsd-signature-type">Socket</span></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -725,7 +735,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L364">p2p/Peer.ts:364</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L374">p2p/Peer.ts:374</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -747,7 +757,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L165">p2p/Peer.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L189">p2p/Peer.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,13 +779,14 @@
 						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"close"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"error"</span>, err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"packet"</span>, packet<span class="tsd-signature-symbol">: </span><a href="_p2p_packets_packet_.packet.html" class="tsd-signature-type">Packet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"handshake"</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L32">p2p/Peer.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L33">p2p/Peer.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -790,7 +801,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L33">p2p/Peer.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L34">p2p/Peer.ts:34</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -805,7 +816,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L34">p2p/Peer.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L35">p2p/Peer.ts:35</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -820,7 +831,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L35">p2p/Peer.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L36">p2p/Peer.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -835,7 +846,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L36">p2p/Peer.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L37">p2p/Peer.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -853,7 +864,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L37">p2p/Peer.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L38">p2p/Peer.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -863,6 +874,21 @@
 								</li>
 								<li>
 									<h5>packet: <a href="_p2p_packets_packet_.packet.html" class="tsd-signature-type">Packet</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides EventEmitter.emit</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L39">p2p/Peer.ts:39</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"handshake"</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -879,7 +905,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L522">p2p/Peer.ts:522</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L536">p2p/Peer.ts:536</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -904,27 +930,10 @@
 								<p>Inherited from EventEmitter.eventNames</p>
 								<p>Overrides EventEmitter.eventNames</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:930</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:930</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">symbol</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="finalizeopen" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> finalize<wbr>Open</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">finalize<wbr>Open<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L340">p2p/Peer.ts:340</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -938,7 +947,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L405">p2p/Peer.ts:405</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L415">p2p/Peer.ts:415</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -957,6 +966,32 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getlndpubkey" class="tsd-anchor"></a>
+					<h3>get<wbr>Lnd<wbr>Pub<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Lnd<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">(</span>chain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L123">p2p/Peer.ts:123</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>chain: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">undefined</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 					<a name="getmaxlisteners" class="tsd-anchor"></a>
 					<h3>get<wbr>Max<wbr>Listeners</h3>
@@ -969,7 +1004,7 @@
 								<p>Inherited from EventEmitter.getMaxListeners</p>
 								<p>Overrides EventEmitter.getMaxListeners</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:926</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:926</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -986,7 +1021,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L390">p2p/Peer.ts:390</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L400">p2p/Peer.ts:400</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1009,7 +1044,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L114">p2p/Peer.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L137">p2p/Peer.ts:137</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -1026,7 +1061,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L543">p2p/Peer.ts:543</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L564">p2p/Peer.ts:564</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1049,7 +1084,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L504">p2p/Peer.ts:504</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L516">p2p/Peer.ts:516</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1072,7 +1107,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L565">p2p/Peer.ts:565</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L594">p2p/Peer.ts:594</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1095,7 +1130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L230">p2p/Peer.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L254">p2p/Peer.ts:254</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1118,7 +1153,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L246">p2p/Peer.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L270">p2p/Peer.ts:270</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1141,22 +1176,27 @@
 					<a name="inithello" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> init<wbr>Hello</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">init<wbr>Hello<span class="tsd-signature-symbol">(</span>handshakeData<span class="tsd-signature-symbol">: </span><a href="../modules/_types_p2p_.html#handshakestate" class="tsd-signature-type">HandshakeState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">init<wbr>Hello<span class="tsd-signature-symbol">(</span>handshakeData<span class="tsd-signature-symbol">: </span><a href="../modules/_types_p2p_.html#handshakestate" class="tsd-signature-type">HandshakeState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_p2p_packets_types_hellopacket_.hellopacket.html" class="tsd-signature-type">HelloPacket</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L331">p2p/Peer.ts:331</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L551">p2p/Peer.ts:551</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sends a hello packet and waits for one to be received, if we haven&#39;t received a hello packet already.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>handshakeData: <a href="../modules/_types_p2p_.html#handshakestate" class="tsd-signature-type">HandshakeState</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_p2p_packets_types_hellopacket_.hellopacket.html" class="tsd-signature-type">HelloPacket</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1170,7 +1210,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L324">p2p/Peer.ts:324</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L349">p2p/Peer.ts:349</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1187,7 +1227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L491">p2p/Peer.ts:491</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L499">p2p/Peer.ts:499</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1217,7 +1257,7 @@
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<p>Overrides EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:931</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:931</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1242,7 +1282,7 @@
 								<p>Inherited from EventEmitter.listeners</p>
 								<p>Overrides EventEmitter.listeners</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:927</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:927</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1261,15 +1301,14 @@
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"packet"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"error"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"packet"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
-						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"error"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"handshake"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L25">p2p/Peer.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L27">p2p/Peer.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1305,7 +1344,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L26">p2p/Peer.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L28">p2p/Peer.ts:28</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1341,65 +1380,23 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L27">p2p/Peer.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L29">p2p/Peer.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>event: <span class="tsd-signature-type">"packet"</span></h5>
+									<h5>event: <span class="tsd-signature-type">"handshake"</span></h5>
 								</li>
 								<li>
 									<h5>listener: <span class="tsd-signature-type">function</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>packet<span class="tsd-signature-symbol">: </span><a href="_p2p_packets_packet_.packet.html" class="tsd-signature-type">Packet</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
 												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>packet: <a href="_p2p_packets_packet_.packet.html" class="tsd-signature-type">Packet</a></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
-						</li>
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Overrides EventEmitter.on</p>
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L28">p2p/Peer.ts:28</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>event: <span class="tsd-signature-type">"error"</span></h5>
-								</li>
-								<li>
-									<h5>listener: <span class="tsd-signature-type">function</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>err: <span class="tsd-signature-type">Error</span></h5>
-														</li>
-													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 												</li>
 											</ul>
@@ -1424,7 +1421,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L29">p2p/Peer.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L30">p2p/Peer.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1454,7 +1451,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L30">p2p/Peer.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L31">p2p/Peer.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1484,7 +1481,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.once</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L31">p2p/Peer.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L32">p2p/Peer.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1516,13 +1513,13 @@
 					<a name="open" class="tsd-anchor"></a>
 					<h3>open</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">(</span>handshakeData<span class="tsd-signature-symbol">: </span><a href="../modules/_types_p2p_.html#handshakestate" class="tsd-signature-type">HandshakeState</a>, nodePubKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, retryConnecting<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">open<span class="tsd-signature-symbol">(</span>handshakeData<span class="tsd-signature-symbol">: </span><a href="../modules/_types_p2p_.html#handshakestate" class="tsd-signature-type">HandshakeState</a>, nodePubKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, retryConnecting<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L133">p2p/Peer.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L156">p2p/Peer.ts:156</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1550,7 +1547,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> retryConnecting: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> retryConnecting: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<div class="lead">
 											<p>whether to retry to connect upon failure</p>
@@ -1574,7 +1571,7 @@
 								<p>Inherited from EventEmitter.prependListener</p>
 								<p>Overrides EventEmitter.prependListener</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:921</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:921</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1620,7 +1617,7 @@
 								<p>Inherited from EventEmitter.prependOnceListener</p>
 								<p>Overrides EventEmitter.prependOnceListener</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:922</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:922</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1666,7 +1663,7 @@
 								<p>Inherited from EventEmitter.rawListeners</p>
 								<p>Overrides EventEmitter.rawListeners</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:928</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:928</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1691,7 +1688,7 @@
 								<p>Inherited from EventEmitter.removeAllListeners</p>
 								<p>Overrides EventEmitter.removeAllListeners</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:924</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:924</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1716,7 +1713,7 @@
 								<p>Inherited from EventEmitter.removeListener</p>
 								<p>Overrides EventEmitter.removeListener</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:923</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:923</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1750,29 +1747,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="sendhello" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> send<wbr>Hello</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">send<wbr>Hello<span class="tsd-signature-symbol">(</span>handshakeData<span class="tsd-signature-symbol">: </span><a href="../modules/_types_p2p_.html#handshakestate" class="tsd-signature-type">HandshakeState</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_p2p_packets_types_hellopacket_.hellopacket.html" class="tsd-signature-type">HelloPacket</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L534">p2p/Peer.ts:534</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>handshakeData: <a href="../modules/_types_p2p_.html#handshakestate" class="tsd-signature-type">HandshakeState</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_p2p_packets_types_hellopacket_.hellopacket.html" class="tsd-signature-type">HelloPacket</a></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="sendnodes" class="tsd-anchor"></a>
 					<h3>send<wbr>Nodes</h3>
@@ -1783,7 +1757,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L218">p2p/Peer.ts:218</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L242">p2p/Peer.ts:242</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1814,7 +1788,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L212">p2p/Peer.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L236">p2p/Peer.ts:236</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1840,7 +1814,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L203">p2p/Peer.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L227">p2p/Peer.ts:227</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1863,7 +1837,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L557">p2p/Peer.ts:557</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L586">p2p/Peer.ts:586</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_p2p_packets_types_pingpacket_.pingpacket.html" class="tsd-signature-type">PingPacket</a></h4>
@@ -1880,7 +1854,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L569">p2p/Peer.ts:569</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L598">p2p/Peer.ts:598</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1903,7 +1877,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L223">p2p/Peer.ts:223</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L247">p2p/Peer.ts:247</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1928,7 +1902,7 @@
 								<p>Inherited from EventEmitter.setMaxListeners</p>
 								<p>Overrides EventEmitter.setMaxListeners</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:925</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:925</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1951,12 +1925,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L350">p2p/Peer.ts:350</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L360">p2p/Peer.ts:360</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Wait for a packet to be received from peer. Executed on timeout or once packet is received.</p>
+									<p>Waits for a packet to be received from peer.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1969,6 +1943,7 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A promise that is resolved once the packet is received or rejects on timeout.</p>
 						</li>
 					</ul>
 				</section>
@@ -1982,7 +1957,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Peer.ts#L103">p2p/Peer.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L111">p2p/Peer.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2014,7 +1989,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from EventEmitter.listenerCount</p>
 								<ul>
-									<li>Defined in /Users/itsbalamurali/Desktop/xud/node_modules/@types/node/index.d.ts:915</li>
+									<li>Defined in C:/Users/Daniel/Documents/GitHub/xud/node_modules/@types/node/index.d.ts:915</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2036,7 +2011,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_p2p_peer_.html">"p2p/<wbr>Peer"</a>
@@ -2171,10 +2146,10 @@
 								<a href="_p2p_peer_.peer.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_p2p_peer_.peer.html#finalizeopen" class="tsd-kind-icon">finalize<wbr>Open</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_p2p_peer_.peer.html#fulfillresponseentry" class="tsd-kind-icon">fulfill<wbr>Response<wbr>Entry</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_p2p_peer_.peer.html#getlndpubkey" class="tsd-kind-icon">get<wbr>Lnd<wbr>Pub<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_p2p_peer_.peer.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
@@ -2238,9 +2213,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_p2p_peer_.peer.html#removelistener" class="tsd-kind-icon">remove<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_p2p_peer_.peer.html#sendhello" class="tsd-kind-icon">send<wbr>Hello</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_p2p_peer_.peer.html#sendnodes" class="tsd-kind-icon">send<wbr>Nodes</a>

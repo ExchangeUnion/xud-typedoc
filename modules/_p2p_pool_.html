@@ -53,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="_p2p_pool_.html">&quot;p2p/Pool&quot;</a>
@@ -85,6 +85,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_p2p_pool_.html#nodereputationinfo" class="tsd-kind-icon">Node<wbr>Reputation<wbr>Info</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_p2p_pool_.html#poolconfig" class="tsd-kind-icon">Pool<wbr>Config</a></li>
 							</ul>
 						</section>
@@ -94,12 +95,33 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="nodereputationinfo" class="tsd-anchor"></a>
+					<h3>Node<wbr>Reputation<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">Node<wbr>Reputation<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Pool.ts#L40">p2p/Pool.ts:40</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>reputation<wbr>Score<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.reputationevent.html" class="tsd-signature-type">ReputationEvent</a></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="poolconfig" class="tsd-anchor"></a>
 					<h3>Pool<wbr>Config</h3>
 					<div class="tsd-signature tsd-kind-icon">Pool<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/p2p/Pool.ts#L18">p2p/Pool.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Pool.ts#L20">p2p/Pool.ts:20</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -107,12 +129,44 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>addresses<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>An array of IP addresses or host names which can be used to connect to this server.
+										It will be advertised with peers for them to try to connect to the server in the future.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>detectexternalip<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Whether or not to automatically detect and share current external ip address on startup.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>discover<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>If false, don&#39;t send GET_NODES when connecting, defaults to true.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>listen<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Whether or not to listen for incoming connections from peers.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Which port to listen on. If 0, a random unused port will be used.</p>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -123,7 +177,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="_p2p_pool_.html">"p2p/<wbr>Pool"</a>
@@ -137,6 +191,9 @@
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../interfaces/_p2p_pool_.nodeconnectioniterator.html" class="tsd-kind-icon">Node<wbr>Connection<wbr>Iterator</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_p2p_pool_.html#nodereputationinfo" class="tsd-kind-icon">Node<wbr>Reputation<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_p2p_pool_.html#poolconfig" class="tsd-kind-icon">Pool<wbr>Config</a>

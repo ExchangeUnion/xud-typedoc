@@ -53,7 +53,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../index.html">Globals</a>
 				</li>
 				<li>
 					<a href="../modules/_db_db_.html">&quot;db/DB&quot;</a>
@@ -97,23 +97,19 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_db_db_.db.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_db_db_.db.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_db_db_.db.html#models" class="tsd-kind-icon">models</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_db_db_.db.html#sequelize" class="tsd-kind-icon">sequelize</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_db_db_.db.html#storage" class="tsd-kind-icon">storage</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_db_.db.html#close" class="tsd-kind-icon">close</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_db_db_.db.html#createdatabase" class="tsd-kind-icon">create<wbr>Database</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_db_db_.db.html#createsequelizeinstance" class="tsd-kind-icon">create<wbr>Sequelize<wbr>Instance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_db_.db.html#droptables" class="tsd-kind-icon">drop<wbr>Tables</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_db_.db.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_db_db_.db.html#loadmodels" class="tsd-kind-icon">load<wbr>Models</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_db_db_.db.html#truncate" class="tsd-kind-icon">truncate</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_db_db_.db.html#isdbdoesnotexisterror" class="tsd-kind-icon">is<wbr>DbDoes<wbr>Not<wbr>Exist<wbr>Error</a></li>
 							</ul>
 						</section>
 					</div>
@@ -125,22 +121,29 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new DB<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../modules/_db_db_.html#dbconfig" class="tsd-signature-type">DBConfig</a>, logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_db_db_.db.html" class="tsd-signature-type">DB</a></li>
+						<li class="tsd-signature tsd-kind-icon">new DB<span class="tsd-signature-symbol">(</span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a>, storage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_db_db_.db.html" class="tsd-signature-type">DB</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L32">db/DB.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L20">db/DB.ts:20</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>config: <a href="../modules/_db_db_.html#dbconfig" class="tsd-signature-type">DBConfig</a></h5>
+									<h5>logger: <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></h5>
 								</li>
 								<li>
-									<h5>logger: <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> storage: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the file path for the sqlite database file, if &#39;:memory:&#39; or not specified the db is stored in memory</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_db_db_.db.html" class="tsd-signature-type">DB</a></h4>
@@ -151,22 +154,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="config" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> config</h3>
-					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="../modules/_db_db_.html#dbconfig" class="tsd-signature-type">DBConfig</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L34">db/DB.ts:34</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="logger" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> logger</h3>
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L34">db/DB.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L25">db/DB.ts:25</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -176,7 +169,7 @@
 					<div class="tsd-signature tsd-kind-icon">models<span class="tsd-signature-symbol">:</span> <a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L32">db/DB.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L20">db/DB.ts:20</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,9 +179,24 @@
 					<div class="tsd-signature tsd-kind-icon">sequelize<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Sequelize.Sequelize</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L31">db/DB.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L19">db/DB.ts:19</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="storage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> storage</h3>
+					<div class="tsd-signature tsd-kind-icon">storage<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L25">db/DB.ts:25</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the file path for the sqlite database file, if &#39;:memory:&#39; or not specified the db is stored in memory</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -203,50 +211,10 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L102">db/DB.ts:102</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L95">db/DB.ts:95</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="createdatabase" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Database</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Database<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L153">db/DB.ts:153</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="createsequelizeinstance" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Sequelize<wbr>Instance</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Sequelize<wbr>Instance<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="../modules/_db_db_.html#sequelizeconfig" class="tsd-signature-type">SequelizeConfig</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Sequelize</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L121">db/DB.ts:121</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>config: <a href="../modules/_db_db_.html#sequelizeconfig" class="tsd-signature-type">SequelizeConfig</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Sequelize.Sequelize</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -260,7 +228,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L106">db/DB.ts:106</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L99">db/DB.ts:99</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -271,15 +239,31 @@
 					<a name="init" class="tsd-anchor"></a>
 					<h3>init</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>initDb<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L45">db/DB.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L39">db/DB.ts:39</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize the connection to the database.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> initDb: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>whether to intialize a new database with default values if no database exists</p>
+										</div>
+									</div>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -294,50 +278,10 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L133">db/DB.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/db/DB.ts#L103">db/DB.ts:103</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="truncate" class="tsd-anchor"></a>
-					<h3>truncate</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">truncate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L110">db/DB.ts:110</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-					<a name="isdbdoesnotexisterror" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>DbDoes<wbr>Not<wbr>Exist<wbr>Error</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>DbDoes<wbr>Not<wbr>Exist<wbr>Error<span class="tsd-signature-symbol">(</span>err<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Error</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aabb84b/lib/db/DB.ts#L41">db/DB.ts:41</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>err: <span class="tsd-signature-type">Error</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -347,7 +291,7 @@
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="../globals.html"><em>Globals</em></a>
+						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_db_db_.html">"db/DB"</a>
@@ -365,9 +309,6 @@
 								<a href="_db_db_.db.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_db_db_.db.html#config" class="tsd-kind-icon">config</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_db_db_.db.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -376,14 +317,11 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_db_db_.db.html#sequelize" class="tsd-kind-icon">sequelize</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_db_db_.db.html#storage" class="tsd-kind-icon">storage</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_db_db_.db.html#close" class="tsd-kind-icon">close</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_db_db_.db.html#createdatabase" class="tsd-kind-icon">create<wbr>Database</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_db_db_.db.html#createsequelizeinstance" class="tsd-kind-icon">create<wbr>Sequelize<wbr>Instance</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_db_db_.db.html#droptables" class="tsd-kind-icon">drop<wbr>Tables</a>
@@ -394,24 +332,12 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_db_db_.db.html#loadmodels" class="tsd-kind-icon">load<wbr>Models</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_db_db_.db.html#truncate" class="tsd-kind-icon">truncate</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-								<a href="_db_db_.db.html#isdbdoesnotexisterror" class="tsd-kind-icon">is<wbr>DbDoes<wbr>Not<wbr>Exist<wbr>Error</a>
-							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_db_db_.html#dbconfig" class="tsd-kind-icon">DBConfig</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_db_db_.html#models" class="tsd-kind-icon">Models</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_db_db_.html#sequelizeconfig" class="tsd-kind-icon">Sequelize<wbr>Config</a>
 					</li>
 				</ul>
 			</nav>
