@@ -105,6 +105,7 @@
 						<section class="tsd-index-section ">
 							<h3>Accessors</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_nodekey_nodekey_.nodekey.html#nodeprivkey" class="tsd-kind-icon">node<wbr>Priv<wbr>Key</a></li>
 								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_nodekey_nodekey_.nodekey.html#nodepubkey" class="tsd-kind-icon">node<wbr>Pub<wbr>Key</a></li>
 							</ul>
 						</section>
@@ -133,7 +134,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L11">nodekey/NodeKey.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L11">nodekey/NodeKey.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -155,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">priv<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Buffer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L13">nodekey/NodeKey.ts:13</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L13">nodekey/NodeKey.ts:13</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -165,13 +166,30 @@
 					<div class="tsd-signature tsd-kind-icon">pub<wbr>Key<wbr>Str<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L11">nodekey/NodeKey.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L11">nodekey/NodeKey.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Accessors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+					<a name="nodeprivkey" class="tsd-anchor"></a>
+					<h3>node<wbr>Priv<wbr>Key</h3>
+					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> nodePrivKey<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L22">nodekey/NodeKey.ts:22</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
 					<a name="nodepubkey" class="tsd-anchor"></a>
 					<h3>node<wbr>Pub<wbr>Key</h3>
@@ -182,7 +200,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L18">nodekey/NodeKey.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L18">nodekey/NodeKey.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -202,12 +220,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L80">nodekey/NodeKey.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L85">nodekey/NodeKey.ts:85</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Sign a message with the private key.</p>
+									<p>Signs a message with the private key.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -230,18 +248,18 @@
 					<a name="tofile" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> to<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>File<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>File<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L89">nodekey/NodeKey.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L94">nodekey/NodeKey.ts:94</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Save the private key to a file, optionally encrypted by a password.</p>
+									<p>Saves the private key to a file, optionally encrypted by a password.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -263,7 +281,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -271,13 +289,13 @@
 					<a name="fromfile" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> from<wbr>File</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">from<wbr>File<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a></li>
+						<li class="tsd-signature tsd-kind-icon">from<wbr>File<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, password<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L40">nodekey/NodeKey.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L44">nodekey/NodeKey.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -304,7 +322,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>a NodeKey if a file containing a valid ECDSA private key exists at the given path</p>
 						</li>
 					</ul>
@@ -313,21 +331,21 @@
 					<a name="generate" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> generate</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">generate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a></li>
+						<li class="tsd-signature tsd-kind-icon">generate<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L25">nodekey/NodeKey.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L29">nodekey/NodeKey.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Generate a random NodeKey.</p>
+									<p>Generates a random NodeKey.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -335,18 +353,18 @@
 					<a name="load" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> load</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>xudir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, instanceId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a></li>
+						<li class="tsd-signature tsd-kind-icon">load<span class="tsd-signature-symbol">(</span>xudir<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, instanceId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/nodekey/NodeKey.ts#L60">nodekey/NodeKey.ts:60</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/nodekey/NodeKey.ts#L65">nodekey/NodeKey.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Load a node key from a file or create one if none exists. See <a href="_nodekey_nodekey_.nodekey.html#fromfile">fromFile</a> and <a href="_nodekey_nodekey_.nodekey.html#generate">generate</a>.</p>
+									<p>Loads a node key from a file or create one if none exists. See <a href="_nodekey_nodekey_.nodekey.html#fromfile">fromFile</a> and <a href="_nodekey_nodekey_.nodekey.html#generate">generate</a>.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -358,7 +376,7 @@
 									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> instanceId: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -390,6 +408,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_nodekey_nodekey_.nodekey.html#pubkeystr" class="tsd-kind-icon">pub<wbr>Key<wbr>Str</a>
+							</li>
+							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+								<a href="_nodekey_nodekey_.nodekey.html#nodeprivkey" class="tsd-kind-icon">node<wbr>Priv<wbr>Key</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_nodekey_nodekey_.nodekey.html#nodepubkey" class="tsd-kind-icon">node<wbr>Pub<wbr>Key</a>

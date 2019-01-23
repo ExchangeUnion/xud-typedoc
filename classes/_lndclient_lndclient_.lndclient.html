@@ -103,6 +103,7 @@
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_lndclient_lndclient_.lndclient.html#cltvdelta" class="tsd-kind-icon">cltv<wbr>Delta</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lndclient_lndclient_.lndclient.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lndclient_lndclient_.lndclient.html#credentials" class="tsd-kind-icon">credentials</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lndclient_lndclient_.lndclient.html#identitypubkey" class="tsd-kind-icon">identity<wbr>Pub<wbr>Key</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_lndclient_lndclient_.lndclient.html#lightning" class="tsd-kind-icon">lightning</a></li>
@@ -135,6 +136,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lndclient_lndclient_.lndclient.html#getinfo" class="tsd-kind-icon">get<wbr>Info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lndclient_lndclient_.lndclient.html#getlndinfo" class="tsd-kind-icon">get<wbr>Lnd<wbr>Info</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_lndclient_lndclient_.lndclient.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_lndclient_lndclient_.lndclient.html#init" class="tsd-kind-icon">init</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_lndclient_lndclient_.lndclient.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_lndclient_lndclient_.lndclient.html#isdisabled" class="tsd-kind-icon">is<wbr>Disabled</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_lndclient_lndclient_.lndclient.html#isdisconnected" class="tsd-kind-icon">is<wbr>Disconnected</a></li>
@@ -177,7 +179,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_baseclient_.baseclient.html">BaseClient</a>.<a href="_baseclient_.baseclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L61">lndclient/LndClient.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L61">lndclient/LndClient.ts:61</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -209,12 +211,27 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="cltvdelta" class="tsd-anchor"></a>
 					<h3>cltv<wbr>Delta</h3>
-					<div class="tsd-signature tsd-kind-icon">cltv<wbr>Delta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<div class="tsd-signature tsd-kind-icon">cltv<wbr>Delta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L49">lndclient/LndClient.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L49">lndclient/LndClient.ts:49</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="config" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> config</h3>
+					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="../modules/_lndclient_lndclient_.html#lndclientconfig" class="tsd-signature-type">LndClientConfig</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L67">lndclient/LndClient.ts:67</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>the lnd configuration</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="credentials" class="tsd-anchor"></a>
@@ -222,7 +239,7 @@
 					<div class="tsd-signature tsd-kind-icon">credentials<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ChannelCredentials</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L53">lndclient/LndClient.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L53">lndclient/LndClient.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -232,7 +249,7 @@
 					<div class="tsd-signature tsd-kind-icon">identity<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L55">lndclient/LndClient.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L55">lndclient/LndClient.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -242,7 +259,7 @@
 					<div class="tsd-signature tsd-kind-icon">lightning<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">LightningClient</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/_lndclient_lndclient_.lightningmethodindex.html" class="tsd-signature-type">LightningMethodIndex</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L50">lndclient/LndClient.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L50">lndclient/LndClient.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -253,7 +270,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_baseclient_.baseclient.html">BaseClient</a>.<a href="_baseclient_.baseclient.html#logger">logger</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/BaseClient.ts#L17">BaseClient.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/BaseClient.ts#L18">BaseClient.ts:18</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -263,7 +280,7 @@
 					<div class="tsd-signature tsd-kind-icon">meta<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Metadata</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L51">lndclient/LndClient.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L51">lndclient/LndClient.ts:51</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -273,18 +290,18 @@
 					<div class="tsd-signature tsd-kind-icon">reconnection<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NodeJS.Timer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L54">lndclient/LndClient.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L54">lndclient/LndClient.ts:54</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 					<a name="status" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagProtected">Protected</span> status</h3>
-					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <a href="../enums/_baseclient_.clientstatus.html" class="tsd-signature-type">ClientStatus</a><span class="tsd-signature-symbol"> =&nbsp;ClientStatus.Disabled</span></div>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <a href="../enums/_baseclient_.clientstatus.html" class="tsd-signature-type">ClientStatus</a><span class="tsd-signature-symbol"> =&nbsp;ClientStatus.NotInitialized</span></div>
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_baseclient_.baseclient.html">BaseClient</a>.<a href="_baseclient_.baseclient.html#status">status</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/BaseClient.ts#L15">BaseClient.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/BaseClient.ts#L16">BaseClient.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -294,7 +311,7 @@
 					<div class="tsd-signature tsd-kind-icon">uri<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L52">lndclient/LndClient.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L52">lndclient/LndClient.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -304,7 +321,7 @@
 					<div class="tsd-signature tsd-kind-icon">RECHECK_<wbr>SYNC_<wbr>TIMER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">30000</span><span class="tsd-signature-symbol"> =&nbsp;30000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L61">lndclient/LndClient.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L61">lndclient/LndClient.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -319,7 +336,7 @@
 					<div class="tsd-signature tsd-kind-icon">RECONNECT_<wbr>TIMER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">5000</span><span class="tsd-signature-symbol"> =&nbsp;5000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L58">lndclient/LndClient.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L58">lndclient/LndClient.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -352,7 +369,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L104">lndclient/LndClient.ts:104</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L107">lndclient/LndClient.ts:107</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span>
@@ -421,7 +438,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L243">lndclient/LndClient.ts:243</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L246">lndclient/LndClient.ts:246</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -443,7 +460,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L323">lndclient/LndClient.ts:323</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L326">lndclient/LndClient.ts:326</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -465,7 +482,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L293">lndclient/LndClient.ts:293</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L296">lndclient/LndClient.ts:296</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -499,7 +516,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L250">lndclient/LndClient.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L253">lndclient/LndClient.ts:253</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -534,7 +551,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L44">lndclient/LndClient.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L44">lndclient/LndClient.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -579,7 +596,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L213">lndclient/LndClient.ts:213</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L216">lndclient/LndClient.ts:216</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -602,7 +619,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L124">lndclient/LndClient.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L127">lndclient/LndClient.ts:127</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_lndclient_lndclient_.html#lndinfo" class="tsd-signature-type">LndInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -628,6 +645,28 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="init" class="tsd-anchor"></a>
+					<h3>init</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L74">lndclient/LndClient.ts:74</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initializes the client for calls to lnd and verifies that we can connect to it.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="isconnected" class="tsd-anchor"></a>
 					<h3>is<wbr>Connected</h3>
@@ -639,7 +678,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_baseclient_.baseclient.html">BaseClient</a>.<a href="_baseclient_.baseclient.html#isconnected">isConnected</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/BaseClient.ts#L25">BaseClient.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/BaseClient.ts#L26">BaseClient.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -657,7 +696,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_baseclient_.baseclient.html">BaseClient</a>.<a href="_baseclient_.baseclient.html#isdisabled">isDisabled</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/BaseClient.ts#L28">BaseClient.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/BaseClient.ts#L29">BaseClient.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -675,7 +714,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_baseclient_.baseclient.html">BaseClient</a>.<a href="_baseclient_.baseclient.html#isdisconnected">isDisconnected</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/BaseClient.ts#L31">BaseClient.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/BaseClient.ts#L32">BaseClient.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -692,7 +731,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L272">lndclient/LndClient.ts:272</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L275">lndclient/LndClient.ts:275</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -764,7 +803,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L227">lndclient/LndClient.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L230">lndclient/LndClient.ts:230</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -793,7 +832,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L43">lndclient/LndClient.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L43">lndclient/LndClient.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -883,7 +922,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L262">lndclient/LndClient.ts:262</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L265">lndclient/LndClient.ts:265</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1006,7 +1045,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L279">lndclient/LndClient.ts:279</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L282">lndclient/LndClient.ts:282</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1130,7 +1169,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L220">lndclient/LndClient.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L223">lndclient/LndClient.ts:223</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1158,7 +1197,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L286">lndclient/LndClient.ts:286</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L289">lndclient/LndClient.ts:289</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1212,7 +1251,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_baseclient_.baseclient.html">BaseClient</a>.<a href="_baseclient_.baseclient.html#setstatus">setStatus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/BaseClient.ts#L21">BaseClient.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/BaseClient.ts#L22">BaseClient.ts:22</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1235,7 +1274,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L108">lndclient/LndClient.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L111">lndclient/LndClient.ts:111</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1270,7 +1309,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L170">lndclient/LndClient.ts:170</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L173">lndclient/LndClient.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1294,7 +1333,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/lndclient/LndClient.ts#L236">lndclient/LndClient.ts:236</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/lndclient/LndClient.ts#L239">lndclient/LndClient.ts:239</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1358,6 +1397,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_lndclient_lndclient_.lndclient.html#cltvdelta" class="tsd-kind-icon">cltv<wbr>Delta</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_lndclient_lndclient_.lndclient.html#config" class="tsd-kind-icon">config</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_lndclient_lndclient_.lndclient.html#credentials" class="tsd-kind-icon">credentials</a>
@@ -1424,6 +1466,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_lndclient_lndclient_.lndclient.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_lndclient_lndclient_.lndclient.html#init" class="tsd-kind-icon">init</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_lndclient_lndclient_.lndclient.html#isconnected" class="tsd-kind-icon">is<wbr>Connected</a>

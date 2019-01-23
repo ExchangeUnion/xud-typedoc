@@ -87,7 +87,16 @@
 								<a href="_p2p_packets_types_orderpacket_.orderpacket.html" class="tsd-signature-type">OrderPacket</a>
 							</li>
 							<li>
-								<a href="_p2p_packets_types_hellopacket_.hellopacket.html" class="tsd-signature-type">HelloPacket</a>
+								<a href="_p2p_packets_types_sessioninitpacket_.sessioninitpacket.html" class="tsd-signature-type">SessionInitPacket</a>
+							</li>
+							<li>
+								<a href="_p2p_packets_types_sessionackpacket_.sessionackpacket.html" class="tsd-signature-type">SessionAckPacket</a>
+							</li>
+							<li>
+								<a href="_p2p_packets_types_nodestateupdatepacket_.nodestateupdatepacket.html" class="tsd-signature-type">NodeStateUpdatePacket</a>
+							</li>
+							<li>
+								<a href="_p2p_packets_types_disconnectingpacket_.disconnectingpacket.html" class="tsd-signature-type">DisconnectingPacket</a>
 							</li>
 							<li>
 								<a href="_p2p_packets_types_pingpacket_.pingpacket.html" class="tsd-signature-type">PingPacket</a>
@@ -114,13 +123,13 @@
 								<a href="_p2p_packets_types_swaprequestpacket_.swaprequestpacket.html" class="tsd-signature-type">SwapRequestPacket</a>
 							</li>
 							<li>
-								<a href="_p2p_packets_types_swapresponsepacket_.swapresponsepacket.html" class="tsd-signature-type">SwapResponsePacket</a>
+								<a href="_p2p_packets_types_swapacceptedpacket_.swapacceptedpacket.html" class="tsd-signature-type">SwapAcceptedPacket</a>
 							</li>
 							<li>
 								<a href="_p2p_packets_types_swapcompletepacket_.swapcompletepacket.html" class="tsd-signature-type">SwapCompletePacket</a>
 							</li>
 							<li>
-								<a href="_p2p_packets_types_swaperrorpacket_.swaperrorpacket.html" class="tsd-signature-type">SwapErrorPacket</a>
+								<a href="_p2p_packets_types_swapfailedpacket_.swapfailedpacket.html" class="tsd-signature-type">SwapFailedPacket</a>
 							</li>
 						</ul>
 					</li>
@@ -147,7 +156,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_p2p_packets_packet_.packet.html#body" class="tsd-kind-icon">body</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_p2p_packets_packet_.packet.html#header" class="tsd-kind-icon">header</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_p2p_packets_packet_.packet.html#protocol_delimiter" class="tsd-kind-icon">PROTOCOL_<wbr>DELIMITER</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -160,6 +168,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_packets_packet_.packet.html#checksum" class="tsd-kind-icon">checksum</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_packets_packet_.packet.html#serialize" class="tsd-kind-icon">serialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_packets_packet_.packet.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_packets_packet_.packet.html#toraw" class="tsd-kind-icon">to<wbr>Raw</a></li>
 							</ul>
 						</section>
@@ -179,7 +190,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L44">p2p/packets/Packet.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L49">p2p/packets/Packet.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,7 +214,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L50">p2p/packets/Packet.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L55">p2p/packets/Packet.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -239,7 +250,7 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_p2p_packets_packet_.packetinterface.html">PacketInterface</a>.<a href="../interfaces/_p2p_packets_packet_.packetinterface.html#body">body</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L41">p2p/packets/Packet.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L48">p2p/packets/Packet.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -250,24 +261,9 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/_p2p_packets_packet_.packetinterface.html">PacketInterface</a>.<a href="../interfaces/_p2p_packets_packet_.packetinterface.html#header">header</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L42">p2p/packets/Packet.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L49">p2p/packets/Packet.ts:49</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
-					<a name="protocol_delimiter" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> PROTOCOL_<wbr>DELIMITER</h3>
-					<div class="tsd-signature tsd-kind-icon">PROTOCOL_<wbr>DELIMITER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"ↂ₿ↂ"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;ↂ₿ↂ&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L44">p2p/packets/Packet.ts:44</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Wire protocol delimiter.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -282,7 +278,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L40">p2p/packets/Packet.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L47">p2p/packets/Packet.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/_p2p_packets_packet_.packetdirection.html" class="tsd-signature-type">PacketDirection</a></h4>
@@ -299,7 +295,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L39">p2p/packets/Packet.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L46">p2p/packets/Packet.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/_p2p_packets_packettype_.packettype.html" class="tsd-signature-type">PacketType</a></h4>
@@ -310,25 +306,81 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="toraw" class="tsd-anchor"></a>
-					<h3>to<wbr>Raw</h3>
+					<a name="checksum" class="tsd-anchor"></a>
+					<h3>checksum</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Raw<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">checksum<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L86">p2p/packets/Packet.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L102">p2p/packets/Packet.ts:102</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Serialize this packet to JSON.</p>
+									<p>Calculating the packet checksum using its JSON representation hash first 4 bytes.</p>
 								</div>
 							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="serialize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> serialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">serialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L85">p2p/packets/Packet.ts:85</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tojson" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L87">p2p/packets/Packet.ts:87</a></li>
+								</ul>
+							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>JSON string representing the packet</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="toraw" class="tsd-anchor"></a>
+					<h3>to<wbr>Raw</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Raw<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L95">p2p/packets/Packet.ts:95</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Serialize this packet to binary Buffer.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
+							<p>Buffer representation of the packet</p>
 						</li>
 					</ul>
 				</section>
@@ -364,14 +416,20 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_p2p_packets_packet_.packet.html#header" class="tsd-kind-icon">header</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
-								<a href="_p2p_packets_packet_.packet.html#protocol_delimiter" class="tsd-kind-icon">PROTOCOL_<wbr>DELIMITER</a>
-							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_p2p_packets_packet_.packet.html#direction" class="tsd-kind-icon">direction</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
 								<a href="_p2p_packets_packet_.packet.html#type" class="tsd-kind-icon">type</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_p2p_packets_packet_.packet.html#checksum" class="tsd-kind-icon">checksum</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_p2p_packets_packet_.packet.html#serialize" class="tsd-kind-icon">serialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_p2p_packets_packet_.packet.html#tojson" class="tsd-kind-icon">toJSON</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_p2p_packets_packet_.packet.html#toraw" class="tsd-kind-icon">to<wbr>Raw</a>
@@ -385,6 +443,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_p2p_packets_packet_.html#packetheader" class="tsd-kind-icon">Packet<wbr>Header</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_p2p_packets_packet_.html#ispacket" class="tsd-kind-icon">is<wbr>Packet</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_p2p_packets_packet_.html#ispacketinterface" class="tsd-kind-icon">is<wbr>Packet<wbr>Interface</a>

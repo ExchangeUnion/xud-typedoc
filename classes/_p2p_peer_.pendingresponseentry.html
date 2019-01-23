@@ -91,6 +91,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="_p2p_peer_.pendingresponseentry.html#callbacks" class="tsd-kind-icon">callbacks</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="_p2p_peer_.pendingresponseentry.html#jobs" class="tsd-kind-icon">jobs</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-not-exported"><a href="_p2p_peer_.pendingresponseentry.html#timeout" class="tsd-kind-icon">timeout</a></li>
 							</ul>
@@ -98,6 +99,7 @@
 						<section class="tsd-index-section tsd-is-not-exported">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_p2p_peer_.pendingresponseentry.html#addcb" class="tsd-kind-icon">add<wbr>Cb</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_p2p_peer_.pendingresponseentry.html#addjob" class="tsd-kind-icon">add<wbr>Job</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_p2p_peer_.pendingresponseentry.html#reject" class="tsd-kind-icon">reject</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-not-exported"><a href="_p2p_peer_.pendingresponseentry.html#resolve" class="tsd-kind-icon">resolve</a></li>
@@ -110,12 +112,27 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+					<a name="callbacks" class="tsd-anchor"></a>
+					<h3>callbacks</h3>
+					<div class="tsd-signature tsd-kind-icon">callbacks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/Peer.ts#L825">p2p/Peer.ts:825</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>An array of callbacks to be called synchronously when entry resolve.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 					<a name="jobs" class="tsd-anchor"></a>
 					<h3>jobs</h3>
 					<div class="tsd-signature tsd-kind-icon">jobs<span class="tsd-signature-symbol">:</span> <a href="_p2p_peer_.job.html" class="tsd-signature-type">Job</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L611">p2p/Peer.ts:611</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/Peer.ts#L823">p2p/Peer.ts:823</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -130,13 +147,36 @@
 					<div class="tsd-signature tsd-kind-icon">timeout<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L609">p2p/Peer.ts:609</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/Peer.ts#L821">p2p/Peer.ts:821</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+					<a name="addcb" class="tsd-anchor"></a>
+					<h3>add<wbr>Cb</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Cb<span class="tsd-signature-symbol">(</span>cb<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/Peer.ts#L831">p2p/Peer.ts:831</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cb: <span class="tsd-signature-type">Function</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 					<a name="addjob" class="tsd-anchor"></a>
 					<h3>add<wbr>Job</h3>
@@ -147,7 +187,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L613">p2p/Peer.ts:613</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/Peer.ts#L827">p2p/Peer.ts:827</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -173,7 +213,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L629">p2p/Peer.ts:629</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/Peer.ts#L852">p2p/Peer.ts:852</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -196,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L621">p2p/Peer.ts:621</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/Peer.ts#L839">p2p/Peer.ts:839</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -219,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/Peer.ts#L617">p2p/Peer.ts:617</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/Peer.ts#L835">p2p/Peer.ts:835</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -259,10 +299,16 @@
 						<a href="_p2p_peer_.pendingresponseentry.html" class="tsd-kind-icon">Pending<wbr>Response<wbr>Entry</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
+								<a href="_p2p_peer_.pendingresponseentry.html#callbacks" class="tsd-kind-icon">callbacks</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="_p2p_peer_.pendingresponseentry.html#jobs" class="tsd-kind-icon">jobs</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-not-exported">
 								<a href="_p2p_peer_.pendingresponseentry.html#timeout" class="tsd-kind-icon">timeout</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
+								<a href="_p2p_peer_.pendingresponseentry.html#addcb" class="tsd-kind-icon">add<wbr>Cb</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-not-exported">
 								<a href="_p2p_peer_.pendingresponseentry.html#addjob" class="tsd-kind-icon">add<wbr>Job</a>
@@ -282,6 +328,9 @@
 				<ul class="after-current">
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="../modules/_p2p_peer_.html#peerinfo" class="tsd-kind-icon">Peer<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_p2p_peer_.html#mincompatibleversion" class="tsd-kind-icon">min<wbr>Compatible<wbr>Version</a>
 					</li>
 				</ul>
 			</nav>

@@ -71,9 +71,9 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
+							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_utils_utils_.html#uriparts" class="tsd-kind-icon">Uri<wbr>Parts</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_utils_utils_.html#randombytes" class="tsd-kind-icon">random<wbr>Bytes</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -84,40 +84,51 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#getexternalip" class="tsd-kind-icon">get<wbr>External<wbr>Ip</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#getpublicmethods" class="tsd-kind-icon">get<wbr>Public<wbr>Methods</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#gettsstring" class="tsd-kind-icon">get<wbr>TsString</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#geturi" class="tsd-kind-icon">get<wbr>Uri</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#groupby" class="tsd-kind-icon">group<wbr>By</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#isemptyobject" class="tsd-kind-icon">is<wbr>Empty<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#isobject" class="tsd-kind-icon">is<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#isplainobject" class="tsd-kind-icon">is<wbr>Plain<wbr>Object</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#ms" class="tsd-kind-icon">ms</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#parseuri" class="tsd-kind-icon">parse<wbr>Uri</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#removeundefinedprops" class="tsd-kind-icon">remove<wbr>Undefined<wbr>Props</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="uriparts" class="tsd-anchor"></a>
-					<h3>Uri<wbr>Parts</h3>
-					<div class="tsd-signature tsd-kind-icon">Uri<wbr>Parts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
+					<a name="randombytes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> random<wbr>Bytes</h3>
+					<div class="tsd-signature tsd-kind-icon">random<wbr>Bytes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;promisify(crypto.randomBytes)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L6">utils/utils.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L147">utils/utils.ts:147</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A promisified wrapper for the NodeJS <code>crypto.randomBytes</code> method.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>node<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							<li class="tsd-parameter-siganture">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>arg1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>arg1: <span class="tsd-signature-type">T1</span></h5>
+											</li>
+										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									</li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -135,7 +146,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L86">utils/utils.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L58">utils/utils.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,7 +188,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L142">utils/utils.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L114">utils/utils.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -205,7 +216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L15">utils/utils.ts:15</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L11">utils/utils.ts:11</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -227,7 +238,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L107">utils/utils.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L79">utils/utils.ts:79</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -249,46 +260,24 @@
 					<a name="gettsstring" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>TsString</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>TsString<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>TsString<span class="tsd-signature-symbol">(</span>dateFormat<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L78">utils/utils.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L50">utils/utils.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get the current date in the LocaleString format.</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="geturi" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Uri</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Uri<span class="tsd-signature-symbol">(</span>uriParts<span class="tsd-signature-symbol">: </span><a href="_utils_utils_.html#uriparts" class="tsd-signature-type">UriParts</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L41">utils/utils.ts:41</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a URI from the public key, host and port.</p>
+									<p>Get the current date in the given dateFormat, if not provided formats with <code>YYYY-MM-DD hh:mm:ss.sss</code>.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uriParts: <a href="_utils_utils_.html#uriparts" class="tsd-signature-type">UriParts</a></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> dateFormat: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -305,7 +294,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L118">utils/utils.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L90">utils/utils.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -352,7 +341,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L72">utils/utils.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L44">utils/utils.ts:44</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,7 +369,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L65">utils/utils.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L37">utils/utils.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -408,7 +397,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L160">utils/utils.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L132">utils/utils.ts:132</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,7 +436,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L135">utils/utils.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L107">utils/utils.ts:107</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -460,30 +449,25 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="parseuri" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> parse<wbr>Uri</h3>
+					<a name="removeundefinedprops" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> remove<wbr>Undefined<wbr>Props</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Uri<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_utils_utils_.html#uriparts" class="tsd-signature-type">UriParts</a></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Undefined<wbr>Props<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/utils/utils.ts#L49">utils/utils.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/utils/utils.ts#L149">utils/utils.ts:149</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Splits a URI into the public key, host and port.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>uri: <span class="tsd-signature-type">string</span></h5>
+									<h5>obj: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_utils_utils_.html#uriparts" class="tsd-signature-type">UriParts</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -502,8 +486,8 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_utils_utils_.html#uriparts" class="tsd-kind-icon">Uri<wbr>Parts</a>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="_utils_utils_.html#randombytes" class="tsd-kind-icon">random<wbr>Bytes</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_utils_.html#deepmerge" class="tsd-kind-icon">deep<wbr>Merge</a>
@@ -521,9 +505,6 @@
 						<a href="_utils_utils_.html#gettsstring" class="tsd-kind-icon">get<wbr>TsString</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_utils_utils_.html#geturi" class="tsd-kind-icon">get<wbr>Uri</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_utils_.html#groupby" class="tsd-kind-icon">group<wbr>By</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
@@ -539,7 +520,7 @@
 						<a href="_utils_utils_.html#ms" class="tsd-kind-icon">ms</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_utils_utils_.html#parseuri" class="tsd-kind-icon">parse<wbr>Uri</a>
+						<a href="_utils_utils_.html#removeundefinedprops" class="tsd-kind-icon">remove<wbr>Undefined<wbr>Props</a>
 					</li>
 				</ul>
 			</nav>

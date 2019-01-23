@@ -103,7 +103,6 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#body" class="tsd-kind-icon">body</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#header" class="tsd-kind-icon">header</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#protocol_delimiter" class="tsd-kind-icon">PROTOCOL_<wbr>DELIMITER</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -113,10 +112,16 @@
 								<li class="tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#checksum" class="tsd-kind-icon">checksum</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#serialize" class="tsd-kind-icon">serialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#tojson" class="tsd-kind-icon">toJSON</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#toraw" class="tsd-kind-icon">to<wbr>Raw</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#convert" class="tsd-kind-icon">convert</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#deserialize" class="tsd-kind-icon">deserialize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#validate" class="tsd-kind-icon">validate</a></li>
 							</ul>
 						</section>
 					</div>
@@ -136,7 +141,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L44">p2p/packets/Packet.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L49">p2p/packets/Packet.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -161,7 +166,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L50">p2p/packets/Packet.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L55">p2p/packets/Packet.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -198,7 +203,7 @@
 						<p>Implementation of <a href="../interfaces/_p2p_packets_packet_.packetinterface.html">PacketInterface</a>.<a href="../interfaces/_p2p_packets_packet_.packetinterface.html#body">body</a></p>
 						<p>Inherited from <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#body">body</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L41">p2p/packets/Packet.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L48">p2p/packets/Packet.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -210,25 +215,9 @@
 						<p>Implementation of <a href="../interfaces/_p2p_packets_packet_.packetinterface.html">PacketInterface</a>.<a href="../interfaces/_p2p_packets_packet_.packetinterface.html#header">header</a></p>
 						<p>Inherited from <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#header">header</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L42">p2p/packets/Packet.ts:42</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L49">p2p/packets/Packet.ts:49</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-					<a name="protocol_delimiter" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> PROTOCOL_<wbr>DELIMITER</h3>
-					<div class="tsd-signature tsd-kind-icon">PROTOCOL_<wbr>DELIMITER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"ↂ₿ↂ"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;ↂ₿ↂ&quot;</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#protocol_delimiter">PROTOCOL_DELIMITER</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L44">p2p/packets/Packet.ts:44</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Wire protocol delimiter.</p>
-						</div>
-					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -244,7 +233,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#direction">direction</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/types/OrderInvalidationPacket.ts#L12">p2p/packets/types/OrderInvalidationPacket.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/types/OrderInvalidationPacket.ts#L13">p2p/packets/types/OrderInvalidationPacket.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/_p2p_packets_packet_.packetdirection.html" class="tsd-signature-type">PacketDirection</a></h4>
@@ -262,7 +251,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#type">type</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/types/OrderInvalidationPacket.ts#L8">p2p/packets/types/OrderInvalidationPacket.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/types/OrderInvalidationPacket.ts#L9">p2p/packets/types/OrderInvalidationPacket.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../enums/_p2p_packets_packettype_.packettype.html" class="tsd-signature-type">PacketType</a></h4>
@@ -270,29 +259,160 @@
 					</ul>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="checksum" class="tsd-anchor"></a>
+					<h3>checksum</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">checksum<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#checksum">checksum</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L102">p2p/packets/Packet.ts:102</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculating the packet checksum using its JSON representation hash first 4 bytes.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="serialize" class="tsd-anchor"></a>
+					<h3>serialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">serialize<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#serialize">serialize</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/types/OrderInvalidationPacket.ts#L43">p2p/packets/types/OrderInvalidationPacket.ts:43</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tojson" class="tsd-anchor"></a>
+					<h3>toJSON</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">toJSON<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#tojson">toJSON</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L87">p2p/packets/Packet.ts:87</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="toraw" class="tsd-anchor"></a>
 					<h3>to<wbr>Raw</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Raw<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Raw<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Buffer</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_p2p_packets_packet_.packet.html">Packet</a>.<a href="_p2p_packets_packet_.packet.html#toraw">toRaw</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/p2p/packets/Packet.ts#L86">p2p/packets/Packet.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L95">p2p/packets/Packet.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Serialize this packet to JSON.</p>
+									<p>Serialize this packet to binary Buffer.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>JSON string representing the packet</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Buffer</span></h4>
+							<p>Buffer representation of the packet</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="convert" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> convert</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">convert<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">pb.OrderInvalidationPacket.AsObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html" class="tsd-signature-type">OrderInvalidationPacket</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/types/OrderInvalidationPacket.ts#L30">p2p/packets/types/OrderInvalidationPacket.ts:30</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">pb.OrderInvalidationPacket.AsObject</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html" class="tsd-signature-type">OrderInvalidationPacket</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="deserialize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> deserialize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">deserialize<span class="tsd-signature-symbol">(</span>binary<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html" class="tsd-signature-type">OrderInvalidationPacket</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">pb.OrderInvalidationPacket.AsObject</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/types/OrderInvalidationPacket.ts#L17">p2p/packets/types/OrderInvalidationPacket.ts:17</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>binary: <span class="tsd-signature-type">Uint8Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html" class="tsd-signature-type">OrderInvalidationPacket</a>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">pb.OrderInvalidationPacket.AsObject</span>
+							</h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="validate" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> validate</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">validate<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">pb.OrderInvalidationPacket.AsObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/types/OrderInvalidationPacket.ts#L22">p2p/packets/types/OrderInvalidationPacket.ts:22</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <span class="tsd-signature-type">pb.OrderInvalidationPacket.AsObject</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -325,9 +445,6 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#header" class="tsd-kind-icon">header</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
-								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#protocol_delimiter" class="tsd-kind-icon">PROTOCOL_<wbr>DELIMITER</a>
-							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#direction" class="tsd-kind-icon">direction</a>
 							</li>
@@ -335,7 +452,25 @@
 								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#type" class="tsd-kind-icon">type</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#checksum" class="tsd-kind-icon">checksum</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#serialize" class="tsd-kind-icon">serialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#tojson" class="tsd-kind-icon">toJSON</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#toraw" class="tsd-kind-icon">to<wbr>Raw</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#convert" class="tsd-kind-icon">convert</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#deserialize" class="tsd-kind-icon">deserialize</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="_p2p_packets_types_orderinvalidationpacket_.orderinvalidationpacket.html#validate" class="tsd-kind-icon">validate</a>
 							</li>
 						</ul>
 					</li>

@@ -83,7 +83,6 @@
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="_orderbook_tradingpair_.html#ordersidesarrays" class="tsd-kind-icon">Order<wbr>Sides<wbr>Arrays</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-not-exported"><a href="_orderbook_tradingpair_.html#ordersidesmaps" class="tsd-kind-icon">Order<wbr>Sides<wbr>Maps</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_orderbook_tradingpair_.html#ordersidesqueues" class="tsd-kind-icon">Order<wbr>Sides<wbr>Queues</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_orderbook_tradingpair_.html#splitorder" class="tsd-kind-icon">Split<wbr>Order</a></li>
 							</ul>
 						</section>
 					</div>
@@ -97,7 +96,7 @@
 					<div class="tsd-signature tsd-kind-icon">Order<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L14">orderbook/TradingPair.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/orderbook/TradingPair.ts#L9">orderbook/TradingPair.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -107,7 +106,7 @@
 					<div class="tsd-signature tsd-kind-icon">Order<wbr>Sides<wbr>Arrays<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L21">orderbook/TradingPair.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/orderbook/TradingPair.ts#L16">orderbook/TradingPair.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -128,7 +127,7 @@
 					<div class="tsd-signature tsd-kind-icon">Order<wbr>Sides<wbr>Maps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L16">orderbook/TradingPair.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/orderbook/TradingPair.ts#L11">orderbook/TradingPair.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -149,38 +148,17 @@
 					<div class="tsd-signature tsd-kind-icon">Order<wbr>Sides<wbr>Queues<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L26">orderbook/TradingPair.ts:26</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/orderbook/TradingPair.ts#L21">orderbook/TradingPair.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>buy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FastPriorityQueue</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5>buy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FastPriorityQueue</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_orders_.html#order" class="tsd-signature-type">Order</a><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5>sell<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FastPriorityQueue</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a><span class="tsd-signature-symbol">&gt;</span></h5>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="splitorder" class="tsd-anchor"></a>
-					<h3>Split<wbr>Order</h3>
-					<div class="tsd-signature tsd-kind-icon">Split<wbr>Order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/orderbook/TradingPair.ts#L9">orderbook/TradingPair.ts:9</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter">
-								<h5>matched<span class="tsd-signature-symbol">: </span><a href="_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h5>
-							</li>
-							<li class="tsd-parameter">
-								<h5>remaining<span class="tsd-signature-symbol">: </span><a href="_types_orders_.html#stampedorder" class="tsd-signature-type">StampedOrder</a></h5>
+								<h5>sell<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">FastPriorityQueue</span><span class="tsd-signature-symbol">&lt;</span><a href="_types_orders_.html#order" class="tsd-signature-type">Order</a><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -214,9 +192,6 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_orderbook_tradingpair_.html#ordersidesqueues" class="tsd-kind-icon">Order<wbr>Sides<wbr>Queues</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_orderbook_tradingpair_.html#splitorder" class="tsd-kind-icon">Split<wbr>Order</a>
 					</li>
 				</ul>
 			</nav>

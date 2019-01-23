@@ -76,8 +76,18 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#dealtimedout" class="tsd-kind-icon">Deal<wbr>Timed<wbr>Out</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#invalidresolverequest" class="tsd-kind-icon">Invalid<wbr>Resolve<wbr>Request</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#invalidswappacketreceived" class="tsd-kind-icon">Invalid<wbr>Swap<wbr>Packet<wbr>Received</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#invalidswaprequest" class="tsd-kind-icon">Invalid<wbr>Swap<wbr>Request</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#noroutefound" class="tsd-kind-icon">No<wbr>Route<wbr>Found</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#ordernotfound" class="tsd-kind-icon">Order<wbr>Not<wbr>Found</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#orderunavailable" class="tsd-kind-icon">Order<wbr>Unavailable</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#orderonhold" class="tsd-kind-icon">Order<wbr>OnHold</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#paymenthashreuse" class="tsd-kind-icon">Payment<wbr>Hash<wbr>Reuse</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#sendpaymentfailure" class="tsd-kind-icon">Send<wbr>Payment<wbr>Failure</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#swapclientnotsetup" class="tsd-kind-icon">Swap<wbr>Client<wbr>Not<wbr>Setup</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#swaptimedout" class="tsd-kind-icon">Swap<wbr>Timed<wbr>Out</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapfailurereason.html#unexpectedlnderror" class="tsd-kind-icon">Unexpected<wbr>Lnd<wbr>Error</a></li>
 							</ul>
 						</section>
 					</div>
@@ -86,12 +96,87 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="ordernotfound" class="tsd-anchor"></a>
-					<h3>Order<wbr>Not<wbr>Found</h3>
-					<div class="tsd-signature tsd-kind-icon">Order<wbr>Not<wbr>Found<span class="tsd-signature-symbol">:</span> </div>
+					<a name="dealtimedout" class="tsd-anchor"></a>
+					<h3>Deal<wbr>Timed<wbr>Out</h3>
+					<div class="tsd-signature tsd-kind-icon">Deal<wbr>Timed<wbr>Out<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;11</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/enums.ts#L54">types/enums.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L98">types/enums.ts:98</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The deal timed out while we were waiting for the peer to respond to our swap request.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="invalidresolverequest" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Resolve<wbr>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Resolve<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;8</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L92">types/enums.ts:92</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The swap resolver request from lnd was invalid.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="invalidswappacketreceived" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Swap<wbr>Packet<wbr>Received</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Swap<wbr>Packet<wbr>Received<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;6</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L88">types/enums.ts:88</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Received a swap packet from the peer with invalid data.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="invalidswaprequest" class="tsd-anchor"></a>
+					<h3>Invalid<wbr>Swap<wbr>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">Invalid<wbr>Swap<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L80">types/enums.ts:80</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The swap request contained invalid data.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="noroutefound" class="tsd-anchor"></a>
+					<h3>No<wbr>Route<wbr>Found</h3>
+					<div class="tsd-signature tsd-kind-icon">No<wbr>Route<wbr>Found<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L84">types/enums.ts:84</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Could not find a route to complete the swap.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="ordernotfound" class="tsd-anchor"></a>
+					<h3>Order<wbr>Not<wbr>Found</h3>
+					<div class="tsd-signature tsd-kind-icon">Order<wbr>Not<wbr>Found<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L76">types/enums.ts:76</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -101,17 +186,92 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="orderunavailable" class="tsd-anchor"></a>
-					<h3>Order<wbr>Unavailable</h3>
-					<div class="tsd-signature tsd-kind-icon">Order<wbr>Unavailable<span class="tsd-signature-symbol">:</span> </div>
+					<a name="orderonhold" class="tsd-anchor"></a>
+					<h3>Order<wbr>OnHold</h3>
+					<div class="tsd-signature tsd-kind-icon">Order<wbr>OnHold<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/enums.ts#L56">types/enums.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L78">types/enums.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
 							<p>The order specified by a swap request is on hold for a different ongoing swap.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="paymenthashreuse" class="tsd-anchor"></a>
+					<h3>Payment<wbr>Hash<wbr>Reuse</h3>
+					<div class="tsd-signature tsd-kind-icon">Payment<wbr>Hash<wbr>Reuse<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;9</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L94">types/enums.ts:94</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The swap request attempts to reuse a payment hash.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="sendpaymentfailure" class="tsd-anchor"></a>
+					<h3>Send<wbr>Payment<wbr>Failure</h3>
+					<div class="tsd-signature tsd-kind-icon">Send<wbr>Payment<wbr>Failure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;7</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L90">types/enums.ts:90</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The call to lnd to send payment failed.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="swapclientnotsetup" class="tsd-anchor"></a>
+					<h3>Swap<wbr>Client<wbr>Not<wbr>Setup</h3>
+					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Client<wbr>Not<wbr>Setup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L82">types/enums.ts:82</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>We are not connected to both swap clients, or we are missing pub key identifiers for the peer&#39;s nodes.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="swaptimedout" class="tsd-anchor"></a>
+					<h3>Swap<wbr>Timed<wbr>Out</h3>
+					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Timed<wbr>Out<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;10</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L96">types/enums.ts:96</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The swap timed out while we were waiting for it to complete execution.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="unexpectedlnderror" class="tsd-anchor"></a>
+					<h3>Unexpected<wbr>Lnd<wbr>Error</h3>
+					<div class="tsd-signature tsd-kind-icon">Unexpected<wbr>Lnd<wbr>Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L86">types/enums.ts:86</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A call to lnd failed for an unexpected reason.</p>
 						</div>
 					</div>
 				</section>
@@ -131,7 +291,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_types_enums_.disconnectionreason.html" class="tsd-kind-icon">Disconnection<wbr>Reason</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 						<a href="_types_enums_.network.html" class="tsd-kind-icon">Network</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_types_enums_.networkmagic.html" class="tsd-kind-icon">Network<wbr>Magic</a>
 					</li>
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 						<a href="_types_enums_.orderside.html" class="tsd-kind-icon">Order<wbr>Side</a>
@@ -151,10 +317,40 @@
 						<a href="_types_enums_.swapfailurereason.html" class="tsd-kind-icon">Swap<wbr>Failure<wbr>Reason</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#dealtimedout" class="tsd-kind-icon">Deal<wbr>Timed<wbr>Out</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#invalidresolverequest" class="tsd-kind-icon">Invalid<wbr>Resolve<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#invalidswappacketreceived" class="tsd-kind-icon">Invalid<wbr>Swap<wbr>Packet<wbr>Received</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#invalidswaprequest" class="tsd-kind-icon">Invalid<wbr>Swap<wbr>Request</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#noroutefound" class="tsd-kind-icon">No<wbr>Route<wbr>Found</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="_types_enums_.swapfailurereason.html#ordernotfound" class="tsd-kind-icon">Order<wbr>Not<wbr>Found</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_types_enums_.swapfailurereason.html#orderunavailable" class="tsd-kind-icon">Order<wbr>Unavailable</a>
+								<a href="_types_enums_.swapfailurereason.html#orderonhold" class="tsd-kind-icon">Order<wbr>OnHold</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#paymenthashreuse" class="tsd-kind-icon">Payment<wbr>Hash<wbr>Reuse</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#sendpaymentfailure" class="tsd-kind-icon">Send<wbr>Payment<wbr>Failure</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#swapclientnotsetup" class="tsd-kind-icon">Swap<wbr>Client<wbr>Not<wbr>Setup</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#swaptimedout" class="tsd-kind-icon">Swap<wbr>Timed<wbr>Out</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_types_enums_.swapfailurereason.html#unexpectedlnderror" class="tsd-kind-icon">Unexpected<wbr>Lnd<wbr>Error</a>
 							</li>
 						</ul>
 					</li>

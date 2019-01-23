@@ -88,7 +88,7 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Deal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/swaps/types.ts#L4">swaps/types.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/swaps/types.ts#L4">swaps/types.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -101,7 +101,7 @@
 								<h5>create<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> error<wbr>Reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> error<wbr>Message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>The reason for being in the current state.</p>
@@ -110,6 +110,17 @@
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> execute<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> failure<wbr>Reason<span class="tsd-signature-symbol">?: </span><a href="../enums/_types_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>is<wbr>Buy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Whether the maker order is a buy order.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>local<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -163,7 +174,7 @@
 								<h5>pair<wbr>Id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>The trading pair of the order. The pairId together with the orderId are needed to find the deal in orderBook.</p>
+										<p>The trading pair for the swap. The pairId together with the orderId are needed to find the maker order in the order book.</p>
 									</div>
 								</div>
 							</li>
@@ -203,20 +214,25 @@
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>The accepted quantity of the order to execute as accepted by the maker.</p>
+										<p>The quantity of the order to execute as accepted by the maker.</p>
 									</div>
 								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5>r_<wbr>hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<h5>r<wbr>Hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>The hash of the preimage.</p>
+										<p>The hex-encoded hash of the preimage.</p>
 									</div>
 								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> r_<wbr>preimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> r<wbr>Preimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The hex-encoded preimage.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>role<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a></h5>
@@ -273,10 +289,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="swapresult" class="tsd-anchor"></a>
 					<h3>Swap<wbr>Result</h3>
-					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"orderId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"localId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pairId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"quantity"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"r_hash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"role"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"orderId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"localId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pairId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"role"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/swaps/types.ts#L55">swaps/types.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/swaps/types.ts#L59">swaps/types.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">

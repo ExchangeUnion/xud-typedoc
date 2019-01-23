@@ -77,7 +77,7 @@
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapphase.html#amountreceived" class="tsd-kind-icon">Amount<wbr>Received</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapphase.html#amountsent" class="tsd-kind-icon">Amount<wbr>Sent</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapphase.html#sendingamount" class="tsd-kind-icon">Sending<wbr>Amount</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapphase.html#swapagreed" class="tsd-kind-icon">Swap<wbr>Agreed</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapphase.html#swapcompleted" class="tsd-kind-icon">Swap<wbr>Completed</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_types_enums_.swapphase.html#swapcreated" class="tsd-kind-icon">Swap<wbr>Created</a></li>
@@ -95,19 +95,31 @@
 					<div class="tsd-signature tsd-kind-icon">Amount<wbr>Received<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/enums.ts#L34">types/enums.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L53">types/enums.ts:53</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>We have received the agreed amount of the swap, and the preimage is now known to both sides.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="amountsent" class="tsd-anchor"></a>
-					<h3>Amount<wbr>Sent</h3>
-					<div class="tsd-signature tsd-kind-icon">Amount<wbr>Sent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
+					<a name="sendingamount" class="tsd-anchor"></a>
+					<h3>Sending<wbr>Amount</h3>
+					<div class="tsd-signature tsd-kind-icon">Sending<wbr>Amount<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/enums.ts#L33">types/enums.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L51">types/enums.ts:51</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>We have commanded lnd to send payment according to the agreed terms. The payment (and swap)
+								could still fail due to no route with sufficient capacity, lack of cooperation from the
+							receiver or any intermediary node along the route, or an unexpected error from lnd.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="swapagreed" class="tsd-anchor"></a>
@@ -115,9 +127,14 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Agreed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/enums.ts#L32">types/enums.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L45">types/enums.ts:45</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The terms of the swap have been agreed to, and we will attempt to execute it.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="swapcompleted" class="tsd-anchor"></a>
@@ -125,7 +142,7 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Completed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/enums.ts#L35">types/enums.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L55">types/enums.ts:55</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -135,9 +152,14 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/enums.ts#L30">types/enums.ts:30</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L41">types/enums.ts:41</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The swap has been created locally.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
 					<a name="swaprequested" class="tsd-anchor"></a>
@@ -145,9 +167,14 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Requested<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/ca65367/lib/types/enums.ts#L31">types/enums.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/types/enums.ts#L43">types/enums.ts:43</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The swap has been sent to a peer to request approval.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -165,7 +192,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_types_enums_.disconnectionreason.html" class="tsd-kind-icon">Disconnection<wbr>Reason</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 						<a href="_types_enums_.network.html" class="tsd-kind-icon">Network</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_types_enums_.networkmagic.html" class="tsd-kind-icon">Network<wbr>Magic</a>
 					</li>
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 						<a href="_types_enums_.orderside.html" class="tsd-kind-icon">Order<wbr>Side</a>
@@ -191,7 +224,7 @@
 								<a href="_types_enums_.swapphase.html#amountreceived" class="tsd-kind-icon">Amount<wbr>Received</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_types_enums_.swapphase.html#amountsent" class="tsd-kind-icon">Amount<wbr>Sent</a>
+								<a href="_types_enums_.swapphase.html#sendingamount" class="tsd-kind-icon">Sending<wbr>Amount</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="_types_enums_.swapphase.html#swapagreed" class="tsd-kind-icon">Swap<wbr>Agreed</a>
