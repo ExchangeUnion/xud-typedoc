@@ -92,6 +92,7 @@
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_p2p_packets_packet_.html#packetheader" class="tsd-kind-icon">Packet<wbr>Header</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_p2p_packets_packet_.html#responsetype" class="tsd-kind-icon">Response<wbr>Type</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-not-exported">
@@ -99,6 +100,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_p2p_packets_packet_.html#ispacket" class="tsd-kind-icon">is<wbr>Packet</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_p2p_packets_packet_.html#ispacketinterface" class="tsd-kind-icon">is<wbr>Packet<wbr>Interface</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_p2p_packets_packet_.html#ispackettype" class="tsd-kind-icon">is<wbr>Packet<wbr>Type</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_p2p_packets_packet_.html#ispackettypearray" class="tsd-kind-icon">is<wbr>Packet<wbr>Type<wbr>Array</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,7 +115,7 @@
 					<div class="tsd-signature tsd-kind-icon">Packet<wbr>Header<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L6">p2p/packets/Packet.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/packets/Packet.ts#L6">p2p/packets/Packet.ts:6</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -137,6 +140,16 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="responsetype" class="tsd-anchor"></a>
+					<h3>Response<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">Response<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/_p2p_packets_packettype_.packettype.html" class="tsd-signature-type">PacketType</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_p2p_packets_packettype_.packettype.html" class="tsd-signature-type">PacketType</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/packets/Packet.ts#L35">p2p/packets/Packet.ts:35</a></li>
+						</ul>
+					</aside>
+				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
 				<h2>Functions</h2>
@@ -144,19 +157,19 @@
 					<a name="ispacket" class="tsd-anchor"></a>
 					<h3>is<wbr>Packet</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Packet<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Packet<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L26">p2p/packets/Packet.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/packets/Packet.ts#L117">p2p/packets/Packet.ts:117</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+									<h5>val: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -173,13 +186,59 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/Packet.ts#L18">p2p/packets/Packet.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/packets/Packet.ts#L18">p2p/packets/Packet.ts:18</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="ispackettype" class="tsd-anchor"></a>
+					<h3>is<wbr>Packet<wbr>Type</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Packet<wbr>Type<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/packets/Packet.ts#L37">p2p/packets/Packet.ts:37</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="ispackettypearray" class="tsd-anchor"></a>
+					<h3>is<wbr>Packet<wbr>Type<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Packet<wbr>Type<wbr>Array<span class="tsd-signature-symbol">(</span>val<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/packets/Packet.ts#L41">p2p/packets/Packet.ts:41</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>val: <span class="tsd-signature-type">any</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -213,11 +272,20 @@
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_p2p_packets_packet_.html#packetheader" class="tsd-kind-icon">Packet<wbr>Header</a>
 					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_p2p_packets_packet_.html#responsetype" class="tsd-kind-icon">Response<wbr>Type</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_p2p_packets_packet_.html#ispacket" class="tsd-kind-icon">is<wbr>Packet</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_p2p_packets_packet_.html#ispacketinterface" class="tsd-kind-icon">is<wbr>Packet<wbr>Interface</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_p2p_packets_packet_.html#ispackettype" class="tsd-kind-icon">is<wbr>Packet<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_p2p_packets_packet_.html#ispackettypearray" class="tsd-kind-icon">is<wbr>Packet<wbr>Type<wbr>Array</a>
 					</li>
 				</ul>
 			</nav>

@@ -73,8 +73,12 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_types_.html#resolverequest" class="tsd-kind-icon">Resolve<wbr>Request</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_types_.html#route" class="tsd-kind-icon">Route</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_types_.html#sanityswap" class="tsd-kind-icon">Sanity<wbr>Swap</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_types_.html#swapdeal" class="tsd-kind-icon">Swap<wbr>Deal</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_types_.html#swapresult" class="tsd-kind-icon">Swap<wbr>Result</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_types_.html#swapfailure" class="tsd-kind-icon">Swap<wbr>Failure</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_types_.html#swapsuccess" class="tsd-kind-icon">Swap<wbr>Success</a></li>
 							</ul>
 						</section>
 					</div>
@@ -83,12 +87,71 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="resolverequest" class="tsd-anchor"></a>
+					<h3>Resolve<wbr>Request</h3>
+					<div class="tsd-signature tsd-kind-icon">Resolve<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L98">swaps/types.ts:98</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The amount of the incoming payment pending resolution, in the smallest units supported by the token.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>r<wbr>Hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="route" class="tsd-anchor"></a>
+					<h3>Route</h3>
+					<div class="tsd-signature tsd-kind-icon">Route<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L88">swaps/types.ts:88</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>get<wbr>Total<wbr>Time<wbr>Lock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Function</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="sanityswap" class="tsd-anchor"></a>
+					<h3>Sanity<wbr>Swap</h3>
+					<div class="tsd-signature tsd-kind-icon">Sanity<wbr>Swap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"rHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rPreimage"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L93">swaps/types.ts:93</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Tracks the state of a pending swap of 1 satoshi for 1 satoshi of a specified currency.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="swapdeal" class="tsd-anchor"></a>
 					<h3>Swap<wbr>Deal</h3>
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Deal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/swaps/types.ts#L4">swaps/types.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L8">swaps/types.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -99,6 +162,14 @@
 							</li>
 							<li class="tsd-parameter">
 								<h5>create<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> destination<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The identifier for the payment channel network node we should pay to complete the swap.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> error<wbr>Message<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
@@ -112,7 +183,7 @@
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> execute<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> failure<wbr>Reason<span class="tsd-signature-symbol">?: </span><a href="../enums/_types_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> failure<wbr>Reason<span class="tsd-signature-symbol">?: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5>is<wbr>Buy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
@@ -134,7 +205,7 @@
 								<h5>maker<wbr>Amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>The number of satoshis (or equivalent) the maker is expecting to receive.</p>
+										<p>The amount the maker is expecting to receive denominated in satoshis.</p>
 									</div>
 								</div>
 							</li>
@@ -155,10 +226,18 @@
 								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> maker<wbr>ToTaker<wbr>Routes<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Route</span><span class="tsd-signature-symbol">[]</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> maker<wbr>ToTaker<wbr>Routes<span class="tsd-signature-symbol">?: </span><a href="_swaps_types_.html#route" class="tsd-signature-type">Route</a><span class="tsd-signature-symbol">[]</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>The routes the maker should use to send to the taker.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>maker<wbr>Units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The number of the smallest base units of the currency (like satoshis or wei) the maker is expecting to receive.</p>
 									</div>
 								</div>
 							</li>
@@ -187,7 +266,7 @@
 								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5>phase<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.swapphase.html" class="tsd-signature-type">SwapPhase</a></h5>
+								<h5>phase<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapphase.html" class="tsd-signature-type">SwapPhase</a></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>The most updated deal phase</p>
@@ -235,15 +314,15 @@
 								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5>role<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a></h5>
+								<h5>role<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>The role of the local node in the swap.</p>
+										<p>Our role in the swap.</p>
 									</div>
 								</div>
 							</li>
 							<li class="tsd-parameter">
-								<h5>state<span class="tsd-signature-symbol">: </span><a href="../enums/_types_enums_.swapstate.html" class="tsd-signature-type">SwapState</a></h5>
+								<h5>state<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapstate.html" class="tsd-signature-type">SwapState</a></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>The most updated deal state. State works together with phase to indicate where the
@@ -255,7 +334,7 @@
 								<h5>taker<wbr>Amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
-										<p>The number of satoshis (or equivalent) the taker is expecting to receive.</p>
+										<p>The amount the taker is expecting to receive denominated in satoshis.</p>
 									</div>
 								</div>
 							</li>
@@ -283,16 +362,34 @@
 									</div>
 								</div>
 							</li>
+							<li class="tsd-parameter">
+								<h5>taker<wbr>Units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The number of the smallest base units of the currency (like satoshis or wei) the maker is expecting to receive.</p>
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-					<a name="swapresult" class="tsd-anchor"></a>
-					<h3>Swap<wbr>Result</h3>
-					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"orderId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"localId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pairId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"role"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<a name="swapfailure" class="tsd-anchor"></a>
+					<h3>Swap<wbr>Failure</h3>
+					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Failure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"orderId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pairId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"quantity"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/swaps/types.ts#L59">swaps/types.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L82">swaps/types.ts:82</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="swapsuccess" class="tsd-anchor"></a>
+					<h3>Swap<wbr>Success</h3>
+					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Success<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"orderId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"localId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pairId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"price"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rPreimage"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"role"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L69">swaps/types.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -317,10 +414,22 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_swaps_types_.html#resolverequest" class="tsd-kind-icon">Resolve<wbr>Request</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_swaps_types_.html#route" class="tsd-kind-icon">Route</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_swaps_types_.html#sanityswap" class="tsd-kind-icon">Sanity<wbr>Swap</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_swaps_types_.html#swapdeal" class="tsd-kind-icon">Swap<wbr>Deal</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-						<a href="_swaps_types_.html#swapresult" class="tsd-kind-icon">Swap<wbr>Result</a>
+						<a href="_swaps_types_.html#swapfailure" class="tsd-kind-icon">Swap<wbr>Failure</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_swaps_types_.html#swapsuccess" class="tsd-kind-icon">Swap<wbr>Success</a>
 					</li>
 				</ul>
 			</nav>

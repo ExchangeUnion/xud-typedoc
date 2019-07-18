@@ -70,9 +70,16 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-not-exported">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_utils_.html#satoshis_per_coin" class="tsd-kind-icon">SATOSHIS_<wbr>PER_<wbr>COIN</a></li>
+							</ul>
+						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_cli_utils_.html#coinstosats" class="tsd-kind-icon">coins<wbr>ToSats</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_utils_.html#formatinternalmatch" class="tsd-kind-icon">format<wbr>Internal<wbr>Match</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_utils_.html#formatplaceorderoutput" class="tsd-kind-icon">format<wbr>Place<wbr>Order<wbr>Output</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_utils_.html#formatremainingorder" class="tsd-kind-icon">format<wbr>Remaining<wbr>Order</a></li>
@@ -81,13 +88,55 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_utils_.html#getbasecurrency" class="tsd-kind-icon">get<wbr>Base<wbr>Currency</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_cli_utils_.html#orderbuilder" class="tsd-kind-icon">order<wbr>Builder</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_cli_utils_.html#orderhandler" class="tsd-kind-icon">order<wbr>Handler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_cli_utils_.html#satstocoinsstr" class="tsd-kind-icon">sats<wbr>ToCoins<wbr>Str</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="satoshis_per_coin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> SATOSHIS_<wbr>PER_<wbr>COIN</h3>
+					<div class="tsd-signature tsd-kind-icon">SATOSHIS_<wbr>PER_<wbr>COIN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;10 ** 8</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L5">cli/utils.ts:5</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="coinstosats" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> coins<wbr>ToSats</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">coins<wbr>ToSats<span class="tsd-signature-symbol">(</span>coinsQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L8">cli/utils.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a number of coins as an integer number of satoshis.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>coinsQuantity: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="formatinternalmatch" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> format<wbr>Internal<wbr>Match</h3>
@@ -98,7 +147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/cli/utils.ts#L95">cli/utils.ts:95</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L108">cli/utils.ts:108</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -121,7 +170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/cli/utils.ts#L82">cli/utils.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L94">cli/utils.ts:94</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -144,7 +193,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/cli/utils.ts#L110">cli/utils.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L123">cli/utils.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -167,7 +216,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/cli/utils.ts#L105">cli/utils.ts:105</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L118">cli/utils.ts:118</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -190,7 +239,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/cli/utils.ts#L100">cli/utils.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L113">cli/utils.ts:113</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -213,7 +262,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/cli/utils.ts#L115">cli/utils.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L128">cli/utils.ts:128</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -236,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/cli/utils.ts#L5">cli/utils.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L17">cli/utils.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -262,7 +311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/cli/utils.ts#L30">cli/utils.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L42">cli/utils.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -275,6 +324,34 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="satstocoinsstr" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> sats<wbr>ToCoins<wbr>Str</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">sats<wbr>ToCoins<wbr>Str<span class="tsd-signature-symbol">(</span>satsQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/utils.ts#L13">cli/utils.ts:13</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a number of satoshis as a string representation of coins with up to 8 decimal places.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>satsQuantity: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -293,6 +370,12 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_cli_utils_.html#satoshis_per_coin" class="tsd-kind-icon">SATOSHIS_<wbr>PER_<wbr>COIN</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_cli_utils_.html#coinstosats" class="tsd-kind-icon">coins<wbr>ToSats</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_cli_utils_.html#formatinternalmatch" class="tsd-kind-icon">format<wbr>Internal<wbr>Match</a>
 					</li>
@@ -316,6 +399,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_cli_utils_.html#orderhandler" class="tsd-kind-icon">order<wbr>Handler</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_cli_utils_.html#satstocoinsstr" class="tsd-kind-icon">sats<wbr>ToCoins<wbr>Str</a>
 					</li>
 				</ul>
 			</nav>

@@ -93,7 +93,7 @@
 					<div class="tsd-signature tsd-kind-icon">Session<wbr>Init<wbr>Packet<wbr>Body<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/p2p/packets/types/SessionInitPacket.ts#L7">p2p/packets/types/SessionInitPacket.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/packets/types/SessionInitPacket.ts#L7">p2p/packets/types/SessionInitPacket.ts:7</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -103,13 +103,39 @@
 								<h5>ephemeral<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5>node<wbr>State<span class="tsd-signature-symbol">: </span><a href="_types_p2p_.html#nodestate" class="tsd-signature-type">NodeState</a></h5>
+								<h5>node<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Our local node pub key.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>node<wbr>State<span class="tsd-signature-symbol">: </span><a href="_p2p_types_.html#nodestate" class="tsd-signature-type">NodeState</a></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Our local node state.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>peer<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The node pub key of the peer we are connecting to.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>sign<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The version of xud we are running.</p>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>

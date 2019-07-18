@@ -98,6 +98,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcserver_.grpcserver.html#addxudinitservice" class="tsd-kind-icon">add<wbr>Xud<wbr>Init<wbr>Service</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcserver_.grpcserver.html#addxudservice" class="tsd-kind-icon">add<wbr>Xud<wbr>Service</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcserver_.grpcserver.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_grpc_grpcserver_.grpcserver.html#generatecertificate" class="tsd-kind-icon">generate<wbr>Certificate</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcserver_.grpcserver.html#listen" class="tsd-kind-icon">listen</a></li>
@@ -112,22 +114,19 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Grpc<wbr>Server<span class="tsd-signature-symbol">(</span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a>, service<span class="tsd-signature-symbol">: </span><a href="_service_service_.service.html" class="tsd-signature-type">Service</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grpc_grpcserver_.grpcserver.html" class="tsd-signature-type">GrpcServer</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Grpc<wbr>Server<span class="tsd-signature-symbol">(</span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grpc_grpcserver_.grpcserver.html" class="tsd-signature-type">GrpcServer</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/grpc/GrpcServer.ts#L16">grpc/GrpcServer.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L17">grpc/GrpcServer.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>logger: <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></h5>
-								</li>
-								<li>
-									<h5>service: <a href="_service_service_.service.html" class="tsd-signature-type">Service</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_grpc_grpcserver_.grpcserver.html" class="tsd-signature-type">GrpcServer</a></h4>
@@ -139,11 +138,11 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="grpcservice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> grpc<wbr>Service</h3>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> grpc<wbr>Service</h3>
 					<div class="tsd-signature tsd-kind-icon">grpc<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="_grpc_grpcservice_.grpcservice.html" class="tsd-signature-type">GrpcService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/grpc/GrpcServer.ts#L16">grpc/GrpcServer.ts:16</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L17">grpc/GrpcServer.ts:17</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -153,7 +152,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/grpc/GrpcServer.ts#L18">grpc/GrpcServer.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L19">grpc/GrpcServer.ts:19</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -163,13 +162,59 @@
 					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/grpc/GrpcServer.ts#L15">grpc/GrpcServer.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L16">grpc/GrpcServer.ts:16</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addxudinitservice" class="tsd-anchor"></a>
+					<h3>add<wbr>Xud<wbr>Init<wbr>Service</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Xud<wbr>Init<wbr>Service<span class="tsd-signature-symbol">(</span>initService<span class="tsd-signature-symbol">: </span><a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L28">grpc/GrpcServer.ts:28</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>initService: <a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addxudservice" class="tsd-anchor"></a>
+					<h3>add<wbr>Xud<wbr>Service</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Xud<wbr>Service<span class="tsd-signature-symbol">(</span>service<span class="tsd-signature-symbol">: </span><a href="_service_service_.service.html" class="tsd-signature-type">Service</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L33">grpc/GrpcServer.ts:33</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>service: <a href="_service_service_.service.html" class="tsd-signature-type">Service</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="close" class="tsd-anchor"></a>
 					<h3>close</h3>
@@ -180,7 +225,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/grpc/GrpcServer.ts#L101">grpc/GrpcServer.ts:101</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L80">grpc/GrpcServer.ts:80</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -202,7 +247,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/grpc/GrpcServer.ts#L115">grpc/GrpcServer.ts:115</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L96">grpc/GrpcServer.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -228,13 +273,13 @@
 					<a name="listen" class="tsd-anchor"></a>
 					<h3>listen</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">listen<span class="tsd-signature-symbol">(</span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tlsCertPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tlsKeyPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">listen<span class="tsd-signature-symbol">(</span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tlsCertPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, tlsKeyPath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/067378f/lib/grpc/GrpcServer.ts#L63">grpc/GrpcServer.ts:63</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/grpc/GrpcServer.ts#L42">grpc/GrpcServer.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,7 +302,7 @@
 									<h5>tlsKeyPath: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>true if the server started listening successfully, false otherwise</p>
 						</li>
 					</ul>
@@ -293,6 +338,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_grpc_grpcserver_.grpcserver.html#server" class="tsd-kind-icon">server</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_grpc_grpcserver_.grpcserver.html#addxudinitservice" class="tsd-kind-icon">add<wbr>Xud<wbr>Init<wbr>Service</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_grpc_grpcserver_.grpcserver.html#addxudservice" class="tsd-kind-icon">add<wbr>Xud<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_grpc_grpcserver_.grpcserver.html#close" class="tsd-kind-icon">close</a>
