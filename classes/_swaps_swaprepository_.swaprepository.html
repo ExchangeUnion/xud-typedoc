@@ -96,9 +96,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swaprepository_.swaprepository.html#addswapdeal" class="tsd-kind-icon">add<wbr>Swap<wbr>Deal</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swaprepository_.swaprepository.html#getswapdeal" class="tsd-kind-icon">get<wbr>Swap<wbr>Deal</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swaprepository_.swaprepository.html#getswapdeals" class="tsd-kind-icon">get<wbr>Swap<wbr>Deals</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swaprepository_.swaprepository.html#saveswapdeal" class="tsd-kind-icon">save<wbr>Swap<wbr>Deal</a></li>
 							</ul>
 						</section>
 					</div>
@@ -116,7 +116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/SwapRepository.ts#L5">swaps/SwapRepository.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/SwapRepository.ts#L5">swaps/SwapRepository.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -138,36 +138,13 @@
 					<div class="tsd-signature tsd-kind-icon">models<span class="tsd-signature-symbol">:</span> <a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/SwapRepository.ts#L7">swaps/SwapRepository.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/SwapRepository.ts#L7">swaps/SwapRepository.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addswapdeal" class="tsd-anchor"></a>
-					<h3>add<wbr>Swap<wbr>Deal</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<wbr>Swap<wbr>Deal<span class="tsd-signature-symbol">(</span>swapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">db.SwapDealFactory</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.SwapDealInstance</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/SwapRepository.ts#L22">swaps/SwapRepository.ts:22</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>swapDeal: <span class="tsd-signature-type">db.SwapDealFactory</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.SwapDealInstance</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getswapdeal" class="tsd-anchor"></a>
 					<h3>get<wbr>Swap<wbr>Deal</h3>
@@ -178,7 +155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/SwapRepository.ts#L13">swaps/SwapRepository.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/SwapRepository.ts#L13">swaps/SwapRepository.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -201,10 +178,36 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/SwapRepository.ts#L9">swaps/SwapRepository.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/SwapRepository.ts#L9">swaps/SwapRepository.ts:9</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Bluebird</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.SwapDealInstance</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="saveswapdeal" class="tsd-anchor"></a>
+					<h3>save<wbr>Swap<wbr>Deal</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Swap<wbr>Deal<span class="tsd-signature-symbol">(</span>swapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">db.SwapDealFactory</span>, swapOrder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">db.OrderFactory</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/SwapRepository.ts#L22">swaps/SwapRepository.ts:22</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>swapDeal: <span class="tsd-signature-type">db.SwapDealFactory</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> swapOrder: <span class="tsd-signature-type">db.OrderFactory</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -235,13 +238,13 @@
 								<a href="_swaps_swaprepository_.swaprepository.html#models" class="tsd-kind-icon">models</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_swaps_swaprepository_.swaprepository.html#addswapdeal" class="tsd-kind-icon">add<wbr>Swap<wbr>Deal</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_swaps_swaprepository_.swaprepository.html#getswapdeal" class="tsd-kind-icon">get<wbr>Swap<wbr>Deal</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_swaps_swaprepository_.swaprepository.html#getswapdeals" class="tsd-kind-icon">get<wbr>Swap<wbr>Deals</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_swaps_swaprepository_.swaprepository.html#saveswapdeal" class="tsd-kind-icon">save<wbr>Swap<wbr>Deal</a>
 							</li>
 						</ul>
 					</li>
@@ -264,6 +267,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -312,7 +316,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

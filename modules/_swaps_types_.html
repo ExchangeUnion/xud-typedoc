@@ -92,7 +92,7 @@
 					<div class="tsd-signature tsd-kind-icon">Resolve<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L98">swaps/types.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/types.ts#L101">swaps/types.ts:101</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -107,7 +107,21 @@
 								</div>
 							</li>
 							<li class="tsd-parameter">
+								<h5>chain_<wbr>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>expiration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The number of blocks before the incoming payment expires.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
 								<h5>r<wbr>Hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>token<wbr>Address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -118,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">Route<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L88">swaps/types.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/types.ts#L91">swaps/types.ts:91</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -136,7 +150,7 @@
 					<div class="tsd-signature tsd-kind-icon">Sanity<wbr>Swap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"rHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rPreimage"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L93">swaps/types.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/types.ts#L96">swaps/types.ts:96</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -151,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Deal<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L8">swaps/types.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/types.ts#L8">swaps/types.ts:8</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -159,9 +173,19 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> complete<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The time when the swap either completed successfully or failed.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5>create<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The time when we created this swap deal locally.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> destination<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
@@ -181,6 +205,11 @@
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> execute<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The time when we began executing the swap by sending payment.</p>
+									</div>
+								</div>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> failure<wbr>Reason<span class="tsd-signature-symbol">?: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a></h5>
@@ -222,14 +251,6 @@
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>The currency the maker is expecting to receive.</p>
-									</div>
-								</div>
-							</li>
-							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> maker<wbr>ToTaker<wbr>Routes<span class="tsd-signature-symbol">?: </span><a href="_swaps_types_.html#route" class="tsd-signature-type">Route</a><span class="tsd-signature-symbol">[]</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<div class="lead">
-										<p>The routes the maker should use to send to the taker.</p>
 									</div>
 								</div>
 							</li>
@@ -355,6 +376,14 @@
 								</div>
 							</li>
 							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> taker<wbr>Max<wbr>Time<wbr>Lock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The maximum time lock from the maker to the taker in blocks.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> taker<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
@@ -379,7 +408,7 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Failure<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"orderId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pairId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"quantity"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L82">swaps/types.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/types.ts#L85">swaps/types.ts:85</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -389,7 +418,7 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Success<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Pick</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">"orderId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"localId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"pairId"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rHash"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"peerPubKey"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"price"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"rPreimage"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"role"</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/swaps/types.ts#L69">swaps/types.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/types.ts#L72">swaps/types.ts:72</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -448,6 +477,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -496,7 +526,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

@@ -97,20 +97,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="command" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"openchannel &lt;nodePubKey&gt; &lt;currency&gt; &lt;amount&gt;"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;openchannel &lt;nodePubKey&gt; &lt;currency&gt; &lt;amount&gt;&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"openchannel &lt;node_key&gt; &lt;currency&gt; &lt;amount&gt;"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;openchannel &lt;node_key&gt; &lt;currency&gt; &lt;amount&gt;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L6">cli/commands/openchannel.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L6">cli/commands/openchannel.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="describe" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> describe</h3>
-					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"open a payment channel"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;open a payment channel&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"open a payment channel with a peer"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;open a payment channel with a peer&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L8">cli/commands/openchannel.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L8">cli/commands/openchannel.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -127,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L25">cli/commands/openchannel.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L25">cli/commands/openchannel.ts:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -149,7 +149,7 @@
 					<div class="tsd-signature tsd-kind-icon">builder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L10">cli/commands/openchannel.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L10">cli/commands/openchannel.ts:10</a></li>
 						</ul>
 					</aside>
 					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
@@ -158,16 +158,16 @@
 						<div class="tsd-signature tsd-kind-icon">amount<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L19">cli/commands/openchannel.ts:19</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L19">cli/commands/openchannel.ts:19</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="builder.amount.description" class="tsd-anchor"></a>
 							<h3>description</h3>
-							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;The amount of the channel&quot;</span></div>
+							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;the amount to be deposited into the channel&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L21">cli/commands/openchannel.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L21">cli/commands/openchannel.ts:21</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -177,7 +177,7 @@
 							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;number&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L20">cli/commands/openchannel.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L20">cli/commands/openchannel.ts:20</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -188,16 +188,16 @@
 						<div class="tsd-signature tsd-kind-icon">currency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L15">cli/commands/openchannel.ts:15</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L15">cli/commands/openchannel.ts:15</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
 							<a name="builder.currency.description-1" class="tsd-anchor"></a>
 							<h3>description</h3>
-							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;The ticker symbol for the currency&quot;</span></div>
+							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;the ticker symbol for the currency&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L16">cli/commands/openchannel.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L16">cli/commands/openchannel.ts:16</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -207,37 +207,37 @@
 							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;string&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L17">cli/commands/openchannel.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L17">cli/commands/openchannel.ts:17</a></li>
 								</ul>
 							</aside>
 						</section>
 					</section>
 					<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-object-literal">
-						<a name="builder.nodepubkey" class="tsd-anchor"></a>
-						<h3>node<wbr>Pub<wbr>Key</h3>
-						<div class="tsd-signature tsd-kind-icon">node<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+						<a name="builder.node_key" class="tsd-anchor"></a>
+						<h3>node_<wbr>key</h3>
+						<div class="tsd-signature tsd-kind-icon">node_<wbr>key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L11">cli/commands/openchannel.ts:11</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L11">cli/commands/openchannel.ts:11</a></li>
 							</ul>
 						</aside>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-							<a name="builder.nodepubkey.description-2" class="tsd-anchor"></a>
+							<a name="builder.node_key.description-2" class="tsd-anchor"></a>
 							<h3>description</h3>
-							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;The node pub key of the peer to open the channel with&quot;</span></div>
+							<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;the node key of the connected peer to open the channel with&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L12">cli/commands/openchannel.ts:12</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L12">cli/commands/openchannel.ts:12</a></li>
 								</ul>
 							</aside>
 						</section>
 						<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal">
-							<a name="builder.nodepubkey.type-2" class="tsd-anchor"></a>
+							<a name="builder.node_key.type-2" class="tsd-anchor"></a>
 							<h3>type</h3>
 							<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;string&quot;</span></div>
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/cli/commands/openchannel.ts#L13">cli/commands/openchannel.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/openchannel.ts#L13">cli/commands/openchannel.ts:13</a></li>
 								</ul>
 							</aside>
 						</section>
@@ -287,6 +287,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -335,7 +336,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

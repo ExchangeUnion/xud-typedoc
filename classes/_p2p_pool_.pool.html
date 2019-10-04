@@ -106,7 +106,9 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#config" class="tsd-kind-icon">config</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#connected" class="tsd-kind-icon">connected</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#disconnecting" class="tsd-kind-icon">disconnecting</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#listenport" class="tsd-kind-icon">listen<wbr>Port</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#loadingnodespromise" class="tsd-kind-icon">loading<wbr>Nodes<wbr>Promise</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#network" class="tsd-kind-icon">network</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#nodekey" class="tsd-kind-icon">node<wbr>Key</a></li>
@@ -136,6 +138,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_pool_.pool.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_pool_.pool.html#addoutbound" class="tsd-kind-icon">add<wbr>Outbound</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_pool_.pool.html#addreputationevent" class="tsd-kind-icon">add<wbr>Reputation<wbr>Event</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#addressisself" class="tsd-kind-icon">address<wbr>IsSelf</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_pool_.pool.html#bannode" class="tsd-kind-icon">ban<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#bindnodelist" class="tsd-kind-icon">bind<wbr>Node<wbr>List</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_pool_.pool.html#bindpeer" class="tsd-kind-icon">bind<wbr>Peer</a></li>
@@ -152,6 +155,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_p2p_pool_.pool.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_pool_.pool.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_pool_.pool.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_pool_.pool.html#getnetwork" class="tsd-kind-icon">get<wbr>Network</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_pool_.pool.html#getnodereputation" class="tsd-kind-icon">get<wbr>Node<wbr>Reputation</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_pool_.pool.html#getpeer" class="tsd-kind-icon">get<wbr>Peer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_pool_.pool.html#gettokenidentifier" class="tsd-kind-icon">get<wbr>Token<wbr>Identifier</a></li>
@@ -205,7 +209,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L94">p2p/Pool.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L96">p2p/Pool.ts:96</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -322,7 +326,7 @@
 					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="../modules/_p2p_types_.html#poolconfig" class="tsd-signature-type">PoolConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L90">p2p/Pool.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L92">p2p/Pool.ts:92</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -337,7 +341,17 @@
 					<div class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L86">p2p/Pool.ts:86</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L88">p2p/Pool.ts:88</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="disconnecting" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> disconnecting</h3>
+					<div class="tsd-signature tsd-kind-icon">disconnecting<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L87">p2p/Pool.ts:87</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -347,7 +361,7 @@
 					<div class="tsd-signature tsd-kind-icon">listen<wbr>Port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L88">p2p/Pool.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L90">p2p/Pool.ts:90</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -357,12 +371,22 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="loadingnodespromise" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> loading<wbr>Nodes<wbr>Promise</h3>
+					<div class="tsd-signature tsd-kind-icon">loading<wbr>Nodes<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L83">p2p/Pool.ts:83</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="logger" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> logger</h3>
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L93">p2p/Pool.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L95">p2p/Pool.ts:95</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -372,7 +396,7 @@
 					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <a href="_p2p_network_.network.html" class="tsd-signature-type">Network</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L92">p2p/Pool.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L94">p2p/Pool.ts:94</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -382,7 +406,7 @@
 					<div class="tsd-signature tsd-kind-icon">node<wbr>Key<span class="tsd-signature-symbol">:</span> <a href="_nodekey_nodekey_.nodekey.html" class="tsd-signature-type">NodeKey</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L94">p2p/Pool.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L96">p2p/Pool.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -392,7 +416,7 @@
 					<div class="tsd-signature tsd-kind-icon">node<wbr>Pub<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L74">p2p/Pool.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L74">p2p/Pool.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -407,7 +431,7 @@
 					<div class="tsd-signature tsd-kind-icon">node<wbr>State<span class="tsd-signature-symbol">:</span> <a href="../modules/_p2p_types_.html#nodestate" class="tsd-signature-type">NodeState</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L76">p2p/Pool.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L76">p2p/Pool.ts:76</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -422,7 +446,7 @@
 					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <a href="_p2p_nodelist_.nodelist.html" class="tsd-signature-type">NodeList</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L82">p2p/Pool.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L82">p2p/Pool.ts:82</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -437,7 +461,7 @@
 					<div class="tsd-signature tsd-kind-icon">peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map&lt;string, Peer&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L84">p2p/Pool.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L85">p2p/Pool.ts:85</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -452,7 +476,7 @@
 					<div class="tsd-signature tsd-kind-icon">pending<wbr>Inbound<wbr>Peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Set&lt;Peer&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L80">p2p/Pool.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L80">p2p/Pool.ts:80</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -467,7 +491,7 @@
 					<div class="tsd-signature tsd-kind-icon">pending<wbr>Outbound<wbr>Peers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> =&nbsp;new Map&lt;string, Peer&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L78">p2p/Pool.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L78">p2p/Pool.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -482,7 +506,7 @@
 					<div class="tsd-signature tsd-kind-icon">repository<span class="tsd-signature-symbol">:</span> <a href="_p2p_p2prepository_.p2prepository.html" class="tsd-signature-type">P2PRepository</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L91">p2p/Pool.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L93">p2p/Pool.ts:93</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -492,7 +516,7 @@
 					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Server</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L85">p2p/Pool.ts:85</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L86">p2p/Pool.ts:86</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -502,7 +526,7 @@
 					<div class="tsd-signature tsd-kind-icon">version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L72">p2p/Pool.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L72">p2p/Pool.ts:72</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -535,7 +559,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L138">p2p/Pool.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L140">p2p/Pool.ts:140</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -552,7 +576,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L134">p2p/Pool.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L136">p2p/Pool.ts:136</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -572,7 +596,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L616">p2p/Pool.ts:616</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L649">p2p/Pool.ts:649</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -641,7 +665,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L387">p2p/Pool.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L404">p2p/Pool.ts:404</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -690,7 +714,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L568">p2p/Pool.ts:568</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L601">p2p/Pool.ts:601</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -706,6 +730,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="addressisself" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> address<wbr>IsSelf</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">address<wbr>IsSelf<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L442">p2p/Pool.ts:442</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="bannode" class="tsd-anchor"></a>
 					<h3>ban<wbr>Node</h3>
@@ -716,7 +763,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L521">p2p/Pool.ts:521</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L554">p2p/Pool.ts:554</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -739,7 +786,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L253">p2p/Pool.ts:253</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L261">p2p/Pool.ts:261</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -756,7 +803,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L795">p2p/Pool.ts:795</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L828">p2p/Pool.ts:828</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -779,7 +826,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L785">p2p/Pool.ts:785</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L818">p2p/Pool.ts:818</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -796,7 +843,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L592">p2p/Pool.ts:592</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L625">p2p/Pool.ts:625</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -819,7 +866,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L605">p2p/Pool.ts:605</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L638">p2p/Pool.ts:638</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -866,7 +913,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L511">p2p/Pool.ts:511</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L544">p2p/Pool.ts:544</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -895,7 +942,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L863">p2p/Pool.ts:863</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L898">p2p/Pool.ts:898</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -912,7 +959,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L871">p2p/Pool.ts:871</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L906">p2p/Pool.ts:906</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -929,7 +976,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L299">p2p/Pool.ts:299</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L307">p2p/Pool.ts:307</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -981,7 +1028,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L183">p2p/Pool.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L185">p2p/Pool.ts:185</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -998,7 +1045,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L245">p2p/Pool.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L247">p2p/Pool.ts:247</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1015,7 +1062,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L558">p2p/Pool.ts:558</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L591">p2p/Pool.ts:591</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1050,7 +1097,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L44">p2p/Pool.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L44">p2p/Pool.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1068,7 +1115,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L45">p2p/Pool.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L45">p2p/Pool.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1092,7 +1139,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L46">p2p/Pool.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L46">p2p/Pool.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1113,7 +1160,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L47">p2p/Pool.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L47">p2p/Pool.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1131,7 +1178,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L49">p2p/Pool.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L49">p2p/Pool.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1154,7 +1201,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L51">p2p/Pool.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L51">p2p/Pool.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1180,7 +1227,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L52">p2p/Pool.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L52">p2p/Pool.ts:52</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1198,7 +1245,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L53">p2p/Pool.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L53">p2p/Pool.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1219,7 +1266,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L54">p2p/Pool.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L54">p2p/Pool.ts:54</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1240,7 +1287,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L55">p2p/Pool.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L55">p2p/Pool.ts:55</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1261,7 +1308,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L56">p2p/Pool.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L56">p2p/Pool.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1279,7 +1326,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L57">p2p/Pool.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L57">p2p/Pool.ts:57</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1334,6 +1381,29 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getnetwork" class="tsd-anchor"></a>
+					<h3>get<wbr>Network</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Network<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.xunetwork.html" class="tsd-signature-type">XuNetwork</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L374">p2p/Pool.ts:374</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the active XU network as specified by the configuration.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_constants_enums_.xunetwork.html" class="tsd-signature-type">XuNetwork</a></h4>
+							<p>the active XU network</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getnodereputation" class="tsd-anchor"></a>
 					<h3>get<wbr>Node<wbr>Reputation</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -1343,7 +1413,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L366">p2p/Pool.ts:366</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L383">p2p/Pool.ts:383</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1377,7 +1447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L584">p2p/Pool.ts:584</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L617">p2p/Pool.ts:617</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1406,7 +1476,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L142">p2p/Pool.ts:142</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L144">p2p/Pool.ts:144</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1432,7 +1502,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L771">p2p/Pool.ts:771</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L804">p2p/Pool.ts:804</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1463,7 +1533,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L639">p2p/Pool.ts:639</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L672">p2p/Pool.ts:672</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1489,7 +1559,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L832">p2p/Pool.ts:832</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L867">p2p/Pool.ts:867</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1512,7 +1582,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L623">p2p/Pool.ts:623</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L656">p2p/Pool.ts:656</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1535,7 +1605,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L149">p2p/Pool.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L151">p2p/Pool.ts:151</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1557,7 +1627,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L417">p2p/Pool.ts:417</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L432">p2p/Pool.ts:432</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="../modules/_p2p_peer_.html#peerinfo" class="tsd-signature-type">PeerInfo</a><span class="tsd-signature-symbol">[]</span></h4>
@@ -1574,7 +1644,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L887">p2p/Pool.ts:887</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L922">p2p/Pool.ts:922</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1706,7 +1776,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L30">p2p/Pool.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L30">p2p/Pool.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1742,7 +1812,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L31">p2p/Pool.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L31">p2p/Pool.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1784,7 +1854,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L32">p2p/Pool.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L32">p2p/Pool.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1823,7 +1893,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L33">p2p/Pool.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L33">p2p/Pool.ts:33</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1859,7 +1929,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L35">p2p/Pool.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L35">p2p/Pool.ts:35</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1900,7 +1970,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L37">p2p/Pool.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L37">p2p/Pool.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1944,7 +2014,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L38">p2p/Pool.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L38">p2p/Pool.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1980,7 +2050,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L39">p2p/Pool.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L39">p2p/Pool.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2019,7 +2089,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L40">p2p/Pool.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L40">p2p/Pool.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2058,7 +2128,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L41">p2p/Pool.ts:41</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L41">p2p/Pool.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2097,7 +2167,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L42">p2p/Pool.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L42">p2p/Pool.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2133,7 +2203,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L43">p2p/Pool.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L43">p2p/Pool.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2223,7 +2293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L439">p2p/Pool.ts:439</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L468">p2p/Pool.ts:468</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2448,7 +2518,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L238">p2p/Pool.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L240">p2p/Pool.ts:240</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2465,7 +2535,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L572">p2p/Pool.ts:572</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L605">p2p/Pool.ts:605</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2516,7 +2586,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L322">p2p/Pool.ts:322</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L330">p2p/Pool.ts:330</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2547,7 +2617,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L343">p2p/Pool.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L351">p2p/Pool.ts:351</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2570,7 +2640,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L330">p2p/Pool.ts:330</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L338">p2p/Pool.ts:338</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2596,7 +2666,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L427">p2p/Pool.ts:427</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L456">p2p/Pool.ts:456</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2625,7 +2695,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L533">p2p/Pool.ts:533</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L566">p2p/Pool.ts:566</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2651,7 +2721,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L912">p2p/Pool.ts:912</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L947">p2p/Pool.ts:947</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2674,7 +2744,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L226">p2p/Pool.ts:226</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L228">p2p/Pool.ts:228</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2717,7 +2787,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L205">p2p/Pool.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L207">p2p/Pool.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2746,7 +2816,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L214">p2p/Pool.ts:214</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L216">p2p/Pool.ts:216</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2778,7 +2848,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L722">p2p/Pool.ts:722</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L755">p2p/Pool.ts:755</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2806,7 +2876,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/p2p/Pool.ts#L266">p2p/Pool.ts:266</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/p2p/Pool.ts#L274">p2p/Pool.ts:274</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2877,7 +2947,13 @@
 								<a href="_p2p_pool_.pool.html#connected" class="tsd-kind-icon">connected</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_p2p_pool_.pool.html#disconnecting" class="tsd-kind-icon">disconnecting</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_p2p_pool_.pool.html#listenport" class="tsd-kind-icon">listen<wbr>Port</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_p2p_pool_.pool.html#loadingnodespromise" class="tsd-kind-icon">loading<wbr>Nodes<wbr>Promise</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_p2p_pool_.pool.html#logger" class="tsd-kind-icon">logger</a>
@@ -2936,6 +3012,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_p2p_pool_.pool.html#addreputationevent" class="tsd-kind-icon">add<wbr>Reputation<wbr>Event</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_p2p_pool_.pool.html#addressisself" class="tsd-kind-icon">address<wbr>IsSelf</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_p2p_pool_.pool.html#bannode" class="tsd-kind-icon">ban<wbr>Node</a>
 							</li>
@@ -2983,6 +3062,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_p2p_pool_.pool.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_p2p_pool_.pool.html#getnetwork" class="tsd-kind-icon">get<wbr>Network</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_p2p_pool_.pool.html#getnodereputation" class="tsd-kind-icon">get<wbr>Node<wbr>Reputation</a>
@@ -3122,6 +3204,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -3170,7 +3253,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

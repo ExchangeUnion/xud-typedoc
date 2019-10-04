@@ -79,6 +79,7 @@
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapstate.html#active" class="tsd-kind-icon">Active</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapstate.html#completed" class="tsd-kind-icon">Completed</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapstate.html#error" class="tsd-kind-icon">Error</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapstate.html#recovered" class="tsd-kind-icon">Recovered</a></li>
 							</ul>
 						</section>
 					</div>
@@ -92,7 +93,7 @@
 					<div class="tsd-signature tsd-kind-icon">Active<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L77">constants/enums.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L81">constants/enums.ts:81</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -102,7 +103,7 @@
 					<div class="tsd-signature tsd-kind-icon">Completed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L79">constants/enums.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L83">constants/enums.ts:83</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -112,9 +113,26 @@
 					<div class="tsd-signature tsd-kind-icon">Error<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L78">constants/enums.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L82">constants/enums.ts:82</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="recovered" class="tsd-anchor"></a>
+					<h3>Recovered</h3>
+					<div class="tsd-signature tsd-kind-icon">Recovered<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L89">constants/enums.ts:89</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A swap that was executed but wasn&#39;t formally completed. This may occur as a result of xud
+								crashing late in the swap process, after htlcs for both legs of the swap are set up but
+							before the swap is formally complete.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -169,6 +187,9 @@
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="_constants_enums_.swapstate.html#error" class="tsd-kind-icon">Error</a>
 							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_constants_enums_.swapstate.html#recovered" class="tsd-kind-icon">Recovered</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -199,6 +220,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -247,7 +269,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

@@ -78,7 +78,7 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapphase.html#paymentreceived" class="tsd-kind-icon">Payment<wbr>Received</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapphase.html#sendingpayment" class="tsd-kind-icon">Sending<wbr>Payment</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapphase.html#swapagreed" class="tsd-kind-icon">Swap<wbr>Agreed</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapphase.html#swapaccepted" class="tsd-kind-icon">Swap<wbr>Accepted</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapphase.html#swapcompleted" class="tsd-kind-icon">Swap<wbr>Completed</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapphase.html#swapcreated" class="tsd-kind-icon">Swap<wbr>Created</a></li>
 								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.swapphase.html#swaprequested" class="tsd-kind-icon">Swap<wbr>Requested</a></li>
@@ -95,12 +95,13 @@
 					<div class="tsd-signature tsd-kind-icon">Payment<wbr>Received<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;4</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L71">constants/enums.ts:71</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L75">constants/enums.ts:75</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>We have received the agreed amount of the swap, and the preimage is now known to both sides.</p>
+							<p>We have received the agreed amount of the swap and released the preimage to the
+							receiving swap client so it can accept payment.</p>
 						</div>
 					</div>
 				</section>
@@ -110,24 +111,25 @@
 					<div class="tsd-signature tsd-kind-icon">Sending<wbr>Payment<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;3</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L69">constants/enums.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L70">constants/enums.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>We have commanded swap client to send payment according to the agreed terms. The payment (and swap)
-								could still fail due to no route with sufficient capacity, lack of cooperation from the
-							receiver or any intermediary node along the route, or an unexpected error from swap client.</p>
+							<p>We have made a request to the swap client to send payment according to the agreed terms.
+								The payment (and swap) could still fail due to no route with sufficient capacity, lack of
+								cooperation from the receiver or any intermediary node along the route, or an unexpected
+							error from the swap client.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="swapagreed" class="tsd-anchor"></a>
-					<h3>Swap<wbr>Agreed</h3>
-					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Agreed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
+					<a name="swapaccepted" class="tsd-anchor"></a>
+					<h3>Swap<wbr>Accepted</h3>
+					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Accepted<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;2</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L63">constants/enums.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L63">constants/enums.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -142,7 +144,7 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Completed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;5</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L73">constants/enums.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L77">constants/enums.ts:77</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -157,12 +159,12 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Created<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L59">constants/enums.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L59">constants/enums.ts:59</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The swap has been created locally.</p>
+							<p>The swap deal has been created locally.</p>
 						</div>
 					</div>
 				</section>
@@ -172,12 +174,12 @@
 					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Requested<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol"> =&nbsp;1</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/constants/enums.ts#L61">constants/enums.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/constants/enums.ts#L61">constants/enums.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The swap has been sent to a peer to request approval.</p>
+							<p>We&#39;ve made a request to a peer to accept this swap.</p>
 						</div>
 					</div>
 				</section>
@@ -226,7 +228,7 @@
 								<a href="_constants_enums_.swapphase.html#sendingpayment" class="tsd-kind-icon">Sending<wbr>Payment</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_enums_.swapphase.html#swapagreed" class="tsd-kind-icon">Swap<wbr>Agreed</a>
+								<a href="_constants_enums_.swapphase.html#swapaccepted" class="tsd-kind-icon">Swap<wbr>Accepted</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
 								<a href="_constants_enums_.swapphase.html#swapcompleted" class="tsd-kind-icon">Swap<wbr>Completed</a>
@@ -273,6 +275,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -321,7 +324,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>

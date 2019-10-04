@@ -75,10 +75,13 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#channel" class="tsd-kind-icon">Channel</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#openchannelpayload" class="tsd-kind-icon">Open<wbr>Channel<wbr>Payload</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#paymentevent" class="tsd-kind-icon">Payment<wbr>Event</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#raidenchannelcount" class="tsd-kind-icon">Raiden<wbr>Channel<wbr>Count</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#raidenclientconfig" class="tsd-kind-icon">Raiden<wbr>Client<wbr>Config</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#raideninfo" class="tsd-kind-icon">Raiden<wbr>Info</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#raidenresolverequest" class="tsd-kind-icon">Raiden<wbr>Resolve<wbr>Request</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#raidenresolveresponse" class="tsd-kind-icon">Raiden<wbr>Resolve<wbr>Response</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#raidenversion" class="tsd-kind-icon">Raiden<wbr>Version</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#tokenpaymentrequest" class="tsd-kind-icon">Token<wbr>Payment<wbr>Request</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_raidenclient_types_.html#tokenpaymentresponse" class="tsd-kind-icon">Token<wbr>Payment<wbr>Response</a></li>
 							</ul>
@@ -94,7 +97,7 @@
 					<div class="tsd-signature tsd-kind-icon">Channel<span class="tsd-signature-symbol">:</span> <a href="_raidenclient_types_.html#openchannelpayload" class="tsd-signature-type">OpenChannelPayload</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/raidenclient/types.ts#L31">raidenclient/types.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L49">raidenclient/types.ts:49</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -109,7 +112,7 @@
 					<div class="tsd-signature tsd-kind-icon">Open<wbr>Channel<wbr>Payload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/raidenclient/types.ts#L21">raidenclient/types.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L31">raidenclient/types.ts:31</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -136,12 +139,84 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="paymentevent" class="tsd-anchor"></a>
+					<h3>Payment<wbr>Event</h3>
+					<div class="tsd-signature tsd-kind-icon">Payment<wbr>Event<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L96">raidenclient/types.ts:96</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> amount<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>identifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> initiator<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>log_<wbr>time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>payment_<wbr>network_<wbr>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> reason<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> route<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> secret<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> target<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>token_<wbr>network_<wbr>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="raidenchannelcount" class="tsd-anchor"></a>
+					<h3>Raiden<wbr>Channel<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">Raiden<wbr>Channel<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L22">raidenclient/types.ts:22</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>active<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>closed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>settled<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="raidenclientconfig" class="tsd-anchor"></a>
 					<h3>Raiden<wbr>Client<wbr>Config</h3>
 					<div class="tsd-signature tsd-kind-icon">Raiden<wbr>Client<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/raidenclient/types.ts#L4">raidenclient/types.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L5">raidenclient/types.ts:5</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -159,6 +234,9 @@
 								<h5>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
+								<h5>keystorepath<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
 								<h5>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 							</li>
 						</ul>
@@ -170,7 +248,7 @@
 					<div class="tsd-signature tsd-kind-icon">Raiden<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/raidenclient/types.ts#L11">raidenclient/types.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L13">raidenclient/types.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -185,10 +263,16 @@
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> address<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> channels<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> chain<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> channels<span class="tsd-signature-symbol">?: </span><a href="_raidenclient_types_.html#raidenchannelcount" class="tsd-signature-type">RaidenChannelCount</a></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> error<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>status<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> version<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
@@ -202,7 +286,7 @@
 					<div class="tsd-signature tsd-kind-icon">Raiden<wbr>Resolve<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/raidenclient/types.ts#L59">raidenclient/types.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L78">raidenclient/types.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -213,6 +297,22 @@
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>The amount of the incoming payment pending resolution, in the smallest units supported by the token.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>chain_<wbr>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The current height of the chain</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>expiration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The lock expiration for the incoming payment (absolute block number).</p>
 									</div>
 								</div>
 							</li>
@@ -241,7 +341,7 @@
 					<div class="tsd-signature tsd-kind-icon">Raiden<wbr>Resolve<wbr>Response<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/raidenclient/types.ts#L75">raidenclient/types.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L91">raidenclient/types.ts:91</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -259,12 +359,35 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="raidenversion" class="tsd-anchor"></a>
+					<h3>Raiden<wbr>Version</h3>
+					<div class="tsd-signature tsd-kind-icon">Raiden<wbr>Version<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L42">raidenclient/types.ts:42</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The raiden version.</p>
+						</div>
+					</div>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="tokenpaymentrequest" class="tsd-anchor"></a>
 					<h3>Token<wbr>Payment<wbr>Request</h3>
 					<div class="tsd-signature tsd-kind-icon">Token<wbr>Payment<wbr>Request<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/raidenclient/types.ts#L50">raidenclient/types.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L68">raidenclient/types.ts:68</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -287,6 +410,9 @@
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> identifier<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 							</li>
 							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> lock_<wbr>timeout<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
 								<h5>secret_<wbr>hash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
@@ -304,7 +430,7 @@
 					<div class="tsd-signature tsd-kind-icon">Token<wbr>Payment<wbr>Response<span class="tsd-signature-symbol">:</span> <a href="_raidenclient_types_.html#tokenpaymentrequest" class="tsd-signature-type">TokenPaymentRequest</a><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/90641ed9/lib/raidenclient/types.ts#L43">raidenclient/types.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/raidenclient/types.ts#L61">raidenclient/types.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -335,6 +461,12 @@
 						<a href="_raidenclient_types_.html#openchannelpayload" class="tsd-kind-icon">Open<wbr>Channel<wbr>Payload</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_raidenclient_types_.html#paymentevent" class="tsd-kind-icon">Payment<wbr>Event</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_raidenclient_types_.html#raidenchannelcount" class="tsd-kind-icon">Raiden<wbr>Channel<wbr>Count</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_raidenclient_types_.html#raidenclientconfig" class="tsd-kind-icon">Raiden<wbr>Client<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -345,6 +477,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_raidenclient_types_.html#raidenresolveresponse" class="tsd-kind-icon">Raiden<wbr>Resolve<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_raidenclient_types_.html#raidenversion" class="tsd-kind-icon">Raiden<wbr>Version</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_raidenclient_types_.html#tokenpaymentrequest" class="tsd-kind-icon">Token<wbr>Payment<wbr>Request</a>
@@ -369,6 +504,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -417,7 +553,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
