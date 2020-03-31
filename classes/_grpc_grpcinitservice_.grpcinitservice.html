@@ -90,6 +90,7 @@
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_grpc_grpcinitservice_.grpcinitservice.html#disabled" class="tsd-kind-icon">disabled</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_grpc_grpcinitservice_.grpcinitservice.html#initservice" class="tsd-kind-icon">init<wbr>Service</a></li>
 							</ul>
 						</section>
@@ -97,6 +98,10 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcinitservice_.grpcinitservice.html#createnode" class="tsd-kind-icon">create<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcinitservice_.grpcinitservice.html#disable" class="tsd-kind-icon">disable</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_grpc_grpcinitservice_.grpcinitservice.html#isready" class="tsd-kind-icon">is<wbr>Ready</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcinitservice_.grpcinitservice.html#restorenode" class="tsd-kind-icon">restore<wbr>Node</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcinitservice_.grpcinitservice.html#setinitservice" class="tsd-kind-icon">set<wbr>Init<wbr>Service</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcinitservice_.grpcinitservice.html#unlocknode" class="tsd-kind-icon">unlock<wbr>Node</a></li>
 							</ul>
 						</section>
@@ -109,21 +114,15 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Grpc<wbr>Init<wbr>Service<span class="tsd-signature-symbol">(</span>initService<span class="tsd-signature-symbol">: </span><a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grpc_grpcinitservice_.grpcinitservice.html" class="tsd-signature-type">GrpcInitService</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Grpc<wbr>Init<wbr>Service<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grpc_grpcinitservice_.grpcinitservice.html" class="tsd-signature-type">GrpcInitService</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/grpc/GrpcInitService.ts#L7">grpc/GrpcInitService.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L9">lib/grpc/GrpcInitService.ts:9</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>initService: <a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_grpc_grpcinitservice_.grpcinitservice.html" class="tsd-signature-type">GrpcInitService</a></h4>
 						</li>
 					</ul>
@@ -132,12 +131,22 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="disabled" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> disabled</h3>
+					<div class="tsd-signature tsd-kind-icon">disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L8">lib/grpc/GrpcInitService.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="initservice" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> init<wbr>Service</h3>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> init<wbr>Service</h3>
 					<div class="tsd-signature tsd-kind-icon">init<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/grpc/GrpcInitService.ts#L8">grpc/GrpcInitService.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L9">lib/grpc/GrpcInitService.ts:9</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -148,13 +157,13 @@
 					<a name="createnode" class="tsd-anchor"></a>
 					<h3>create<wbr>Node</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>Node<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CreateNodeRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Node<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CreateNodeRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/grpc/GrpcInitService.ts#L13">grpc/GrpcInitService.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L43">lib/grpc/GrpcInitService.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -168,7 +177,7 @@
 									<h5>call: <span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CreateNodeRequest</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
@@ -203,16 +212,152 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="unlocknode" class="tsd-anchor"></a>
-					<h3>unlock<wbr>Node</h3>
+					<a name="disable" class="tsd-anchor"></a>
+					<h3>disable</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">unlock<wbr>Node<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UnlockNodeRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">disable<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/grpc/GrpcInitService.ts#L35">grpc/GrpcInitService.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L18">lib/grpc/GrpcInitService.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Disables the grpc initialization service once xud has been intialized.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isready" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Ready</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Ready<span class="tsd-signature-symbol">(</span>initService<span class="tsd-signature-symbol">: </span><a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">grpc.sendUnaryData</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">initService</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">InitService</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L28">lib/grpc/GrpcInitService.ts:28</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks whether this service is ready to handle calls and sends an error to the client
+									caller if not ready.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>initService: <a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-type">grpc.sendUnaryData</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">initService</span><span class="tsd-signature-symbol"> is </span><span class="tsd-signature-type">InitService</span></h4>
+							<p><code>true</code> if the service is ready, otherwise <code>false</code></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="restorenode" class="tsd-anchor"></a>
+					<h3>restore<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">restore<wbr>Node<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RestoreNodeRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L84">lib/grpc/GrpcInitService.ts:84</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See <a href="_service_initservice_.initservice.html#restorenode">InitService.restoreNode</a></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>call: <span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">RestoreNodeRequest</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-siganture">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>error: <span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+														</li>
+														<li>
+															<h5>value: <span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+														</li>
+														<li>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> trailer: <span class="tsd-signature-type">Metadata</span></h5>
+														</li>
+														<li>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> flags: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setinitservice" class="tsd-anchor"></a>
+					<h3>set<wbr>Init<wbr>Service</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Init<wbr>Service<span class="tsd-signature-symbol">(</span>initService<span class="tsd-signature-symbol">: </span><a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L13">lib/grpc/GrpcInitService.ts:13</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>initService: <a href="_service_initservice_.initservice.html" class="tsd-signature-type">InitService</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="unlocknode" class="tsd-anchor"></a>
+					<h3>unlock<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">unlock<wbr>Node<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UnlockNodeRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/grpc/GrpcInitService.ts#L65">lib/grpc/GrpcInitService.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -226,7 +371,7 @@
 									<h5>call: <span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">UnlockNodeRequest</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 								<li>
-									<h5>callback: <span class="tsd-signature-type">function</span></h5>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
 											<ul class="tsd-signatures tsd-kind-type-literal">
@@ -269,7 +414,7 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_grpc_grpcinitservice_.html">"grpc/<wbr>Grpc<wbr>Init<wbr>Service"</a>
+						<a href="../modules/_grpc_grpcinitservice_.html">&quot;grpc/<wbr>Grpc<wbr>Init<wbr>Service&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -284,10 +429,25 @@
 								<a href="_grpc_grpcinitservice_.grpcinitservice.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_grpc_grpcinitservice_.grpcinitservice.html#disabled" class="tsd-kind-icon">disabled</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_grpc_grpcinitservice_.grpcinitservice.html#initservice" class="tsd-kind-icon">init<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_grpc_grpcinitservice_.grpcinitservice.html#createnode" class="tsd-kind-icon">create<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_grpc_grpcinitservice_.grpcinitservice.html#disable" class="tsd-kind-icon">disable</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_grpc_grpcinitservice_.grpcinitservice.html#isready" class="tsd-kind-icon">is<wbr>Ready</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_grpc_grpcinitservice_.grpcinitservice.html#restorenode" class="tsd-kind-icon">restore<wbr>Node</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_grpc_grpcinitservice_.grpcinitservice.html#setinitservice" class="tsd-kind-icon">set<wbr>Init<wbr>Service</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_grpc_grpcinitservice_.grpcinitservice.html#unlocknode" class="tsd-kind-icon">unlock<wbr>Node</a>

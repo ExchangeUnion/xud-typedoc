@@ -73,6 +73,7 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported"><a href="_utils_utils_.html#max_decimal_places" class="tsd-kind-icon">MAX_<wbr>DECIMAL_<wbr>PLACES</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_utils_utils_.html#randombytes" class="tsd-kind-icon">random<wbr>Bytes</a></li>
 								<li class="tsd-kind-variable tsd-parent-kind-external-module"><a href="_utils_utils_.html#settimeoutpromise" class="tsd-kind-icon">set<wbr>Timeout<wbr>Promise</a></li>
 							</ul>
@@ -81,10 +82,12 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#base64tohex" class="tsd-kind-icon">base64<wbr>ToHex</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#checkdecimalplaces" class="tsd-kind-icon">check<wbr>Decimal<wbr>Places</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_utils_utils_.html#convertkvparraytokvps" class="tsd-kind-icon">convert<wbr>Kvp<wbr>Array<wbr>ToKvps</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#deepmerge" class="tsd-kind-icon">deep<wbr>Merge</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#derivepairid" class="tsd-kind-icon">derive<wbr>Pair<wbr>Id</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#generatepreimageandhash" class="tsd-kind-icon">generate<wbr>Preimage<wbr>And<wbr>Hash</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#getdefaultbackupdir" class="tsd-kind-icon">get<wbr>Default<wbr>Backup<wbr>Dir</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#getexternalip" class="tsd-kind-icon">get<wbr>External<wbr>Ip</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#getpublicmethods" class="tsd-kind-icon">get<wbr>Public<wbr>Methods</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#gettsstring" class="tsd-kind-icon">get<wbr>TsString</a></li>
@@ -97,6 +100,7 @@
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_utils_utils_.html#removeundefinedprops" class="tsd-kind-icon">remove<wbr>Undefined<wbr>Props</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#setobjecttomap" class="tsd-kind-icon">set<wbr>Object<wbr>ToMap</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#sortorders" class="tsd-kind-icon">sort<wbr>Orders</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_utils_utils_.html#toeip55address" class="tsd-kind-icon">to<wbr>Eip55<wbr>Address</a></li>
 							</ul>
 						</section>
 					</div>
@@ -104,13 +108,23 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="max_decimal_places" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> MAX_<wbr>DECIMAL_<wbr>PLACES</h3>
+					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>DECIMAL_<wbr>PLACES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">12</span><span class="tsd-signature-symbol"> = 12</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L12">lib/utils/utils.ts:12</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="randombytes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> random<wbr>Bytes</h3>
-					<div class="tsd-signature tsd-kind-icon">random<wbr>Bytes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span><span class="tsd-signature-symbol"> =&nbsp;promisify(cryptoRandomBytes)</span></div>
+					<div class="tsd-signature tsd-kind-icon">random<wbr>Bytes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>arg1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = promisify(cryptoRandomBytes)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L150">utils/utils.ts:150</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L162">lib/utils/utils.ts:162</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -122,7 +136,7 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter-siganture">
-								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+								<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
 									<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>arg1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T1</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">TResult</span><span class="tsd-signature-symbol">&gt;</span></li>
 								</ul>
 								<ul class="tsd-descriptions">
@@ -143,10 +157,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="settimeoutpromise" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> set<wbr>Timeout<wbr>Promise</h3>
-					<div class="tsd-signature tsd-kind-icon">set<wbr>Timeout<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__promisify__</span><span class="tsd-signature-symbol"> =&nbsp;promisify(setTimeout)</span></div>
+					<div class="tsd-signature tsd-kind-icon">set<wbr>Timeout<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__promisify__</span><span class="tsd-signature-symbol"> = promisify(setTimeout)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L147">utils/utils.ts:147</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L159">lib/utils/utils.ts:159</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -168,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L204">utils/utils.ts:204</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L216">lib/utils/utils.ts:216</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,17 +195,45 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-					<a name="convertkvparraytokvps" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Kvp<wbr>Array<wbr>ToKvps</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">convert<wbr>Kvp<wbr>Array<wbr>ToKvps&lt;T&gt;<span class="tsd-signature-symbol">(</span>kvpArray<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="checkdecimalplaces" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> check<wbr>Decimal<wbr>Places</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Decimal<wbr>Places<span class="tsd-signature-symbol">(</span>digits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L176">utils/utils.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L111">lib/utils/utils.ts:111</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns true if number has more than MAX_DECIMAL_PLACES, false otherwise.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>digits: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+					<a name="convertkvparraytokvps" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> convert<wbr>Kvp<wbr>Array<wbr>ToKvps</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">convert<wbr>Kvp<wbr>Array<wbr>ToKvps&lt;T&gt;<span class="tsd-signature-symbol">(</span>kvpArray<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L188">lib/utils/utils.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -211,7 +253,7 @@
 									<h5>kvpArray: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">{}</span></h4>
 							<ul class="tsd-parameters">
 								<li class="tsd-parameter-index-signature">
 									<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">T</span></h5>
@@ -230,7 +272,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L58">utils/utils.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L64">lib/utils/utils.ts:64</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -272,7 +314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L114">utils/utils.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L126">lib/utils/utils.ts:126</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -294,13 +336,13 @@
 					<a name="generatepreimageandhash" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> generate<wbr>Preimage<wbr>And<wbr>Hash</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">generate<wbr>Preimage<wbr>And<wbr>Hash<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">generate<wbr>Preimage<wbr>And<wbr>Hash<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rPreimage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L197">utils/utils.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L209">lib/utils/utils.ts:209</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -308,7 +350,24 @@
 									<p>Returns a random payment preimage and hash in hex encoding.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rPreimage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="getdefaultbackupdir" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> get<wbr>Default<wbr>Backup<wbr>Dir</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Backup<wbr>Dir<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L245">lib/utils/utils.ts:245</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -322,7 +381,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L11">utils/utils.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L17">lib/utils/utils.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -344,7 +403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L79">utils/utils.ts:79</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L85">lib/utils/utils.ts:85</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -372,7 +431,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L50">utils/utils.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L56">lib/utils/utils.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -394,13 +453,13 @@
 					<a name="groupby" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> group<wbr>By</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">group<wbr>By<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span>, keyGetter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">group<wbr>By<span class="tsd-signature-symbol">(</span>arr<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span>, keyGetter<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L90">utils/utils.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L96">lib/utils/utils.ts:96</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -409,10 +468,10 @@
 									<h5>arr: <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 								<li>
-									<h5>keyGetter: <span class="tsd-signature-type">function</span></h5>
+									<h5>keyGetter: <span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal tsd-is-not-exported">
+											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
 											</ul>
 											<ul class="tsd-descriptions">
@@ -423,10 +482,7 @@
 															<h5>item: <span class="tsd-signature-type">any</span></h5>
 														</li>
 													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
-														<span class="tsd-signature-symbol"> | </span>
-														<span class="tsd-signature-type">number</span>
-													</h4>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
 												</li>
 											</ul>
 										</li>
@@ -447,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L208">utils/utils.ts:208</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L220">lib/utils/utils.ts:220</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -470,7 +526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L44">utils/utils.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L50">lib/utils/utils.ts:50</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -498,7 +554,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L37">utils/utils.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L43">lib/utils/utils.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -526,7 +582,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L132">utils/utils.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L144">lib/utils/utils.ts:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -565,7 +621,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L107">utils/utils.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L119">lib/utils/utils.ts:119</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -587,7 +643,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L152">utils/utils.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L164">lib/utils/utils.ts:164</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -610,13 +666,13 @@
 					<a name="setobjecttomap" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> set<wbr>Object<wbr>ToMap</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Object<wbr>ToMap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, map<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Object<wbr>ToMap<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, map<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L165">utils/utils.ts:165</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L177">lib/utils/utils.ts:177</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -625,13 +681,13 @@
 									<h5>obj: <span class="tsd-signature-type">any</span></h5>
 								</li>
 								<li>
-									<h5>map: <span class="tsd-signature-type">object</span></h5>
+									<h5>map: <span class="tsd-signature-symbol">{ </span>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
-											<h5>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">function</span></h5>
+											<h5>set<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">any</span></h5>
 											<ul class="tsd-parameters">
 												<li class="tsd-parameter-siganture">
-													<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable tsd-is-not-exported">
+													<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
 														<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 													</ul>
 													<ul class="tsd-descriptions">
@@ -668,7 +724,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/utils/utils.ts#L185">utils/utils.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L197">lib/utils/utils.ts:197</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -684,6 +740,37 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="toeip55address" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> to<wbr>Eip55<wbr>Address</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Eip55<wbr>Address<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/utils/utils.ts#L230">lib/utils/utils.ts:230</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts input to EIP55 format.
+										Prints the ith digit in uppercase if it&#39;s a letter and the 4*ith bit of the hash of the lowercase hexadecimal address is 1
+										otherwise prints it in lowercase.
+									Example: &#39;0xfb6916095ca1df60bb79ce92ce3ea74c37c5d359&#39; is converted to &#39;0xfB6916095ca1df60bB79Ce92cE3Ea74c37c5d359&#39;</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>address: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -693,12 +780,15 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_utils_utils_.html">"utils/utils"</a>
+						<a href="_utils_utils_.html">&quot;utils/utils&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_utils_utils_.html#max_decimal_places" class="tsd-kind-icon">MAX_<wbr>DECIMAL_<wbr>PLACES</a>
+					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_utils_utils_.html#randombytes" class="tsd-kind-icon">random<wbr>Bytes</a>
 					</li>
@@ -707,6 +797,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_utils_.html#base64tohex" class="tsd-kind-icon">base64<wbr>ToHex</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_utils_utils_.html#checkdecimalplaces" class="tsd-kind-icon">check<wbr>Decimal<wbr>Places</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 						<a href="_utils_utils_.html#convertkvparraytokvps" class="tsd-kind-icon">convert<wbr>Kvp<wbr>Array<wbr>ToKvps</a>
@@ -719,6 +812,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_utils_.html#generatepreimageandhash" class="tsd-kind-icon">generate<wbr>Preimage<wbr>And<wbr>Hash</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_utils_utils_.html#getdefaultbackupdir" class="tsd-kind-icon">get<wbr>Default<wbr>Backup<wbr>Dir</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_utils_.html#getexternalip" class="tsd-kind-icon">get<wbr>External<wbr>Ip</a>
@@ -755,6 +851,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_utils_utils_.html#sortorders" class="tsd-kind-icon">sort<wbr>Orders</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_utils_utils_.html#toeip55address" class="tsd-kind-icon">to<wbr>Eip55<wbr>Address</a>
 					</li>
 				</ul>
 			</nav>

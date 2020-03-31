@@ -73,7 +73,7 @@
 						<section class="tsd-index-section ">
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum tsd-parent-kind-external-module tsd-is-not-exported"><a href="../enums/_swaps_swapclient_.clientstatus.html" class="tsd-kind-icon">Client<wbr>Status</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_swaps_swapclient_.clientstatus.html" class="tsd-kind-icon">Client<wbr>Status</a></li>
 								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_swaps_swapclient_.paymentstate.html" class="tsd-kind-icon">Payment<wbr>State</a></li>
 							</ul>
 						</section>
@@ -86,9 +86,11 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported"><a href="_swaps_swapclient_.html#channelbalance" class="tsd-kind-icon">Channel<wbr>Balance</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_swapclient_.html#channelbalance" class="tsd-kind-icon">Channel<wbr>Balance</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_swapclient_.html#paymentstatus" class="tsd-kind-icon">Payment<wbr>Status</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_swapclient_.html#swapclientinfo" class="tsd-kind-icon">Swap<wbr>Client<wbr>Info</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_swapclient_.html#tradinglimits" class="tsd-kind-icon">Trading<wbr>Limits</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_swaps_swapclient_.html#walletbalance" class="tsd-kind-icon">Wallet<wbr>Balance</a></li>
 							</ul>
 						</section>
 					</div>
@@ -96,13 +98,13 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="channelbalance" class="tsd-anchor"></a>
 					<h3>Channel<wbr>Balance</h3>
-					<div class="tsd-signature tsd-kind-icon">Channel<wbr>Balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">Channel<wbr>Balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>balance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>inactiveBalance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>pendingOpenBalance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/SwapClient.ts#L15">swaps/SwapClient.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/swaps/SwapClient.ts#L27">lib/swaps/SwapClient.ts:27</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -113,6 +115,14 @@
 								<div class="tsd-comment tsd-typography">
 									<div class="lead">
 										<p>The cumulative balance of open channels denominated in satoshis.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>inactive<wbr>Balance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The cumulative balance of inactive channels denominated in satoshis.</p>
 									</div>
 								</div>
 							</li>
@@ -130,10 +140,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="paymentstatus" class="tsd-anchor"></a>
 					<h3>Payment<wbr>Status</h3>
-					<div class="tsd-signature tsd-kind-icon">Payment<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">Payment<wbr>Status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>preimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><a href="../enums/_swaps_swapclient_.paymentstate.html" class="tsd-signature-type">PaymentState</a><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/SwapClient.ts#L33">swaps/SwapClient.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/swaps/SwapClient.ts#L63">lib/swaps/SwapClient.ts:63</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -151,10 +161,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="swapclientinfo" class="tsd-anchor"></a>
 					<h3>Swap<wbr>Client<wbr>Info</h3>
-					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Client<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<div class="tsd-signature tsd-kind-icon">Swap<wbr>Client<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>newIdentifier<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>newUris<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/swaps/SwapClient.ts#L22">swaps/SwapClient.ts:22</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/swaps/SwapClient.ts#L52">lib/swaps/SwapClient.ts:52</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -169,6 +179,76 @@
 						</ul>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="tradinglimits" class="tsd-anchor"></a>
+					<h3>Trading<wbr>Limits</h3>
+					<div class="tsd-signature tsd-kind-icon">Trading<wbr>Limits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>maxBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>maxSell<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/swaps/SwapClient.ts#L45">lib/swaps/SwapClient.ts:45</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>max<wbr>Buy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Max inbound capacity for a distinct channel denominated in satoshis.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>max<wbr>Sell<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>Max outbound capacity for a distinct channel denominated in satoshis.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="walletbalance" class="tsd-anchor"></a>
+					<h3>Wallet<wbr>Balance</h3>
+					<div class="tsd-signature tsd-kind-icon">Wallet<wbr>Balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>confirmedBalance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>totalBalance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>unconfirmedBalance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/swaps/SwapClient.ts#L36">lib/swaps/SwapClient.ts:36</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>confirmed<wbr>Balance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The confirmed balance of a wallet (with &gt;= 1 confirmations).</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>total<wbr>Balance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The balance of the wallet.</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>unconfirmed<wbr>Balance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>The unconfirmed balance of a wallet (with 0 confirmations).</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -178,13 +258,13 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_swaps_swapclient_.html">"swaps/<wbr>Swap<wbr>Client"</a>
+						<a href="_swaps_swapclient_.html">&quot;swaps/<wbr>Swap<wbr>Client&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
 						<a href="../enums/_swaps_swapclient_.clientstatus.html" class="tsd-kind-icon">Client<wbr>Status</a>
 					</li>
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
@@ -193,7 +273,7 @@
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
 						<a href="../classes/_swaps_swapclient_.swapclient.html" class="tsd-kind-icon">Swap<wbr>Client</a>
 					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_swaps_swapclient_.html#channelbalance" class="tsd-kind-icon">Channel<wbr>Balance</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -201,6 +281,12 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_swaps_swapclient_.html#swapclientinfo" class="tsd-kind-icon">Swap<wbr>Client<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_swaps_swapclient_.html#tradinglimits" class="tsd-kind-icon">Trading<wbr>Limits</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_swaps_swapclient_.html#walletbalance" class="tsd-kind-icon">Wallet<wbr>Balance</a>
 					</li>
 				</ul>
 			</nav>

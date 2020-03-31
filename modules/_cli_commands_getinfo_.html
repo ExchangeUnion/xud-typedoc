@@ -80,6 +80,7 @@
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_commands_getinfo_.html#determinexudstatus" class="tsd-kind-icon">determine<wbr>Xud<wbr>Status</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_commands_getinfo_.html#displaygeneral" class="tsd-kind-icon">display<wbr>General</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_commands_getinfo_.html#displaygetinfo" class="tsd-kind-icon">display<wbr>Get<wbr>Info</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported"><a href="_cli_commands_getinfo_.html#displaylndinfo" class="tsd-kind-icon">display<wbr>Lnd<wbr>Info</a></li>
@@ -95,26 +96,55 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="command" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"getinfo"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;getinfo&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"getinfo"</span><span class="tsd-signature-symbol"> = &quot;getinfo&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/getinfo.ts#L82">cli/commands/getinfo.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/cli/commands/getinfo.ts#L107">lib/cli/commands/getinfo.ts:107</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="describe" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> describe</h3>
-					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"get general info from the local xud node"</span><span class="tsd-signature-symbol"> =&nbsp;&quot;get general info from the local xud node&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"get general info from the local xud node"</span><span class="tsd-signature-symbol"> = &quot;get general info from the local xud node&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/getinfo.ts#L84">cli/commands/getinfo.ts:84</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/cli/commands/getinfo.ts#L109">lib/cli/commands/getinfo.ts:109</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<a name="determinexudstatus" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> determine<wbr>Xud<wbr>Status</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">determine<wbr>Xud<wbr>Status<span class="tsd-signature-symbol">(</span>numPeers<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, lndMap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LndInfo.AsObject</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span>, raiden<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RaidenInfo.AsObject</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/cli/commands/getinfo.ts#L32">lib/cli/commands/getinfo.ts:32</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numPeers: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>lndMap: <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">LndInfo.AsObject</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>raiden: <span class="tsd-signature-type">RaidenInfo.AsObject</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 					<a name="displaygeneral" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> display<wbr>General</h3>
@@ -125,7 +155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/getinfo.ts#L32">cli/commands/getinfo.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/cli/commands/getinfo.ts#L56">lib/cli/commands/getinfo.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +178,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/getinfo.ts#L73">cli/commands/getinfo.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/cli/commands/getinfo.ts#L98">lib/cli/commands/getinfo.ts:98</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -171,7 +201,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/getinfo.ts#L7">cli/commands/getinfo.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/cli/commands/getinfo.ts#L7">lib/cli/commands/getinfo.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -197,7 +227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/getinfo.ts#L53">cli/commands/getinfo.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/cli/commands/getinfo.ts#L78">lib/cli/commands/getinfo.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -220,7 +250,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/3bd67481/lib/cli/commands/getinfo.ts#L86">cli/commands/getinfo.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/cli/commands/getinfo.ts#L111">lib/cli/commands/getinfo.ts:111</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -242,7 +272,7 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="_cli_commands_getinfo_.html">"cli/commands/getinfo"</a>
+						<a href="_cli_commands_getinfo_.html">&quot;cli/commands/getinfo&quot;</a>
 					</li>
 				</ul>
 			</nav>
@@ -253,6 +283,9 @@
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
 						<a href="_cli_commands_getinfo_.html#describe" class="tsd-kind-icon">describe</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="_cli_commands_getinfo_.html#determinexudstatus" class="tsd-kind-icon">determine<wbr>Xud<wbr>Status</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
 						<a href="_cli_commands_getinfo_.html#displaygeneral" class="tsd-kind-icon">display<wbr>General</a>
