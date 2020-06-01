@@ -102,7 +102,9 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_nodelist_.nodelist.html#aliases" class="tsd-kind-icon">aliases</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_nodelist_.nodelist.html#bannednodes" class="tsd-kind-icon">banned<wbr>Nodes</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_nodelist_.nodelist.html#nodeidmap" class="tsd-kind-icon">node<wbr>IdMap</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_nodelist_.nodelist.html#nodes" class="tsd-kind-icon">nodes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_p2p_nodelist_.nodelist.html#repository" class="tsd-kind-icon">repository</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_p2p_nodelist_.nodelist.html#ban_threshold" class="tsd-kind-icon">BAN_<wbr>THRESHOLD</a></li>
@@ -119,14 +121,18 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_nodelist_.nodelist.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_p2p_nodelist_.nodelist.html#addnode" class="tsd-kind-icon">add<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#addreputationevent" class="tsd-kind-icon">add<wbr>Reputation<wbr>Event</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#ban" class="tsd-kind-icon">ban</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#createnode" class="tsd-kind-icon">create<wbr>Node</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="_p2p_nodelist_.nodelist.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_nodelist_.nodelist.html#eventnames" class="tsd-kind-icon">event<wbr>Names</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#foreach" class="tsd-kind-icon">for<wbr>Each</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#getalias" class="tsd-kind-icon">get<wbr>Alias</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#getbannedpubkeys" class="tsd-kind-icon">get<wbr>Banned<wbr>Pub<wbr>Keys</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#getid" class="tsd-kind-icon">get<wbr>Id</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_nodelist_.nodelist.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#getnodebyid" class="tsd-kind-icon">get<wbr>Node<wbr>ById</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#has" class="tsd-kind-icon">has</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_p2p_nodelist_.nodelist.html#isbanned" class="tsd-kind-icon">is<wbr>Banned</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="_p2p_nodelist_.nodelist.html#listenercount" class="tsd-kind-icon">listener<wbr>Count</a></li>
@@ -164,7 +170,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L38">lib/p2p/NodeList.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L43">lib/p2p/NodeList.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -181,14 +187,44 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="aliases" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> aliases</h3>
+					<div class="tsd-signature tsd-kind-icon">aliases<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, string&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L37">lib/p2p/NodeList.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map of node pub keys to aliases.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="bannednodes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> banned<wbr>Nodes</h3>
 					<div class="tsd-signature tsd-kind-icon">banned<wbr>Nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>reputationScore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, NodeInstance&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L32">lib/p2p/NodeList.ts:32</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L33">lib/p2p/NodeList.ts:33</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="nodeidmap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> node<wbr>IdMap</h3>
+					<div class="tsd-signature tsd-kind-icon">node<wbr>IdMap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>reputationScore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;number, NodeInstance&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L35">lib/p2p/NodeList.ts:35</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map of node ids to node instances.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="nodes" class="tsd-anchor"></a>
@@ -196,9 +232,14 @@
 					<div class="tsd-signature tsd-kind-icon">nodes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>reputationScore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, NodeInstance&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L31">lib/p2p/NodeList.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L32">lib/p2p/NodeList.ts:32</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map of node pub keys to node instances.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="repository" class="tsd-anchor"></a>
@@ -206,7 +247,7 @@
 					<div class="tsd-signature tsd-kind-icon">repository<span class="tsd-signature-symbol">:</span> <a href="_p2p_p2prepository_.p2prepository.html" class="tsd-signature-type">P2PRepository</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L40">lib/p2p/NodeList.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L45">lib/p2p/NodeList.ts:45</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -216,7 +257,7 @@
 					<div class="tsd-signature tsd-kind-icon">BAN_<wbr>THRESHOLD<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">-50</span><span class="tsd-signature-symbol"> = -50</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L34">lib/p2p/NodeList.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L39">lib/p2p/NodeList.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -244,7 +285,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L36">lib/p2p/NodeList.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L41">lib/p2p/NodeList.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -300,6 +341,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="addnode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> add<wbr>Node</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Node<span class="tsd-signature-symbol">(</span>node<span class="tsd-signature-symbol">: </span><a href="../modules/_db_types_.html#nodeinstance" class="tsd-signature-type">NodeInstance</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L244">lib/p2p/NodeList.ts:244</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>node: <a href="../modules/_db_types_.html#nodeinstance" class="tsd-signature-type">NodeInstance</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="addreputationevent" class="tsd-anchor"></a>
 					<h3>add<wbr>Reputation<wbr>Event</h3>
@@ -310,7 +374,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L153">lib/p2p/NodeList.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L176">lib/p2p/NodeList.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +406,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L72">lib/p2p/NodeList.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L95">lib/p2p/NodeList.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,7 +435,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L114">lib/p2p/NodeList.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L137">lib/p2p/NodeList.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -400,7 +464,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L26">lib/p2p/NodeList.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L26">lib/p2p/NodeList.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -448,7 +512,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L51">lib/p2p/NodeList.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L56">lib/p2p/NodeList.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -480,6 +544,34 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getalias" class="tsd-anchor"></a>
+					<h3>get<wbr>Alias</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Alias<span class="tsd-signature-symbol">(</span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L70">lib/p2p/NodeList.ts:70</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the alias for a given nodePubKey.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nodePubKey: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getbannedpubkeys" class="tsd-anchor"></a>
 					<h3>get<wbr>Banned<wbr>Pub<wbr>Keys</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -489,7 +581,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L58">lib/p2p/NodeList.ts:58</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L81">lib/p2p/NodeList.ts:81</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -504,6 +596,29 @@
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getid" class="tsd-anchor"></a>
+					<h3>get<wbr>Id</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Id<span class="tsd-signature-symbol">(</span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L74">lib/p2p/NodeList.ts:74</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nodePubKey: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -527,6 +642,34 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getnodebyid" class="tsd-anchor"></a>
+					<h3>get<wbr>Node<wbr>ById</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Node<wbr>ById<span class="tsd-signature-symbol">(</span>nodeId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>reputationScore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L63">lib/p2p/NodeList.ts:63</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get the internal node id for a given nodePubKey.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>nodeId: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>addresses<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">?: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>nodePubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>addressesText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>banned<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>lastAddress<span class="tsd-signature-symbol">: </span><a href="../modules/_p2p_types_.html#address" class="tsd-signature-type">Address</a><span class="tsd-signature-symbol">; </span>lastAddressText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>reputationScore<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="has" class="tsd-anchor"></a>
 					<h3>has</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -536,7 +679,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L47">lib/p2p/NodeList.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L52">lib/p2p/NodeList.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -564,7 +707,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L84">lib/p2p/NodeList.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L107">lib/p2p/NodeList.ts:107</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -637,7 +780,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L91">lib/p2p/NodeList.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L114">lib/p2p/NodeList.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -706,7 +849,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L25">lib/p2p/NodeList.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L25">lib/p2p/NodeList.ts:25</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -916,7 +1059,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L186">lib/p2p/NodeList.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L209">lib/p2p/NodeList.ts:209</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1013,7 +1156,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L216">lib/p2p/NodeList.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L239">lib/p2p/NodeList.ts:239</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1064,7 +1207,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L80">lib/p2p/NodeList.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L103">lib/p2p/NodeList.ts:103</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1093,7 +1236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L125">lib/p2p/NodeList.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L148">lib/p2p/NodeList.ts:148</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1128,7 +1271,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/p2p/NodeList.ts#L205">lib/p2p/NodeList.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/p2p/NodeList.ts#L228">lib/p2p/NodeList.ts:228</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1202,7 +1345,13 @@
 								<a href="_p2p_nodelist_.nodelist.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_p2p_nodelist_.nodelist.html#aliases" class="tsd-kind-icon">aliases</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_p2p_nodelist_.nodelist.html#bannednodes" class="tsd-kind-icon">banned<wbr>Nodes</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_p2p_nodelist_.nodelist.html#nodeidmap" class="tsd-kind-icon">node<wbr>IdMap</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_p2p_nodelist_.nodelist.html#nodes" class="tsd-kind-icon">nodes</a>
@@ -1221,6 +1370,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_p2p_nodelist_.nodelist.html#addlistener" class="tsd-kind-icon">add<wbr>Listener</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_p2p_nodelist_.nodelist.html#addnode" class="tsd-kind-icon">add<wbr>Node</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_p2p_nodelist_.nodelist.html#addreputationevent" class="tsd-kind-icon">add<wbr>Reputation<wbr>Event</a>
@@ -1241,10 +1393,19 @@
 								<a href="_p2p_nodelist_.nodelist.html#foreach" class="tsd-kind-icon">for<wbr>Each</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_p2p_nodelist_.nodelist.html#getalias" class="tsd-kind-icon">get<wbr>Alias</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_p2p_nodelist_.nodelist.html#getbannedpubkeys" class="tsd-kind-icon">get<wbr>Banned<wbr>Pub<wbr>Keys</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_p2p_nodelist_.nodelist.html#getid" class="tsd-kind-icon">get<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
 								<a href="_p2p_nodelist_.nodelist.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_p2p_nodelist_.nodelist.html#getnodebyid" class="tsd-kind-icon">get<wbr>Node<wbr>ById</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_p2p_nodelist_.nodelist.html#has" class="tsd-kind-icon">has</a>

@@ -107,7 +107,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#currencyinstances" class="tsd-kind-icon">currency<wbr>Instances</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#localidmap" class="tsd-kind-icon">local<wbr>IdMap</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#logger" class="tsd-kind-icon">logger</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#maxlimits" class="tsd-kind-icon">maxlimits</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#nobalancechecks" class="tsd-kind-icon">nobalancechecks</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_orderbook_orderbook_.orderbook.html#nomatching" class="tsd-kind-icon">nomatching</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#nosanityswaps" class="tsd-kind-icon">nosanityswaps</a></li>
@@ -115,6 +114,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#pool" class="tsd-kind-icon">pool</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#repository" class="tsd-kind-icon">repository</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#swaps" class="tsd-kind-icon">swaps</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#testing" class="tsd-kind-icon">testing</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_orderbook_orderbook_.orderbook.html#thresholds" class="tsd-kind-icon">thresholds</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_orderbook_orderbook_.orderbook.html#tradingpairs" class="tsd-kind-icon">trading<wbr>Pairs</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_orderbook_orderbook_.orderbook.html#max_placeorder_iterations_time" class="tsd-kind-icon">MAX_<wbr>PLACEORDER_<wbr>ITERATIONS_<wbr>TIME</a></li>
@@ -198,25 +198,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Order<wbr>Book<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">; </span>maxlimits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>models<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.CurrencyAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.NodeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.NodeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.OrderInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.OrderAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Pair<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.PairAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>ReputationEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.ReputationEventInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.ReputationEventAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>SwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.SwapDealInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.SwapDealAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Trade<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.TradeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.TradeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>nobalancechecks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nomatching<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nosanityswaps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>pool<span class="tsd-signature-symbol">: </span><a href="_p2p_pool_.pool.html" class="tsd-signature-type">Pool</a><span class="tsd-signature-symbol">; </span>swaps<span class="tsd-signature-symbol">: </span><a href="_swaps_swaps_.swaps.html" class="tsd-signature-type">Swaps</a><span class="tsd-signature-symbol">; </span>thresholds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>minQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_orderbook_orderbook_.orderbook.html" class="tsd-signature-type">OrderBook</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Order<wbr>Book<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">; </span>models<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.CurrencyAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.NodeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.NodeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.OrderInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.OrderAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Pair<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.PairAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>ReputationEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.ReputationEventInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.ReputationEventAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>SwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.SwapDealInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.SwapDealAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Trade<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.TradeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.TradeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>nobalancechecks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nomatching<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nosanityswaps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>pool<span class="tsd-signature-symbol">: </span><a href="_p2p_pool_.pool.html" class="tsd-signature-type">Pool</a><span class="tsd-signature-symbol">; </span>swaps<span class="tsd-signature-symbol">: </span><a href="_swaps_swaps_.swaps.html" class="tsd-signature-type">Swaps</a><span class="tsd-signature-symbol">; </span>testing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>thresholds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>minQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_orderbook_orderbook_.orderbook.html" class="tsd-signature-type">OrderBook</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L96">lib/orderbook/OrderBook.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L92">lib/orderbook/OrderBook.ts:92</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">; </span>maxlimits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>models<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.CurrencyAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.NodeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.NodeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.OrderInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.OrderAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Pair<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.PairAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>ReputationEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.ReputationEventInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.ReputationEventAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>SwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.SwapDealInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.SwapDealAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Trade<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.TradeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.TradeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>nobalancechecks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nomatching<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nosanityswaps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>pool<span class="tsd-signature-symbol">: </span><a href="_p2p_pool_.pool.html" class="tsd-signature-type">Pool</a><span class="tsd-signature-symbol">; </span>swaps<span class="tsd-signature-symbol">: </span><a href="_swaps_swaps_.swaps.html" class="tsd-signature-type">Swaps</a><span class="tsd-signature-symbol">; </span>thresholds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>minQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">; </span>models<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.CurrencyAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.NodeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.NodeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.OrderInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.OrderAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Pair<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.PairAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>ReputationEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.ReputationEventInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.ReputationEventAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>SwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.SwapDealInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.SwapDealAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Trade<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.TradeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.TradeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>nobalancechecks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nomatching<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>nosanityswaps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>pool<span class="tsd-signature-symbol">: </span><a href="_p2p_pool_.pool.html" class="tsd-signature-type">Pool</a><span class="tsd-signature-symbol">; </span>swaps<span class="tsd-signature-symbol">: </span><a href="_swaps_swaps_.swaps.html" class="tsd-signature-type">Swaps</a><span class="tsd-signature-symbol">; </span>testing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>thresholds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>minQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></h5>
-										</li>
-										<li class="tsd-parameter">
-											<h5>maxlimits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>models<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>Currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.CurrencyInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.CurrencyAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Node<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.NodeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.NodeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.OrderInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.OrderAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Pair<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.PairInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.PairAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>ReputationEvent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.ReputationEventInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.ReputationEventAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>SwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.SwapDealInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.SwapDealAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>Trade<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.Model</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">db.TradeInstance</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">db.TradeAttributes</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></h5>
@@ -260,6 +257,9 @@
 											<h5>swaps<span class="tsd-signature-symbol">: </span><a href="_swaps_swaps_.swaps.html" class="tsd-signature-type">Swaps</a></h5>
 										</li>
 										<li class="tsd-parameter">
+											<h5>testing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+										</li>
+										<li class="tsd-parameter">
 											<h5>thresholds<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>minQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
 											<ul class="tsd-parameters">
 												<li class="tsd-parameter">
@@ -283,7 +283,7 @@
 					<div class="tsd-signature tsd-kind-icon">currency<wbr>Instances<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, CurrencyInstance&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L72">lib/orderbook/OrderBook.ts:72</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L68">lib/orderbook/OrderBook.ts:68</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -298,7 +298,7 @@
 					<div class="tsd-signature tsd-kind-icon">local<wbr>IdMap<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, OrderIdentifier&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L69">lib/orderbook/OrderBook.ts:69</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L65">lib/orderbook/OrderBook.ts:65</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -313,17 +313,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L77">lib/orderbook/OrderBook.ts:77</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="maxlimits" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> maxlimits</h3>
-					<div class="tsd-signature tsd-kind-icon">maxlimits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L80">lib/orderbook/OrderBook.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L73">lib/orderbook/OrderBook.ts:73</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -333,7 +323,7 @@
 					<div class="tsd-signature tsd-kind-icon">nobalancechecks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L79">lib/orderbook/OrderBook.ts:79</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L75">lib/orderbook/OrderBook.ts:75</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -343,7 +333,7 @@
 					<div class="tsd-signature tsd-kind-icon">nomatching<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L66">lib/orderbook/OrderBook.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L62">lib/orderbook/OrderBook.ts:62</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -353,7 +343,7 @@
 					<div class="tsd-signature tsd-kind-icon">nosanityswaps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L78">lib/orderbook/OrderBook.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L74">lib/orderbook/OrderBook.ts:74</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -363,7 +353,7 @@
 					<div class="tsd-signature tsd-kind-icon">pair<wbr>Instances<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>baseCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quoteCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>baseCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quoteCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, PairInstance&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L74">lib/orderbook/OrderBook.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L70">lib/orderbook/OrderBook.ts:70</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -378,7 +368,7 @@
 					<div class="tsd-signature tsd-kind-icon">pool<span class="tsd-signature-symbol">:</span> <a href="_p2p_pool_.pool.html" class="tsd-signature-type">Pool</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L81">lib/orderbook/OrderBook.ts:81</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L77">lib/orderbook/OrderBook.ts:77</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -388,7 +378,7 @@
 					<div class="tsd-signature tsd-kind-icon">repository<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">OrderBookRepository</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L75">lib/orderbook/OrderBook.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L71">lib/orderbook/OrderBook.ts:71</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -398,7 +388,17 @@
 					<div class="tsd-signature tsd-kind-icon">swaps<span class="tsd-signature-symbol">:</span> <a href="_swaps_swaps_.swaps.html" class="tsd-signature-type">Swaps</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L82">lib/orderbook/OrderBook.ts:82</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L78">lib/orderbook/OrderBook.ts:78</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="testing" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> testing</h3>
+					<div class="tsd-signature tsd-kind-icon">testing<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L76">lib/orderbook/OrderBook.ts:76</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -408,7 +408,7 @@
 					<div class="tsd-signature tsd-kind-icon">thresholds<span class="tsd-signature-symbol">:</span> <a href="../modules/_orderbook_types_.html#orderbookthresholds" class="tsd-signature-type">OrderBookThresholds</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L76">lib/orderbook/OrderBook.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L72">lib/orderbook/OrderBook.ts:72</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -418,7 +418,7 @@
 					<div class="tsd-signature tsd-kind-icon">trading<wbr>Pairs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_orderbook_tradingpair_.tradingpair.html" class="tsd-signature-type">TradingPair</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, TradingPair&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L65">lib/orderbook/OrderBook.ts:65</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L61">lib/orderbook/OrderBook.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -430,10 +430,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="max_placeorder_iterations_time" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MAX_<wbr>PLACEORDER_<wbr>ITERATIONS_<wbr>TIME</h3>
-					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>PLACEORDER_<wbr>ITERATIONS_<wbr>TIME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10000</span><span class="tsd-signature-symbol"> = 10000</span></div>
+					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>PLACEORDER_<wbr>ITERATIONS_<wbr>TIME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">60000</span><span class="tsd-signature-symbol"> = 60000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L85">lib/orderbook/OrderBook.ts:85</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L81">lib/orderbook/OrderBook.ts:81</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -448,7 +448,7 @@
 					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>SANITY_<wbr>SWAP_<wbr>TIME<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">15000</span><span class="tsd-signature-symbol"> = 15000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L87">lib/orderbook/OrderBook.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L83">lib/orderbook/OrderBook.ts:83</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -481,7 +481,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L94">lib/orderbook/OrderBook.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L90">lib/orderbook/OrderBook.ts:90</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -498,7 +498,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L90">lib/orderbook/OrderBook.ts:90</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L86">lib/orderbook/OrderBook.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -523,7 +523,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L283">lib/orderbook/OrderBook.ts:283</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L279">lib/orderbook/OrderBook.ts:279</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -592,7 +592,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L717">lib/orderbook/OrderBook.ts:717</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L731">lib/orderbook/OrderBook.ts:731</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -621,7 +621,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L580">lib/orderbook/OrderBook.ts:580</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L593">lib/orderbook/OrderBook.ts:593</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -650,7 +650,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L263">lib/orderbook/OrderBook.ts:263</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L259">lib/orderbook/OrderBook.ts:259</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -673,7 +673,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L613">lib/orderbook/OrderBook.ts:613</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L627">lib/orderbook/OrderBook.ts:627</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -703,7 +703,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L157">lib/orderbook/OrderBook.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L153">lib/orderbook/OrderBook.ts:153</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -720,7 +720,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L168">lib/orderbook/OrderBook.ts:168</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L164">lib/orderbook/OrderBook.ts:164</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -737,7 +737,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L783">lib/orderbook/OrderBook.ts:783</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L797">lib/orderbook/OrderBook.ts:797</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -760,7 +760,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L132">lib/orderbook/OrderBook.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L128">lib/orderbook/OrderBook.ts:128</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -790,7 +790,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L43">lib/orderbook/OrderBook.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L39">lib/orderbook/OrderBook.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -813,7 +813,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L45">lib/orderbook/OrderBook.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L41">lib/orderbook/OrderBook.ts:41</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -836,7 +836,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L47">lib/orderbook/OrderBook.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L43">lib/orderbook/OrderBook.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -859,7 +859,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L49">lib/orderbook/OrderBook.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L45">lib/orderbook/OrderBook.ts:45</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -882,7 +882,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L51">lib/orderbook/OrderBook.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L47">lib/orderbook/OrderBook.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -905,7 +905,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L53">lib/orderbook/OrderBook.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L49">lib/orderbook/OrderBook.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -928,7 +928,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L55">lib/orderbook/OrderBook.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L51">lib/orderbook/OrderBook.ts:51</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -978,7 +978,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L560">lib/orderbook/OrderBook.ts:560</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L568">lib/orderbook/OrderBook.ts:568</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1011,7 +1011,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L203">lib/orderbook/OrderBook.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L199">lib/orderbook/OrderBook.ts:199</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1053,7 +1053,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L245">lib/orderbook/OrderBook.ts:245</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L241">lib/orderbook/OrderBook.ts:241</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1085,7 +1085,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L641">lib/orderbook/OrderBook.ts:641</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L655">lib/orderbook/OrderBook.ts:655</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1108,7 +1108,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L227">lib/orderbook/OrderBook.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L223">lib/orderbook/OrderBook.ts:223</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1144,7 +1144,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L258">lib/orderbook/OrderBook.ts:258</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L254">lib/orderbook/OrderBook.ts:254</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1173,7 +1173,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L219">lib/orderbook/OrderBook.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L215">lib/orderbook/OrderBook.ts:215</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1203,13 +1203,13 @@
 					<a name="gettrades" class="tsd-anchor"></a>
 					<h3>get<wbr>Trades</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Trades<span class="tsd-signature-symbol">(</span>limit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>makerOrderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerOrderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>makerOrderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerOrderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>getMakerOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#orderinstance" class="tsd-signature-type">OrderInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getSwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getTakerOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#orderinstance" class="tsd-signature-type">OrderInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Trades<span class="tsd-signature-symbol">(</span>limit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>makerOrderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerOrderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>SwapDeal<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#swapdealattributes" class="tsd-signature-type">SwapDealAttributes</a><span class="tsd-signature-symbol">; </span>makerOrder<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#orderattributes" class="tsd-signature-type">OrderAttributes</a><span class="tsd-signature-symbol">; </span>takerOrder<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#orderattributes" class="tsd-signature-type">OrderAttributes</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>makerOrderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerOrderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>SwapDeal<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#swapdealattributes" class="tsd-signature-type">SwapDealAttributes</a><span class="tsd-signature-symbol">; </span>makerOrder<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#orderattributes" class="tsd-signature-type">OrderAttributes</a><span class="tsd-signature-symbol">; </span>takerOrder<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#orderattributes" class="tsd-signature-type">OrderAttributes</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>createdAt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">; </span>getMakerOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#orderinstance" class="tsd-signature-type">OrderInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getSwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getTakerOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#orderinstance" class="tsd-signature-type">OrderInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L211">lib/orderbook/OrderBook.ts:211</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L207">lib/orderbook/OrderBook.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1223,7 +1223,7 @@
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> limit: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>makerOrderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerOrderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>makerOrderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerOrderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>getMakerOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#orderinstance" class="tsd-signature-type">OrderInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getSwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getTakerOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#orderinstance" class="tsd-signature-type">OrderInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>makerOrderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerOrderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>SwapDeal<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#swapdealattributes" class="tsd-signature-type">SwapDealAttributes</a><span class="tsd-signature-symbol">; </span>makerOrder<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#orderattributes" class="tsd-signature-type">OrderAttributes</a><span class="tsd-signature-symbol">; </span>takerOrder<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#orderattributes" class="tsd-signature-type">OrderAttributes</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>makerOrderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerOrderId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>SwapDeal<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#swapdealattributes" class="tsd-signature-type">SwapDealAttributes</a><span class="tsd-signature-symbol">; </span>makerOrder<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#orderattributes" class="tsd-signature-type">OrderAttributes</a><span class="tsd-signature-symbol">; </span>takerOrder<span class="tsd-signature-symbol">?: </span><a href="../modules/_db_types_.html#orderattributes" class="tsd-signature-type">OrderAttributes</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>createdAt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">; </span>getMakerOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#orderinstance" class="tsd-signature-type">OrderInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getSwapDeal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>getTakerOrder<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Sequelize.BelongsToGetAssociationMixin</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_db_types_.html#orderinstance" class="tsd-signature-type">OrderInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1237,7 +1237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L233">lib/orderbook/OrderBook.ts:233</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L229">lib/orderbook/OrderBook.ts:229</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1265,7 +1265,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L910">lib/orderbook/OrderBook.ts:910</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L924">lib/orderbook/OrderBook.ts:924</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1291,7 +1291,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L925">lib/orderbook/OrderBook.ts:925</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L939">lib/orderbook/OrderBook.ts:939</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1324,7 +1324,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L191">lib/orderbook/OrderBook.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L187">lib/orderbook/OrderBook.ts:187</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1346,7 +1346,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L141">lib/orderbook/OrderBook.ts:141</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L137">lib/orderbook/OrderBook.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1481,7 +1481,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L28">lib/orderbook/OrderBook.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L24">lib/orderbook/OrderBook.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1522,7 +1522,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L30">lib/orderbook/OrderBook.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L26">lib/orderbook/OrderBook.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1563,7 +1563,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L32">lib/orderbook/OrderBook.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L28">lib/orderbook/OrderBook.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1604,7 +1604,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L34">lib/orderbook/OrderBook.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L30">lib/orderbook/OrderBook.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1645,7 +1645,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L36">lib/orderbook/OrderBook.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L32">lib/orderbook/OrderBook.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1686,7 +1686,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L38">lib/orderbook/OrderBook.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L34">lib/orderbook/OrderBook.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1727,7 +1727,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L40">lib/orderbook/OrderBook.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L36">lib/orderbook/OrderBook.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1822,7 +1822,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L594">lib/orderbook/OrderBook.ts:594</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L607">lib/orderbook/OrderBook.ts:607</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1854,7 +1854,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L324">lib/orderbook/OrderBook.ts:324</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L320">lib/orderbook/OrderBook.ts:320</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1883,7 +1883,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L342">lib/orderbook/OrderBook.ts:342</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L343">lib/orderbook/OrderBook.ts:343</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1903,13 +1903,13 @@
 					<a name="placeorder" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> place<wbr>Order</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">place<wbr>Order<span class="tsd-signature-symbol">(</span>order<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_types_.html#ownorder" class="tsd-signature-type">OwnOrder</a>, discardRemaining<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, onUpdate<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_types_.html#placeorderevent" class="tsd-signature-type">PlaceOrderEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span>, maxTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_orderbook_types_.html#placeorderresult" class="tsd-signature-type">PlaceOrderResult</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">place<wbr>Order<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>discardRemaining<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>maxTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>onUpdate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_types_.html#placeorderevent" class="tsd-signature-type">PlaceOrderEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>createdAt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>initialQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>hold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>retry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_orderbook_types_.html#placeorderresult" class="tsd-signature-type">PlaceOrderResult</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L364">lib/orderbook/OrderBook.ts:364</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L370">lib/orderbook/OrderBook.ts:370</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1922,38 +1922,24 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>order: <a href="../modules/_orderbook_types_.html#ownorder" class="tsd-signature-type">OwnOrder</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>the order to place</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> discardRemaining: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>whether to discard any unmatched portion of the order, if <code>false</code> the
-											unmatched portion will enter the order book.</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> onUpdate: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_types_.html#placeorderevent" class="tsd-signature-type">PlaceOrderEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>a callback for when there are updates to the matching and order placement
-											routine including internal matches, successful swaps, failed swaps, and remaining orders</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> maxTime: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<div class="lead">
-											<p>the deadline in epoch milliseconds for this method to end recursive calls</p>
-										</div>
-									</div>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>discardRemaining<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>maxTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>onUpdate<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_types_.html#placeorderevent" class="tsd-signature-type">PlaceOrderEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">; </span>order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>createdAt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>initialQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>hold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>retry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter">
+											<h5>discard<wbr>Remaining<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>max<wbr>Time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>on<wbr>Update<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>e<span class="tsd-signature-symbol">: </span><a href="../modules/_orderbook_types_.html#placeorderevent" class="tsd-signature-type">PlaceOrderEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>order<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>createdAt<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>initialQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>hold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
+										</li>
+										<li class="tsd-parameter">
+											<h5>retry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_orderbook_types_.html#placeorderresult" class="tsd-signature-type">PlaceOrderResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2112,7 +2098,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L295">lib/orderbook/OrderBook.ts:295</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L291">lib/orderbook/OrderBook.ts:291</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2181,7 +2167,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L722">lib/orderbook/OrderBook.ts:722</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L736">lib/orderbook/OrderBook.ts:736</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2210,7 +2196,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L733">lib/orderbook/OrderBook.ts:733</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L747">lib/orderbook/OrderBook.ts:747</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2258,7 +2244,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L661">lib/orderbook/OrderBook.ts:661</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L675">lib/orderbook/OrderBook.ts:675</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2307,7 +2293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L311">lib/orderbook/OrderBook.ts:311</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L307">lib/orderbook/OrderBook.ts:307</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2330,7 +2316,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L758">lib/orderbook/OrderBook.ts:758</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L772">lib/orderbook/OrderBook.ts:772</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2380,7 +2366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L764">lib/orderbook/OrderBook.ts:764</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L778">lib/orderbook/OrderBook.ts:778</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2403,7 +2389,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L775">lib/orderbook/OrderBook.ts:775</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L789">lib/orderbook/OrderBook.ts:789</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2429,7 +2415,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L885">lib/orderbook/OrderBook.ts:885</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L899">lib/orderbook/OrderBook.ts:899</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2498,7 +2484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L898">lib/orderbook/OrderBook.ts:898</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L912">lib/orderbook/OrderBook.ts:912</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2521,7 +2507,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L250">lib/orderbook/OrderBook.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L246">lib/orderbook/OrderBook.ts:246</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2547,7 +2533,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L802">lib/orderbook/OrderBook.ts:802</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L816">lib/orderbook/OrderBook.ts:816</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2578,7 +2564,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/orderbook/OrderBook.ts#L127">lib/orderbook/OrderBook.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/orderbook/OrderBook.ts#L123">lib/orderbook/OrderBook.ts:123</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2658,9 +2644,6 @@
 								<a href="_orderbook_orderbook_.orderbook.html#logger" class="tsd-kind-icon">logger</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_orderbook_orderbook_.orderbook.html#maxlimits" class="tsd-kind-icon">maxlimits</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_orderbook_orderbook_.orderbook.html#nobalancechecks" class="tsd-kind-icon">nobalancechecks</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -2680,6 +2663,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_orderbook_orderbook_.orderbook.html#swaps" class="tsd-kind-icon">swaps</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_orderbook_orderbook_.orderbook.html#testing" class="tsd-kind-icon">testing</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_orderbook_orderbook_.orderbook.html#thresholds" class="tsd-kind-icon">thresholds</a>

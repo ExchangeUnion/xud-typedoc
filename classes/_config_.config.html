@@ -90,6 +90,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#connext" class="tsd-kind-icon">connext</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#dbpath" class="tsd-kind-icon">dbpath</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#debug" class="tsd-kind-icon">debug</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#http" class="tsd-kind-icon">http</a></li>
@@ -99,7 +100,6 @@
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#logdateformat" class="tsd-kind-icon">logdateformat</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#loglevel" class="tsd-kind-icon">loglevel</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#logpath" class="tsd-kind-icon">logpath</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#maxlimits" class="tsd-kind-icon">maxlimits</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#network" class="tsd-kind-icon">network</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#nobalancechecks" class="tsd-kind-icon">nobalancechecks</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_config_.config.html#noencrypt" class="tsd-kind-icon">noencrypt</a></li>
@@ -144,7 +144,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L80">lib/Config.ts:80</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L83">lib/Config.ts:83</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <a href="_config_.config.html" class="tsd-signature-type">Config</a></h4>
@@ -155,12 +155,22 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="connext" class="tsd-anchor"></a>
+					<h3>connext</h3>
+					<div class="tsd-signature tsd-kind-icon">connext<span class="tsd-signature-symbol">:</span> <a href="../modules/_connextclient_types_.html#connextclientconfig" class="tsd-signature-type">ConnextClientConfig</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L58">lib/Config.ts:58</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="dbpath" class="tsd-anchor"></a>
 					<h3>dbpath</h3>
 					<div class="tsd-signature tsd-kind-icon">dbpath<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L64">lib/Config.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L69">lib/Config.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -172,10 +182,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="debug" class="tsd-anchor"></a>
 					<h3>debug</h3>
-					<div class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>raidenDirectChannelChecks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>raidenDirectChannelChecks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>testing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L59">lib/Config.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L61">lib/Config.ts:61</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -183,6 +193,9 @@
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
 								<h5>raiden<wbr>Direct<wbr>Channel<wbr>Checks<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>testing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></h5>
 							</li>
 						</ul>
 					</div>
@@ -193,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">http<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L54">lib/Config.ts:54</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L55">lib/Config.ts:55</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -214,7 +227,7 @@
 					<div class="tsd-signature tsd-kind-icon">initdb<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L62">lib/Config.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L67">lib/Config.ts:67</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -229,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">instanceid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L60">lib/Config.ts:60</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L65">lib/Config.ts:65</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">lnd<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L55">lib/Config.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L56">lib/Config.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -257,7 +270,7 @@
 					<div class="tsd-signature tsd-kind-icon">logdateformat<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L51">lib/Config.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L52">lib/Config.ts:52</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -267,7 +280,7 @@
 					<div class="tsd-signature tsd-kind-icon">loglevel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L49">lib/Config.ts:49</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L50">lib/Config.ts:50</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -277,24 +290,9 @@
 					<div class="tsd-signature tsd-kind-icon">logpath<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L50">lib/Config.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L51">lib/Config.ts:51</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="maxlimits" class="tsd-anchor"></a>
-					<h3>maxlimits</h3>
-					<div class="tsd-signature tsd-kind-icon">maxlimits<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L70">lib/Config.ts:70</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Whether to use the maximum network channel sizes as trading limits.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="network" class="tsd-anchor"></a>
@@ -302,7 +300,7 @@
 					<div class="tsd-signature tsd-kind-icon">network<span class="tsd-signature-symbol">:</span> <a href="../enums/_constants_enums_.xunetwork.html" class="tsd-signature-type">XuNetwork</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L52">lib/Config.ts:52</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L53">lib/Config.ts:53</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -312,7 +310,7 @@
 					<div class="tsd-signature tsd-kind-icon">nobalancechecks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L80">lib/Config.ts:80</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L83">lib/Config.ts:83</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -328,7 +326,7 @@
 					<div class="tsd-signature tsd-kind-icon">noencrypt<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L68">lib/Config.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L73">lib/Config.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -343,7 +341,7 @@
 					<div class="tsd-signature tsd-kind-icon">nomatching<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L66">lib/Config.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L71">lib/Config.ts:71</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -358,7 +356,7 @@
 					<div class="tsd-signature tsd-kind-icon">nosanityswaps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = true</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L75">lib/Config.ts:75</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L78">lib/Config.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -374,7 +372,7 @@
 					<div class="tsd-signature tsd-kind-icon">orderthresholds<span class="tsd-signature-symbol">:</span> <a href="../modules/_orderbook_types_.html#orderbookthresholds" class="tsd-signature-type">OrderBookThresholds</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L57">lib/Config.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L59">lib/Config.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -384,7 +382,7 @@
 					<div class="tsd-signature tsd-kind-icon">p2p<span class="tsd-signature-symbol">:</span> <a href="../modules/_p2p_types_.html#poolconfig" class="tsd-signature-type">PoolConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L47">lib/Config.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L48">lib/Config.ts:48</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -394,7 +392,7 @@
 					<div class="tsd-signature tsd-kind-icon">raiden<span class="tsd-signature-symbol">:</span> <a href="../modules/_raidenclient_types_.html#raidenclientconfig" class="tsd-signature-type">RaidenClientConfig</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L56">lib/Config.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L57">lib/Config.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -404,7 +402,7 @@
 					<div class="tsd-signature tsd-kind-icon">rpc<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>disable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L53">lib/Config.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L54">lib/Config.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -428,7 +426,7 @@
 					<div class="tsd-signature tsd-kind-icon">webproxy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>disable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L58">lib/Config.ts:58</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L60">lib/Config.ts:60</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -449,7 +447,7 @@
 					<div class="tsd-signature tsd-kind-icon">xudir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L48">lib/Config.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L49">lib/Config.ts:49</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -466,7 +464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L359">lib/Config.ts:359</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L370">lib/Config.ts:370</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -483,7 +481,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L344">lib/Config.ts:344</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L355">lib/Config.ts:355</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">8887</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">18887</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">28887</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">38887</span></h4>
@@ -500,7 +498,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L367">lib/Config.ts:367</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L378">lib/Config.ts:378</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -517,7 +515,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L363">lib/Config.ts:363</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L374">lib/Config.ts:374</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -534,7 +532,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L314">lib/Config.ts:314</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L325">lib/Config.ts:325</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">8885</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">18885</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">28885</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">38885</span></h4>
@@ -551,7 +549,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L329">lib/Config.ts:329</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L340">lib/Config.ts:340</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">8886</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">18886</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">28886</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">38886</span></h4>
@@ -568,7 +566,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L278">lib/Config.ts:278</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L289">lib/Config.ts:289</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -596,7 +594,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L194">lib/Config.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L205">lib/Config.ts:205</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -625,7 +623,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L267">lib/Config.ts:267</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L278">lib/Config.ts:278</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -653,7 +651,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L298">lib/Config.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L309">lib/Config.ts:309</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -670,7 +668,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/Config.ts#L173">lib/Config.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/Config.ts#L184">lib/Config.ts:184</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -707,6 +705,9 @@
 								<a href="_config_.config.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_config_.config.html#connext" class="tsd-kind-icon">connext</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_config_.config.html#dbpath" class="tsd-kind-icon">dbpath</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -732,9 +733,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_config_.config.html#logpath" class="tsd-kind-icon">logpath</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_config_.config.html#maxlimits" class="tsd-kind-icon">maxlimits</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_config_.config.html#network" class="tsd-kind-icon">network</a>

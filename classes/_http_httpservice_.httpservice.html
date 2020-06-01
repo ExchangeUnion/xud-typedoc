@@ -96,6 +96,8 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_http_httpservice_.httpservice.html#incomingtransfer" class="tsd-kind-icon">incoming<wbr>Transfer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_http_httpservice_.httpservice.html#providepreimage" class="tsd-kind-icon">provide<wbr>Preimage</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_http_httpservice_.httpservice.html#resolvehashraiden" class="tsd-kind-icon">resolve<wbr>Hash<wbr>Raiden</a></li>
 							</ul>
 						</section>
@@ -114,7 +116,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/http/HttpService.ts#L5">lib/http/HttpService.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/http/HttpService.ts#L10">lib/http/HttpService.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -136,13 +138,59 @@
 					<div class="tsd-signature tsd-kind-icon">service<span class="tsd-signature-symbol">:</span> <a href="_service_service_.service.html" class="tsd-signature-type">Service</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/http/HttpService.ts#L6">lib/http/HttpService.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/http/HttpService.ts#L11">lib/http/HttpService.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="incomingtransfer" class="tsd-anchor"></a>
+					<h3>incoming<wbr>Transfer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">incoming<wbr>Transfer<span class="tsd-signature-symbol">(</span>incomingTransferRequest<span class="tsd-signature-symbol">: </span><a href="../modules/_connextclient_types_.html#connextincomingtransferrequest" class="tsd-signature-type">ConnextIncomingTransferRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/http/HttpService.ts#L48">lib/http/HttpService.ts:48</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>incomingTransferRequest: <a href="../modules/_connextclient_types_.html#connextincomingtransferrequest" class="tsd-signature-type">ConnextIncomingTransferRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="providepreimage" class="tsd-anchor"></a>
+					<h3>provide<wbr>Preimage</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">provide<wbr>Preimage<span class="tsd-signature-symbol">(</span>preimageRequest<span class="tsd-signature-symbol">: </span><a href="../modules/_connextclient_types_.html#connextpreimagerequest" class="tsd-signature-type">ConnextPreimageRequest</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/http/HttpService.ts#L28">lib/http/HttpService.ts:28</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>preimageRequest: <a href="../modules/_connextclient_types_.html#connextpreimagerequest" class="tsd-signature-type">ConnextPreimageRequest</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="resolvehashraiden" class="tsd-anchor"></a>
 					<h3>resolve<wbr>Hash<wbr>Raiden</h3>
@@ -153,7 +201,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/c35a744c/lib/http/HttpService.ts#L8">lib/http/HttpService.ts:8</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/http/HttpService.ts#L13">lib/http/HttpService.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -191,6 +239,12 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_http_httpservice_.httpservice.html#service" class="tsd-kind-icon">service</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_http_httpservice_.httpservice.html#incomingtransfer" class="tsd-kind-icon">incoming<wbr>Transfer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_http_httpservice_.httpservice.html#providepreimage" class="tsd-kind-icon">provide<wbr>Preimage</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_http_httpservice_.httpservice.html#resolvehashraiden" class="tsd-kind-icon">resolve<wbr>Hash<wbr>Raiden</a>
