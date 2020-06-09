@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>GrpcService | xud</title>
-	<meta name="description" content="">
+	<meta name="description" content="Documentation for xud">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
@@ -13,7 +13,7 @@
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -112,7 +112,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#closechannel" class="tsd-kind-icon">close<wbr>Channel</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#closestreams" class="tsd-kind-icon">close<wbr>Streams</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#connect" class="tsd-kind-icon">connect</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#deposit" class="tsd-kind-icon">deposit</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#discovernodes" class="tsd-kind-icon">discover<wbr>Nodes</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#executeswap" class="tsd-kind-icon">execute<wbr>Swap</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a></li>
@@ -137,7 +136,8 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#tradehistory" class="tsd-kind-icon">trade<wbr>History</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#tradinglimits" class="tsd-kind-icon">trading<wbr>Limits</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#unban" class="tsd-kind-icon">unban</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#withdraw" class="tsd-kind-icon">withdraw</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#walletdeposit" class="tsd-kind-icon">wallet<wbr>Deposit</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_grpc_grpcservice_.grpcservice.html#walletwithdraw" class="tsd-kind-icon">wallet<wbr>Withdraw</a></li>
 							</ul>
 						</section>
 					</div>
@@ -155,7 +155,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L147">lib/grpc/GrpcService.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L147">lib/grpc/GrpcService.ts:147</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -176,7 +176,7 @@
 					<div class="tsd-signature tsd-kind-icon">locked<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L144">lib/grpc/GrpcService.ts:144</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L144">lib/grpc/GrpcService.ts:144</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -186,7 +186,7 @@
 					<div class="tsd-signature tsd-kind-icon">service<span class="tsd-signature-symbol">:</span> <a href="../enums/_logger_.context.html#service" class="tsd-signature-type">Service</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L145">lib/grpc/GrpcService.ts:145</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L145">lib/grpc/GrpcService.ts:145</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -196,7 +196,7 @@
 					<div class="tsd-signature tsd-kind-icon">streams<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">grpc.ServerWriteableStream</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Set&lt;grpc.ServerWriteableStream&lt;any&gt;&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L147">lib/grpc/GrpcService.ts:147</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L147">lib/grpc/GrpcService.ts:147</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +218,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L198">lib/grpc/GrpcService.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L198">lib/grpc/GrpcService.ts:198</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -234,7 +234,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -276,7 +276,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L215">lib/grpc/GrpcService.ts:215</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L215">lib/grpc/GrpcService.ts:215</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,7 +292,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -334,7 +334,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L166">lib/grpc/GrpcService.ts:166</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L166">lib/grpc/GrpcService.ts:166</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -362,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L380">lib/grpc/GrpcService.ts:380</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L381">lib/grpc/GrpcService.ts:381</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -378,7 +378,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -420,7 +420,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L232">lib/grpc/GrpcService.ts:232</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L232">lib/grpc/GrpcService.ts:232</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -436,7 +436,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -478,7 +478,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L158">lib/grpc/GrpcService.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L158">lib/grpc/GrpcService.ts:158</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -500,7 +500,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L331">lib/grpc/GrpcService.ts:331</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L331">lib/grpc/GrpcService.ts:331</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -516,65 +516,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
-											<ul class="tsd-signatures tsd-kind-type-literal">
-												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-											</ul>
-											<ul class="tsd-descriptions">
-												<li class="tsd-description">
-													<h4 class="tsd-parameters-title">Parameters</h4>
-													<ul class="tsd-parameters">
-														<li>
-															<h5>error: <span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-														</li>
-														<li>
-															<h5>value: <span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
-														</li>
-														<li>
-															<h5><span class="tsd-flag ts-flagOptional">Optional</span> trailer: <span class="tsd-signature-type">Metadata</span></h5>
-														</li>
-														<li>
-															<h5><span class="tsd-flag ts-flagOptional">Optional</span> flags: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
-														</li>
-													</ul>
-													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="deposit" class="tsd-anchor"></a>
-					<h3>deposit</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">deposit<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DepositRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L348">lib/grpc/GrpcService.ts:348</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>See <a href="_service_service_.service.html#deposit">Service.deposit</a></p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>call: <span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DepositRequest</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								</li>
-								<li>
-									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -616,7 +558,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L791">lib/grpc/GrpcService.ts:791</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L792">lib/grpc/GrpcService.ts:792</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -632,7 +574,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -674,7 +616,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L412">lib/grpc/GrpcService.ts:412</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L413">lib/grpc/GrpcService.ts:413</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -690,7 +632,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -732,7 +674,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L265">lib/grpc/GrpcService.ts:265</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L265">lib/grpc/GrpcService.ts:265</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -748,7 +690,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -790,7 +732,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L460">lib/grpc/GrpcService.ts:460</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L461">lib/grpc/GrpcService.ts:461</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -806,7 +748,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -848,7 +790,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L545">lib/grpc/GrpcService.ts:545</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L546">lib/grpc/GrpcService.ts:546</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -864,7 +806,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -906,7 +848,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L178">lib/grpc/GrpcService.ts:178</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L178">lib/grpc/GrpcService.ts:178</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -939,7 +881,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L597">lib/grpc/GrpcService.ts:597</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L598">lib/grpc/GrpcService.ts:598</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -955,7 +897,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -997,7 +939,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L565">lib/grpc/GrpcService.ts:565</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L566">lib/grpc/GrpcService.ts:566</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1013,7 +955,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1055,7 +997,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L625">lib/grpc/GrpcService.ts:625</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L626">lib/grpc/GrpcService.ts:626</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1071,7 +1013,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1113,7 +1055,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L687">lib/grpc/GrpcService.ts:687</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L688">lib/grpc/GrpcService.ts:688</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1129,7 +1071,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1171,7 +1113,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L315">lib/grpc/GrpcService.ts:315</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L315">lib/grpc/GrpcService.ts:315</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1187,7 +1129,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1229,7 +1171,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L723">lib/grpc/GrpcService.ts:723</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L724">lib/grpc/GrpcService.ts:724</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1257,7 +1199,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L742">lib/grpc/GrpcService.ts:742</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L743">lib/grpc/GrpcService.ts:743</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1273,7 +1215,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1315,7 +1257,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L757">lib/grpc/GrpcService.ts:757</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L758">lib/grpc/GrpcService.ts:758</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1331,7 +1273,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1373,7 +1315,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L248">lib/grpc/GrpcService.ts:248</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L248">lib/grpc/GrpcService.ts:248</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1389,7 +1331,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1431,7 +1373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L774">lib/grpc/GrpcService.ts:774</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L775">lib/grpc/GrpcService.ts:775</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1447,7 +1389,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1489,7 +1431,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L152">lib/grpc/GrpcService.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L152">lib/grpc/GrpcService.ts:152</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1512,7 +1454,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L807">lib/grpc/GrpcService.ts:807</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L808">lib/grpc/GrpcService.ts:808</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1523,7 +1465,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1565,7 +1507,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L823">lib/grpc/GrpcService.ts:823</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L824">lib/grpc/GrpcService.ts:824</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1588,7 +1530,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L849">lib/grpc/GrpcService.ts:849</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L850">lib/grpc/GrpcService.ts:850</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1611,7 +1553,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L863">lib/grpc/GrpcService.ts:863</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L864">lib/grpc/GrpcService.ts:864</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1634,7 +1576,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L643">lib/grpc/GrpcService.ts:643</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L644">lib/grpc/GrpcService.ts:644</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1650,7 +1592,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1692,7 +1634,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L292">lib/grpc/GrpcService.ts:292</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L292">lib/grpc/GrpcService.ts:292</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1708,7 +1650,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1750,7 +1692,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L396">lib/grpc/GrpcService.ts:396</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L397">lib/grpc/GrpcService.ts:397</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1766,7 +1708,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1799,21 +1741,79 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="withdraw" class="tsd-anchor"></a>
-					<h3>withdraw</h3>
+					<a name="walletdeposit" class="tsd-anchor"></a>
+					<h3>wallet<wbr>Deposit</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">withdraw<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WithdrawRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">wallet<wbr>Deposit<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DepositRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/b64ade361/lib/grpc/GrpcService.ts#L364">lib/grpc/GrpcService.ts:364</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L348">lib/grpc/GrpcService.ts:348</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>See <a href="_service_service_.service.html#withdraw">Service.withdraw</a></p>
+									<p>See <a href="_service_service_.service.html#walletdeposit">Service.walletDeposit</a></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>call: <span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">DepositRequest</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>error: <span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+														</li>
+														<li>
+															<h5>value: <span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+														</li>
+														<li>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> trailer: <span class="tsd-signature-type">Metadata</span></h5>
+														</li>
+														<li>
+															<h5><span class="tsd-flag ts-flagOptional">Optional</span> flags: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="walletwithdraw" class="tsd-anchor"></a>
+					<h3>wallet<wbr>Withdraw</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">wallet<wbr>Withdraw<span class="tsd-signature-symbol">(</span>call<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerUnaryCall</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">WithdrawRequest</span><span class="tsd-signature-symbol">&gt;</span>, callback<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/grpc/GrpcService.ts#L365">lib/grpc/GrpcService.ts:365</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See <a href="_service_service_.service.html#walletwithdraw">Service.walletWithdraw</a></p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1824,7 +1824,7 @@
 								<li>
 									<h5>callback: <span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
 									<ul class="tsd-parameters">
-										<li class="tsd-parameter-siganture">
+										<li class="tsd-parameter-signature">
 											<ul class="tsd-signatures tsd-kind-type-literal">
 												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>error<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServiceError</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ResponseType</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span>, trailer<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Metadata</span>, flags<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 											</ul>
@@ -1864,7 +1864,7 @@
 					<li class="globals  ">
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_grpc_grpcservice_.html">&quot;grpc/<wbr>Grpc<wbr>Service&quot;</a>
 					</li>
 				</ul>
@@ -1873,7 +1873,7 @@
 				<ul class="before-current">
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
 						<a href="_grpc_grpcservice_.grpcservice.html" class="tsd-kind-icon">Grpc<wbr>Service</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
@@ -1908,9 +1908,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_grpc_grpcservice_.grpcservice.html#connect" class="tsd-kind-icon">connect</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_grpc_grpcservice_.grpcservice.html#deposit" class="tsd-kind-icon">deposit</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_grpc_grpcservice_.grpcservice.html#discovernodes" class="tsd-kind-icon">discover<wbr>Nodes</a>
@@ -1985,28 +1982,31 @@
 								<a href="_grpc_grpcservice_.grpcservice.html#unban" class="tsd-kind-icon">unban</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_grpc_grpcservice_.grpcservice.html#withdraw" class="tsd-kind-icon">withdraw</a>
+								<a href="_grpc_grpcservice_.grpcservice.html#walletdeposit" class="tsd-kind-icon">wallet<wbr>Deposit</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_grpc_grpcservice_.grpcservice.html#walletwithdraw" class="tsd-kind-icon">wallet<wbr>Withdraw</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_grpc_grpcservice_.html#createorder" class="tsd-kind-icon">create<wbr>Order</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_grpc_grpcservice_.html#createplaceorderevent" class="tsd-kind-icon">create<wbr>Place<wbr>Order<wbr>Event</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_grpc_grpcservice_.html#createplaceorderresponse" class="tsd-kind-icon">create<wbr>Place<wbr>Order<wbr>Response</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_grpc_grpcservice_.html#createserviceorder" class="tsd-kind-icon">create<wbr>Service<wbr>Order</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_grpc_grpcservice_.html#createswapfailure" class="tsd-kind-icon">create<wbr>Swap<wbr>Failure</a>
 					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
 						<a href="../modules/_grpc_grpcservice_.html#createswapsuccess" class="tsd-kind-icon">create<wbr>Swap<wbr>Success</a>
 					</li>
 				</ul>
@@ -2019,28 +2019,12 @@
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
 			<ul class="tsd-legend">
-				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
 				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
 				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
 				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
 				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
-				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
-				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
-				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
@@ -2048,28 +2032,16 @@
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
-				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
-				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
-				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
 			</ul>
 			<ul class="tsd-legend">
-				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
-				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
 			</ul>
 		</div>
 	</div>
