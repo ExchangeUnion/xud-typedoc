@@ -107,7 +107,9 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swaps_.swaps.html#usedhashes" class="tsd-kind-icon">used<wbr>Hashes</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_swaps_swaps_.swaps.html#sanity_swap_complete_timeout" class="tsd-kind-icon">SANITY_<wbr>SWAP_<wbr>COMPLETE_<wbr>TIMEOUT</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_swaps_swaps_.swaps.html#sanity_swap_init_timeout" class="tsd-kind-icon">SANITY_<wbr>SWAP_<wbr>INIT_<wbr>TIMEOUT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_swaps_swaps_.swaps.html#swap_abuse_time_limit" class="tsd-kind-icon">SWAP_<wbr>ABUSE_<wbr>TIME_<wbr>LIMIT</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_swaps_swaps_.swaps.html#swap_accept_timeout" class="tsd-kind-icon">SWAP_<wbr>ACCEPT_<wbr>TIMEOUT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_swaps_swaps_.swaps.html#swap_complete_maker_buffer" class="tsd-kind-icon">SWAP_<wbr>COMPLETE_<wbr>MAKER_<wbr>BUFFER</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_swaps_swaps_.swaps.html#swap_complete_timeout" class="tsd-kind-icon">SWAP_<wbr>COMPLETE_<wbr>TIMEOUT</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_swaps_swaps_.swaps.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_swaps_swaps_.swaps.html#errormonitor" class="tsd-kind-icon">error<wbr>Monitor</a></li>
@@ -131,6 +133,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swaps_.swaps.html#getdeal" class="tsd-kind-icon">get<wbr>Deal</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="_swaps_swaps_.swaps.html#getmaxlisteners" class="tsd-kind-icon">get<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swaps_.swaps.html#getpendingswaphashes" class="tsd-kind-icon">get<wbr>Pending<wbr>Swap<wbr>Hashes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_swaps_swaps_.swaps.html#handlehtlcaccepted" class="tsd-kind-icon">handle<wbr>Htlc<wbr>Accepted</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swaps_.swaps.html#handleresolverequest" class="tsd-kind-icon">handle<wbr>Resolve<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_swaps_swaps_.swaps.html#handleswapaccepted" class="tsd-kind-icon">handle<wbr>Swap<wbr>Accepted</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_swaps_swaps_.swaps.html#handleswapfailed" class="tsd-kind-icon">handle<wbr>Swap<wbr>Failed</a></li>
@@ -183,7 +186,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_backup_backup_.backup.html">Backup</a>.<a href="_backup_backup_.backup.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L59">lib/swaps/Swaps.ts:59</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L76">lib/swaps/Swaps.ts:76</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -214,7 +217,7 @@
 					<div class="tsd-signature tsd-kind-icon">deals<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>completeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>createTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>destination<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>executeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">?: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCltvDelta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>phase<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapphase.html" class="tsd-signature-type">SwapPhase</a><span class="tsd-signature-symbol">; </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>proposedQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rPreimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>role<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapstate.html" class="tsd-signature-type">SwapState</a><span class="tsd-signature-symbol">; </span>takerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCltvDelta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerMaxTimeLock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerPubKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, SwapDeal&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L35">lib/swaps/Swaps.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L38">lib/swaps/Swaps.ts:38</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -229,7 +232,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L61">lib/swaps/Swaps.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L78">lib/swaps/Swaps.ts:78</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -239,7 +242,7 @@
 					<div class="tsd-signature tsd-kind-icon">models<span class="tsd-signature-symbol">:</span> <a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L62">lib/swaps/Swaps.ts:62</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L79">lib/swaps/Swaps.ts:79</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -249,7 +252,7 @@
 					<div class="tsd-signature tsd-kind-icon">pool<span class="tsd-signature-symbol">:</span> <a href="_p2p_pool_.pool.html" class="tsd-signature-type">Pool</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L63">lib/swaps/Swaps.ts:63</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L80">lib/swaps/Swaps.ts:80</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -259,7 +262,7 @@
 					<div class="tsd-signature tsd-kind-icon">repository<span class="tsd-signature-symbol">:</span> <a href="_swaps_swaprepository_.swaprepository.html" class="tsd-signature-type">SwapRepository</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L40">lib/swaps/Swaps.ts:40</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L43">lib/swaps/Swaps.ts:43</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -269,7 +272,7 @@
 					<div class="tsd-signature tsd-kind-icon">sanity<wbr>Swaps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, SanitySwap&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L33">lib/swaps/Swaps.ts:33</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L36">lib/swaps/Swaps.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -284,7 +287,7 @@
 					<div class="tsd-signature tsd-kind-icon">swap<wbr>Client<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="_swaps_swapclientmanager_.swapclientmanager.html" class="tsd-signature-type">SwapClientManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L64">lib/swaps/Swaps.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L81">lib/swaps/Swaps.ts:81</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -294,7 +297,7 @@
 					<div class="tsd-signature tsd-kind-icon">swap<wbr>Recovery<span class="tsd-signature-symbol">:</span> <a href="_swaps_swaprecovery_.swaprecovery.html" class="tsd-signature-type">SwapRecovery</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L36">lib/swaps/Swaps.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L39">lib/swaps/Swaps.ts:39</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -304,7 +307,7 @@
 					<div class="tsd-signature tsd-kind-icon">timeouts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, number&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L38">lib/swaps/Swaps.ts:38</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L41">lib/swaps/Swaps.ts:41</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -319,7 +322,7 @@
 					<div class="tsd-signature tsd-kind-icon">used<wbr>Hashes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Set&lt;string&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L39">lib/swaps/Swaps.ts:39</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L42">lib/swaps/Swaps.ts:42</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -329,7 +332,7 @@
 					<div class="tsd-signature tsd-kind-icon">SANITY_<wbr>SWAP_<wbr>COMPLETE_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10000</span><span class="tsd-signature-symbol"> = 10000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L59">lib/swaps/Swaps.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L76">lib/swaps/Swaps.ts:76</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -344,7 +347,7 @@
 					<div class="tsd-signature tsd-kind-icon">SANITY_<wbr>SWAP_<wbr>INIT_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3000</span><span class="tsd-signature-symbol"> = 3000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L57">lib/swaps/Swaps.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L74">lib/swaps/Swaps.ts:74</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -354,12 +357,28 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="swap_abuse_time_limit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> SWAP_<wbr>ABUSE_<wbr>TIME_<wbr>LIMIT</h3>
+					<div class="tsd-signature tsd-kind-icon">SWAP_<wbr>ABUSE_<wbr>TIME_<wbr>LIMIT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">60000</span><span class="tsd-signature-symbol"> = 60000</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L72">lib/swaps/Swaps.ts:72</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The time threshold in milliseconds after which we consider a counterparty abusive if they
+							settle payment for a timed out swap.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="swap_accept_timeout" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> SWAP_<wbr>ACCEPT_<wbr>TIMEOUT</h3>
 					<div class="tsd-signature tsd-kind-icon">SWAP_<wbr>ACCEPT_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">10000</span><span class="tsd-signature-symbol"> = 10000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L53">lib/swaps/Swaps.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L56">lib/swaps/Swaps.ts:56</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -369,12 +388,32 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="swap_complete_maker_buffer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> SWAP_<wbr>COMPLETE_<wbr>MAKER_<wbr>BUFFER</h3>
+					<div class="tsd-signature tsd-kind-icon">SWAP_<wbr>COMPLETE_<wbr>MAKER_<wbr>BUFFER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">5000</span><span class="tsd-signature-symbol"> = 5000</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L67">lib/swaps/Swaps.ts:67</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Additional time that the maker will wait for a swap to be completed before considering it timed
+								out. This exists because the maker starts timing sooner and ends timing later than the taker.
+								The maker starts timing as soon as it sends its SwapAccepted packet, but taker starts upon
+								receiving that packet some short time later. Furthermore, the taker stops the timer as soon as
+								it reveals the preimage and settles its incoming payment, whereas the maker doesn&#39;t stop until
+							it receives the preimage.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 					<a name="swap_complete_timeout" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> SWAP_<wbr>COMPLETE_<wbr>TIMEOUT</h3>
 					<div class="tsd-signature tsd-kind-icon">SWAP_<wbr>COMPLETE_<wbr>TIMEOUT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">35000</span><span class="tsd-signature-symbol"> = 35000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L55">lib/swaps/Swaps.ts:55</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L58">lib/swaps/Swaps.ts:58</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -428,7 +467,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L479">lib/swaps/Swaps.ts:479</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L486">lib/swaps/Swaps.ts:486</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -464,7 +503,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L284">lib/swaps/Swaps.ts:284</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L293">lib/swaps/Swaps.ts:293</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -532,7 +571,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L418">lib/swaps/Swaps.ts:418</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L427">lib/swaps/Swaps.ts:427</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -574,7 +613,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L177">lib/swaps/Swaps.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L194">lib/swaps/Swaps.ts:194</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -591,7 +630,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L227">lib/swaps/Swaps.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L236">lib/swaps/Swaps.ts:236</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -620,7 +659,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L1278">lib/swaps/Swaps.ts:1278</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L1422">lib/swaps/Swaps.ts:1422</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -633,13 +672,14 @@
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"swap.paid"</span>, swapSuccess<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.reputationevent.html#swapsuccess" class="tsd-signature-type">SwapSuccess</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"swap.failed"</span>, deal<span class="tsd-signature-symbol">: </span><a href="../modules/_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"swap.recovered"</span>, recoveredSwap<span class="tsd-signature-symbol">: </span><a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L27">lib/swaps/Swaps.ts:27</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L29">lib/swaps/Swaps.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -657,7 +697,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L28">lib/swaps/Swaps.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L30">lib/swaps/Swaps.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -667,6 +707,24 @@
 								</li>
 								<li>
 									<h5>deal: <a href="../modules/_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides EventEmitter.emit</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L31">lib/swaps/Swaps.ts:31</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"swap.recovered"</span></h5>
+								</li>
+								<li>
+									<h5>recoveredSwap: <a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -701,7 +759,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L363">lib/swaps/Swaps.ts:363</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L372">lib/swaps/Swaps.ts:372</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -733,7 +791,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L333">lib/swaps/Swaps.ts:333</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L342">lib/swaps/Swaps.ts:342</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,13 +827,13 @@
 					<a name="faildeal" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> fail<wbr>Deal</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">fail<wbr>Deal<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>deal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>completeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>createTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>destination<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>executeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">?: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCltvDelta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>phase<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapphase.html" class="tsd-signature-type">SwapPhase</a><span class="tsd-signature-symbol">; </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>proposedQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rPreimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>role<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapstate.html" class="tsd-signature-type">SwapState</a><span class="tsd-signature-symbol">; </span>takerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCltvDelta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerMaxTimeLock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerPubKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>failedCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>peer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a><span class="tsd-signature-symbol">; </span>reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fail<wbr>Deal<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>deal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>completeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>createTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>destination<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>executeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">?: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCltvDelta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>phase<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapphase.html" class="tsd-signature-type">SwapPhase</a><span class="tsd-signature-symbol">; </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>proposedQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rPreimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>role<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapstate.html" class="tsd-signature-type">SwapState</a><span class="tsd-signature-symbol">; </span>takerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCltvDelta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerMaxTimeLock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerPubKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>failedCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>paymentState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#succeeded" class="tsd-signature-type">Succeeded</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#failed" class="tsd-signature-type">Failed</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#pending" class="tsd-signature-type">Pending</a><span class="tsd-signature-symbol">; </span>peer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a><span class="tsd-signature-symbol">; </span>reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L1066">lib/swaps/Swaps.ts:1066</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L1150">lib/swaps/Swaps.ts:1150</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -786,7 +844,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>deal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>completeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>createTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>destination<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>executeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">?: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCltvDelta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>phase<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapphase.html" class="tsd-signature-type">SwapPhase</a><span class="tsd-signature-symbol">; </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>proposedQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rPreimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>role<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapstate.html" class="tsd-signature-type">SwapState</a><span class="tsd-signature-symbol">; </span>takerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCltvDelta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerMaxTimeLock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerPubKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>failedCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>peer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a><span class="tsd-signature-symbol">; </span>reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>deal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>completeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>createTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>destination<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>executeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">?: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCltvDelta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>phase<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapphase.html" class="tsd-signature-type">SwapPhase</a><span class="tsd-signature-symbol">; </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>proposedQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rPreimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>role<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapstate.html" class="tsd-signature-type">SwapState</a><span class="tsd-signature-symbol">; </span>takerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCltvDelta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerMaxTimeLock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerPubKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>failedCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>paymentState<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#succeeded" class="tsd-signature-type">Succeeded</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#failed" class="tsd-signature-type">Failed</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#pending" class="tsd-signature-type">Pending</a><span class="tsd-signature-symbol">; </span>peer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a><span class="tsd-signature-symbol">; </span>reqId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>deal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>completeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>createTime<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>destination<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>errorMessage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>executeTime<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>failureReason<span class="tsd-signature-symbol">?: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a><span class="tsd-signature-symbol">; </span>isBuy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>localId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCltvDelta<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>makerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>makerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>orderId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>pairId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>peerPubKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>phase<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapphase.html" class="tsd-signature-type">SwapPhase</a><span class="tsd-signature-symbol">; </span>price<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>proposedQuantity<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>quantity<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rPreimage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>role<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swaprole.html" class="tsd-signature-type">SwapRole</a><span class="tsd-signature-symbol">; </span>state<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapstate.html" class="tsd-signature-type">SwapState</a><span class="tsd-signature-symbol">; </span>takerAmount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCltvDelta<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerCurrency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerMaxTimeLock<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>takerPubKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>takerUnits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
@@ -827,7 +885,7 @@
 													<h5><span class="tsd-flag ts-flagOptional">Optional</span> execute<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
 													<div class="tsd-comment tsd-typography">
 														<div class="lead">
-															<p>The time when we began executing the swap by sending payment.</p>
+															<p>The time when we began executing the swap for an accepted deal.</p>
 														</div>
 													</div>
 												</li>
@@ -1031,6 +1089,9 @@
 											<h5>failure<wbr>Reason<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapfailurereason.html" class="tsd-signature-type">SwapFailureReason</a></h5>
 										</li>
 										<li class="tsd-parameter">
+											<h5>payment<wbr>State<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#succeeded" class="tsd-signature-type">Succeeded</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#failed" class="tsd-signature-type">Failed</a><span class="tsd-signature-symbol"> | </span><a href="../enums/_swaps_swapclient_.paymentstate.html#pending" class="tsd-signature-type">Pending</a></h5>
+										</li>
+										<li class="tsd-parameter">
 											<h5>peer<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="_p2p_peer_.peer.html" class="tsd-signature-type">Peer</a></h5>
 										</li>
 										<li class="tsd-parameter">
@@ -1053,7 +1114,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L280">lib/swaps/Swaps.ts:280</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L289">lib/swaps/Swaps.ts:289</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1105,10 +1166,42 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L271">lib/swaps/Swaps.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L280">lib/swaps/Swaps.ts:280</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="handlehtlcaccepted" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> handle<wbr>Htlc<wbr>Accepted</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Htlc<wbr>Accepted<span class="tsd-signature-symbol">(</span>swapClient<span class="tsd-signature-symbol">: </span><a href="_swaps_swapclient_.swapclient.html" class="tsd-signature-type">SwapClient</a>, rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, amount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L685">lib/swaps/Swaps.ts:685</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>swapClient: <a href="_swaps_swapclient_.swapclient.html" class="tsd-signature-type">SwapClient</a></h5>
+								</li>
+								<li>
+									<h5>rHash: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>amount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>currency: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1122,7 +1215,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L1007">lib/swaps/Swaps.ts:1007</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L1080">lib/swaps/Swaps.ts:1080</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1145,7 +1238,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L681">lib/swaps/Swaps.ts:681</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L736">lib/swaps/Swaps.ts:736</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1177,7 +1270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L1248">lib/swaps/Swaps.ts:1248</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L1387">lib/swaps/Swaps.ts:1387</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1200,7 +1293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L1052">lib/swaps/Swaps.ts:1052</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L1115">lib/swaps/Swaps.ts:1115</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1226,7 +1319,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L150">lib/swaps/Swaps.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L167">lib/swaps/Swaps.ts:167</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1332,13 +1425,14 @@
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"swap.paid"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>swapSuccess<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.reputationevent.html#swapsuccess" class="tsd-signature-type">SwapSuccess</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"swap.failed"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>deal<span class="tsd-signature-symbol">: </span><a href="../modules/_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
+						<li class="tsd-signature tsd-kind-icon">on<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"swap.recovered"</span>, listener<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>recoveredSwap<span class="tsd-signature-symbol">: </span><a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">this</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L25">lib/swaps/Swaps.ts:25</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L26">lib/swaps/Swaps.ts:26</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1374,7 +1468,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L26">lib/swaps/Swaps.ts:26</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L27">lib/swaps/Swaps.ts:27</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1395,6 +1489,42 @@
 													<ul class="tsd-parameters">
 														<li>
 															<h5>deal: <a href="../modules/_swaps_types_.html#swapdeal" class="tsd-signature-type">SwapDeal</a></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">this</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L28">lib/swaps/Swaps.ts:28</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>event: <span class="tsd-signature-type">"swap.recovered"</span></h5>
+								</li>
+								<li>
+									<h5>listener: <span class="tsd-signature-symbol">(</span>recoveredSwap<span class="tsd-signature-symbol">: </span><a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>recoveredSwap<span class="tsd-signature-symbol">: </span><a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>recoveredSwap: <a href="../modules/_db_types_.html#swapdealinstance" class="tsd-signature-type">SwapDealInstance</a></h5>
 														</li>
 													</ul>
 													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1463,7 +1593,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L264">lib/swaps/Swaps.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L273">lib/swaps/Swaps.ts:273</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1679,7 +1809,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L930">lib/swaps/Swaps.ts:930</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L985">lib/swaps/Swaps.ts:985</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1729,7 +1859,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L885">lib/swaps/Swaps.ts:885</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L940">lib/swaps/Swaps.ts:940</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1763,7 +1893,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L247">lib/swaps/Swaps.ts:247</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L256">lib/swaps/Swaps.ts:256</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1809,7 +1939,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L1182">lib/swaps/Swaps.ts:1182</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L1273">lib/swaps/Swaps.ts:1273</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1865,7 +1995,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L802">lib/swaps/Swaps.ts:802</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L857">lib/swaps/Swaps.ts:857</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1898,7 +2028,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L297">lib/swaps/Swaps.ts:297</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L306">lib/swaps/Swaps.ts:306</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1941,7 +2071,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L132">lib/swaps/Swaps.ts:132</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L149">lib/swaps/Swaps.ts:149</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2015,7 +2145,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L96">lib/swaps/Swaps.ts:96</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L113">lib/swaps/Swaps.ts:113</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2062,7 +2192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L111">lib/swaps/Swaps.ts:111</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L128">lib/swaps/Swaps.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2169,7 +2299,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L78">lib/swaps/Swaps.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L95">lib/swaps/Swaps.ts:95</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2206,7 +2336,7 @@
 					<div class="tsd-signature tsd-kind-icon">UNITS_<wbr>PER_<wbr>CURRENCY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L43">lib/swaps/Swaps.ts:43</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L46">lib/swaps/Swaps.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -2220,7 +2350,7 @@
 						<div class="tsd-signature tsd-kind-icon">BTC<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L44">lib/swaps/Swaps.ts:44</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L47">lib/swaps/Swaps.ts:47</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -2230,7 +2360,7 @@
 						<div class="tsd-signature tsd-kind-icon">DAI<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10 ** 10</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L49">lib/swaps/Swaps.ts:49</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L52">lib/swaps/Swaps.ts:52</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -2240,7 +2370,7 @@
 						<div class="tsd-signature tsd-kind-icon">ETH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10 ** 10</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L46">lib/swaps/Swaps.ts:46</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L49">lib/swaps/Swaps.ts:49</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -2250,7 +2380,7 @@
 						<div class="tsd-signature tsd-kind-icon">LTC<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L45">lib/swaps/Swaps.ts:45</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L48">lib/swaps/Swaps.ts:48</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -2260,7 +2390,7 @@
 						<div class="tsd-signature tsd-kind-icon">USDT<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10 ** 10</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L47">lib/swaps/Swaps.ts:47</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L50">lib/swaps/Swaps.ts:50</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -2270,7 +2400,7 @@
 						<div class="tsd-signature tsd-kind-icon">WETH<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10 ** 10</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L48">lib/swaps/Swaps.ts:48</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L51">lib/swaps/Swaps.ts:51</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -2280,7 +2410,7 @@
 						<div class="tsd-signature tsd-kind-icon">XUC<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 10 ** 10</span></div>
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/09d4befcd/lib/swaps/Swaps.ts#L50">lib/swaps/Swaps.ts:50</a></li>
+								<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/Swaps.ts#L53">lib/swaps/Swaps.ts:53</a></li>
 							</ul>
 						</aside>
 					</section>
@@ -2345,7 +2475,13 @@
 								<a href="_swaps_swaps_.swaps.html#sanity_swap_init_timeout" class="tsd-kind-icon">SANITY_<wbr>SWAP_<wbr>INIT_<wbr>TIMEOUT</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="_swaps_swaps_.swaps.html#swap_abuse_time_limit" class="tsd-kind-icon">SWAP_<wbr>ABUSE_<wbr>TIME_<wbr>LIMIT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 								<a href="_swaps_swaps_.swaps.html#swap_accept_timeout" class="tsd-kind-icon">SWAP_<wbr>ACCEPT_<wbr>TIMEOUT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="_swaps_swaps_.swaps.html#swap_complete_maker_buffer" class="tsd-kind-icon">SWAP_<wbr>COMPLETE_<wbr>MAKER_<wbr>BUFFER</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
 								<a href="_swaps_swaps_.swaps.html#swap_complete_timeout" class="tsd-kind-icon">SWAP_<wbr>COMPLETE_<wbr>TIMEOUT</a>
@@ -2400,6 +2536,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_swaps_swaps_.swaps.html#getpendingswaphashes" class="tsd-kind-icon">get<wbr>Pending<wbr>Swap<wbr>Hashes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_swaps_swaps_.swaps.html#handlehtlcaccepted" class="tsd-kind-icon">handle<wbr>Htlc<wbr>Accepted</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_swaps_swaps_.swaps.html#handleresolverequest" class="tsd-kind-icon">handle<wbr>Resolve<wbr>Request</a>
