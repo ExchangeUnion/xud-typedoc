@@ -107,6 +107,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_connextclient_connextclient_.connextclient.html#disable" class="tsd-kind-icon">disable</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_connextclient_connextclient_.connextclient.html#expectedincomingtransfers" class="tsd-kind-icon">expected<wbr>Incoming<wbr>Transfers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_connextclient_connextclient_.connextclient.html#finallock" class="tsd-kind-icon">final<wbr>Lock</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_connextclient_connextclient_.connextclient.html#getbalancepromises" class="tsd-kind-icon">get<wbr>Balance<wbr>Promises</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_connextclient_connextclient_.connextclient.html#host" class="tsd-kind-icon">host</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_connextclient_connextclient_.connextclient.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_connextclient_connextclient_.connextclient.html#outgoingtransferhashes" class="tsd-kind-icon">outgoing<wbr>Transfer<wbr>Hashes</a></li>
@@ -210,14 +211,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Connext<wbr>Client<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>disable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>webhookhost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>webhookport<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>currencyInstances<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">; </span>unitConverter<span class="tsd-signature-symbol">: </span><a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_connextclient_connextclient_.connextclient.html" class="tsd-signature-type">ConnextClient</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Connext<wbr>Client<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>disable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>webhookhost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>webhookport<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>currencyInstances<span class="tsd-signature-symbol">: </span><a href="../interfaces/_db_types_.currencyinstance.html" class="tsd-signature-type">CurrencyInstance</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">; </span>unitConverter<span class="tsd-signature-symbol">: </span><a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_connextclient_connextclient_.connextclient.html" class="tsd-signature-type">ConnextClient</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L109">lib/connextclient/ConnextClient.ts:109</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L111">lib/connextclient/ConnextClient.ts:111</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -228,7 +229,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>disable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>webhookhost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>webhookport<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>currencyInstances<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">; </span>unitConverter<span class="tsd-signature-symbol">: </span><a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a><span class="tsd-signature-symbol"> }</span></h5>
+									<h5>__namedParameters: <span class="tsd-signature-symbol">{ </span>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>disable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>webhookhost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>webhookport<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">; </span>currencyInstances<span class="tsd-signature-symbol">: </span><a href="../interfaces/_db_types_.currencyinstance.html" class="tsd-signature-type">CurrencyInstance</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a><span class="tsd-signature-symbol">; </span>unitConverter<span class="tsd-signature-symbol">: </span><a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a><span class="tsd-signature-symbol"> }</span></h5>
 									<ul class="tsd-parameters">
 										<li class="tsd-parameter">
 											<h5>config<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>disable<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">; </span>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>webhookhost<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>webhookport<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></h5>
@@ -251,7 +252,7 @@
 											</ul>
 										</li>
 										<li class="tsd-parameter">
-											<h5>currency<wbr>Instances<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-type">Instance</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>decimalPlaces<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>swapClient<span class="tsd-signature-symbol">: </span><a href="../enums/_constants_enums_.swapclienttype.html" class="tsd-signature-type">SwapClientType</a><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+											<h5>currency<wbr>Instances<span class="tsd-signature-symbol">: </span><a href="../interfaces/_db_types_.currencyinstance.html" class="tsd-signature-type">CurrencyInstance</a><span class="tsd-signature-symbol">[]</span></h5>
 										</li>
 										<li class="tsd-parameter">
 											<h5>logger<span class="tsd-signature-symbol">: </span><a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></h5>
@@ -275,7 +276,7 @@
 					<div class="tsd-signature tsd-kind-icon">_total<wbr>Outbound<wbr>Amount<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, number&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L109">lib/connextclient/ConnextClient.ts:109</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L111">lib/connextclient/ConnextClient.ts:111</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -285,7 +286,7 @@
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L92">lib/connextclient/ConnextClient.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L92">lib/connextclient/ConnextClient.ts:92</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -296,17 +297,17 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#disable">disable</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L96">lib/swaps/SwapClient.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L96">lib/swaps/SwapClient.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="expectedincomingtransfers" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> expected<wbr>Incoming<wbr>Transfers</h3>
-					<div class="tsd-signature tsd-kind-icon">expected<wbr>Incoming<wbr>Transfers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>expiry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, ExpectedIncomingTransfer&gt;()</span></div>
+					<div class="tsd-signature tsd-kind-icon">expected<wbr>Incoming<wbr>Transfers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>expiry<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>paymentId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>rHash<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>tokenAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>units<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, ExpectedIncomingTransfer&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L100">lib/connextclient/ConnextClient.ts:100</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L100">lib/connextclient/ConnextClient.ts:100</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -324,9 +325,24 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#finallock">finalLock</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L91">lib/connextclient/ConnextClient.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L91">lib/connextclient/ConnextClient.ts:91</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="getbalancepromises" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Balance<wbr>Promises</h3>
+					<div class="tsd-signature tsd-kind-icon">get<wbr>Balance<wbr>Promises<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>freeBalanceOffChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>freeBalanceOnChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, Promise&lt;ConnextBalanceResponse&gt;&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L110">lib/connextclient/ConnextClient.ts:110</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A map of currencies to promises representing balance requests.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
 					<a name="host" class="tsd-anchor"></a>
@@ -334,7 +350,7 @@
 					<div class="tsd-signature tsd-kind-icon">host<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L104">lib/connextclient/ConnextClient.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L104">lib/connextclient/ConnextClient.ts:104</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -345,7 +361,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#logger">logger</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L96">lib/swaps/SwapClient.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L96">lib/swaps/SwapClient.ts:96</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -355,7 +371,7 @@
 					<div class="tsd-signature tsd-kind-icon">outgoing<wbr>Transfer<wbr>Hashes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Set&lt;string&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L102">lib/connextclient/ConnextClient.ts:102</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L102">lib/connextclient/ConnextClient.ts:102</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -370,7 +386,7 @@
 					<div class="tsd-signature tsd-kind-icon">port<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L103">lib/connextclient/ConnextClient.ts:103</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L103">lib/connextclient/ConnextClient.ts:103</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -381,7 +397,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#reconnectiontimer">reconnectionTimer</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L88">lib/swaps/SwapClient.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L88">lib/swaps/SwapClient.ts:88</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -391,7 +407,7 @@
 					<div class="tsd-signature tsd-kind-icon">seed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L108">lib/connextclient/ConnextClient.ts:108</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L108">lib/connextclient/ConnextClient.ts:108</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -402,7 +418,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#status">status</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L87">lib/swaps/SwapClient.ts:87</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L87">lib/swaps/SwapClient.ts:87</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -412,7 +428,7 @@
 					<div class="tsd-signature tsd-kind-icon">token<wbr>Addresses<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, string&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L94">lib/connextclient/ConnextClient.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L94">lib/connextclient/ConnextClient.ts:94</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -428,7 +444,7 @@
 					<aside class="tsd-sources">
 						<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#type">type</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L90">lib/connextclient/ConnextClient.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L90">lib/connextclient/ConnextClient.ts:90</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -438,7 +454,7 @@
 					<div class="tsd-signature tsd-kind-icon">unit<wbr>Converter<span class="tsd-signature-symbol">:</span> <a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L107">lib/connextclient/ConnextClient.ts:107</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L107">lib/connextclient/ConnextClient.ts:107</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -448,7 +464,7 @@
 					<div class="tsd-signature tsd-kind-icon">webhookhost<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L106">lib/connextclient/ConnextClient.ts:106</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L106">lib/connextclient/ConnextClient.ts:106</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -458,7 +474,7 @@
 					<div class="tsd-signature tsd-kind-icon">webhookport<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L105">lib/connextclient/ConnextClient.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L105">lib/connextclient/ConnextClient.ts:105</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -469,7 +485,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#reconnect_interval">RECONNECT_INTERVAL</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L86">lib/swaps/SwapClient.ts:86</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L86">lib/swaps/SwapClient.ts:86</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -492,7 +508,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#label">label</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L139">lib/connextclient/ConnextClient.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L141">lib/connextclient/ConnextClient.ts:141</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -510,7 +526,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#minutesperblock">minutesPerBlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L135">lib/connextclient/ConnextClient.ts:135</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L137">lib/connextclient/ConnextClient.ts:137</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
@@ -531,7 +547,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#addinvoice">addInvoice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L370">lib/connextclient/ConnextClient.ts:370</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L373">lib/connextclient/ConnextClient.ts:373</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -614,7 +630,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#canroutetonode">canRouteToNode</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L446">lib/connextclient/ConnextClient.ts:446</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L466">lib/connextclient/ConnextClient.ts:466</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -632,7 +648,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#channelbalance">channelBalance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L501">lib/connextclient/ConnextClient.ts:501</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L521">lib/connextclient/ConnextClient.ts:521</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -656,7 +672,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#close">close</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L363">lib/swaps/SwapClient.ts:363</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L363">lib/swaps/SwapClient.ts:363</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -679,7 +695,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#closechannel">closeChannel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L582">lib/connextclient/ConnextClient.ts:582</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L621">lib/connextclient/ConnextClient.ts:621</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -714,7 +730,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#deposit">deposit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L566">lib/connextclient/ConnextClient.ts:566</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L598">lib/connextclient/ConnextClient.ts:598</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -731,7 +747,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L615">lib/connextclient/ConnextClient.ts:615</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L654">lib/connextclient/ConnextClient.ts:654</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -763,7 +779,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#disconnect">disconnect</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L626">lib/connextclient/ConnextClient.ts:626</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L665">lib/connextclient/ConnextClient.ts:665</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -790,7 +806,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L47">lib/connextclient/ConnextClient.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L47">lib/connextclient/ConnextClient.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -814,7 +830,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L48">lib/connextclient/ConnextClient.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L48">lib/connextclient/ConnextClient.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -832,7 +848,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L49">lib/connextclient/ConnextClient.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L49">lib/connextclient/ConnextClient.ts:49</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -847,7 +863,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L50">lib/connextclient/ConnextClient.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L50">lib/connextclient/ConnextClient.ts:50</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -865,7 +881,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#emit">emit</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L51">lib/connextclient/ConnextClient.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L51">lib/connextclient/ConnextClient.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -909,7 +925,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L602">lib/connextclient/ConnextClient.ts:602</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L641">lib/connextclient/ConnextClient.ts:641</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -931,13 +947,13 @@
 					<a name="getbalance" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Balance</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Balance<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>freeBalanceOffChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>freeBalanceOnChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Balance<span class="tsd-signature-symbol">(</span>currency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_connextclient_types_.html#connextbalanceresponse" class="tsd-signature-type">ConnextBalanceResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L559">lib/connextclient/ConnextClient.ts:559</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L579">lib/connextclient/ConnextClient.ts:579</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -946,7 +962,7 @@
 									<h5>currency: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>freeBalanceOffChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>freeBalanceOnChain<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_connextclient_types_.html#connextbalanceresponse" class="tsd-signature-type">ConnextBalanceResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -960,7 +976,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L495">lib/connextclient/ConnextClient.ts:495</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L515">lib/connextclient/ConnextClient.ts:515</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -982,7 +998,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L260">lib/connextclient/ConnextClient.ts:260</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L263">lib/connextclient/ConnextClient.ts:263</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1005,7 +1021,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L406">lib/connextclient/ConnextClient.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L426">lib/connextclient/ConnextClient.ts:426</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1032,7 +1048,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#getheight">getHeight</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L450">lib/connextclient/ConnextClient.ts:450</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L470">lib/connextclient/ConnextClient.ts:470</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1049,7 +1065,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L454">lib/connextclient/ConnextClient.ts:454</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L474">lib/connextclient/ConnextClient.ts:474</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/_connextclient_types_.html#connextinfo" class="tsd-signature-type">ConnextInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1085,7 +1101,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#getroute">getRoute</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L439">lib/connextclient/ConnextClient.ts:439</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L459">lib/connextclient/ConnextClient.ts:459</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>getTotalTimeLock<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1102,7 +1118,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L252">lib/connextclient/ConnextClient.ts:252</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L255">lib/connextclient/ConnextClient.ts:255</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1125,7 +1141,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L486">lib/connextclient/ConnextClient.ts:486</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L506">lib/connextclient/ConnextClient.ts:506</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1148,7 +1164,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#init">init</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L148">lib/swaps/SwapClient.ts:148</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L148">lib/swaps/SwapClient.ts:148</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1159,15 +1175,21 @@
 					<a name="initconnextclient" class="tsd-anchor"></a>
 					<h3>init<wbr>Connext<wbr>Client</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">init<wbr>Connext<wbr>Client<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>multisigAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>natsClusterId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>natsToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>nodeUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>signerAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>userIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>userPublicIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">init<wbr>Connext<wbr>Client<span class="tsd-signature-symbol">(</span>seedMnemonic<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>multisigAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>natsClusterId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>natsToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>nodeUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>signerAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>userIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>userPublicIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L197">lib/connextclient/ConnextClient.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L200">lib/connextclient/ConnextClient.ts:200</a></li>
 								</ul>
 							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>seedMnemonic: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{ </span>multisigAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>natsClusterId<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>natsToken<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>nodeUrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>signerAddress<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>userIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>userPublicIdentifier<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -1183,7 +1205,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#initspecific">initSpecific</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L143">lib/connextclient/ConnextClient.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L145">lib/connextclient/ConnextClient.ts:145</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -1200,7 +1222,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L192">lib/connextclient/ConnextClient.ts:192</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L195">lib/connextclient/ConnextClient.ts:195</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1229,7 +1251,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#isconnected">isConnected</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L334">lib/swaps/SwapClient.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L334">lib/swaps/SwapClient.ts:334</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1247,7 +1269,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#isdisabled">isDisabled</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L337">lib/swaps/SwapClient.ts:337</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L337">lib/swaps/SwapClient.ts:337</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1265,7 +1287,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#isdisconnected">isDisconnected</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L349">lib/swaps/SwapClient.ts:349</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L349">lib/swaps/SwapClient.ts:349</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1283,7 +1305,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#ismisconfigured">isMisconfigured</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L340">lib/swaps/SwapClient.ts:340</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L340">lib/swaps/SwapClient.ts:340</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1301,7 +1323,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#isnotinitialized">isNotInitialized</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L355">lib/swaps/SwapClient.ts:355</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L355">lib/swaps/SwapClient.ts:355</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1319,7 +1341,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#isoperational">isOperational</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L346">lib/swaps/SwapClient.ts:346</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L346">lib/swaps/SwapClient.ts:346</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1342,7 +1364,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#isoutofsync">isOutOfSync</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L358">lib/swaps/SwapClient.ts:358</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L358">lib/swaps/SwapClient.ts:358</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1360,7 +1382,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#iswaitingunlock">isWaitingUnlock</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L352">lib/swaps/SwapClient.ts:352</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L352">lib/swaps/SwapClient.ts:352</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -1426,7 +1448,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#lookuppayment">lookupPayment</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L412">lib/connextclient/ConnextClient.ts:412</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L432">lib/connextclient/ConnextClient.ts:432</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1453,7 +1475,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#maxchannelinboundamount">maxChannelInboundAmount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L235">lib/connextclient/ConnextClient.ts:235</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L238">lib/connextclient/ConnextClient.ts:238</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1477,7 +1499,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#maxchanneloutboundamount">maxChannelOutboundAmount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L231">lib/connextclient/ConnextClient.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L234">lib/connextclient/ConnextClient.ts:234</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1549,7 +1571,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L42">lib/connextclient/ConnextClient.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L42">lib/connextclient/ConnextClient.ts:42</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1585,7 +1607,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L43">lib/connextclient/ConnextClient.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L43">lib/connextclient/ConnextClient.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1621,7 +1643,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L44">lib/connextclient/ConnextClient.ts:44</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L44">lib/connextclient/ConnextClient.ts:44</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1663,7 +1685,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L45">lib/connextclient/ConnextClient.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L45">lib/connextclient/ConnextClient.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1707,7 +1729,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L147">lib/connextclient/ConnextClient.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L149">lib/connextclient/ConnextClient.ts:149</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1731,7 +1753,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L46">lib/connextclient/ConnextClient.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L46">lib/connextclient/ConnextClient.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1770,7 +1792,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#openchannel">openChannel</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L571">lib/connextclient/ConnextClient.ts:571</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L603">lib/connextclient/ConnextClient.ts:603</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1940,7 +1962,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#removeinvoice">removeInvoice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L402">lib/connextclient/ConnextClient.ts:402</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L406">lib/connextclient/ConnextClient.ts:406</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2009,7 +2031,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#sendpayment">sendPayment</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L315">lib/connextclient/ConnextClient.ts:315</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L318">lib/connextclient/ConnextClient.ts:318</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2032,7 +2054,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L636">lib/connextclient/ConnextClient.ts:636</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L675">lib/connextclient/ConnextClient.ts:675</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2082,7 +2104,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#sendsmallestamount">sendSmallestAmount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L298">lib/connextclient/ConnextClient.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L301">lib/connextclient/ConnextClient.ts:301</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2112,7 +2134,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#setconnected">setConnected</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L175">lib/swaps/SwapClient.ts:175</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L175">lib/swaps/SwapClient.ts:175</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2162,7 +2184,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L185">lib/connextclient/ConnextClient.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L188">lib/connextclient/ConnextClient.ts:188</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2186,7 +2208,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#setstatus">setStatus</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L186">lib/swaps/SwapClient.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L186">lib/swaps/SwapClient.ts:186</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2203,13 +2225,13 @@
 					<a name="settokenaddresses" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> set<wbr>Token<wbr>Addresses</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">set<wbr>Token<wbr>Addresses<span class="tsd-signature-symbol">(</span>currencyInstances<span class="tsd-signature-symbol">: </span><a href="../modules/_db_types_.html#currencyinstance" class="tsd-signature-type">CurrencyInstance</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Token<wbr>Addresses<span class="tsd-signature-symbol">(</span>currencyInstances<span class="tsd-signature-symbol">: </span><a href="../interfaces/_db_types_.currencyinstance.html" class="tsd-signature-type">CurrencyInstance</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L219">lib/connextclient/ConnextClient.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L222">lib/connextclient/ConnextClient.ts:222</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2220,7 +2242,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>currencyInstances: <a href="../modules/_db_types_.html#currencyinstance" class="tsd-signature-type">CurrencyInstance</a><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>currencyInstances: <a href="../interfaces/_db_types_.currencyinstance.html" class="tsd-signature-type">CurrencyInstance</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -2238,7 +2260,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#settleinvoice">settleInvoice</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L393">lib/connextclient/ConnextClient.ts:393</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L396">lib/connextclient/ConnextClient.ts:396</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2272,7 +2294,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L209">lib/connextclient/ConnextClient.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L212">lib/connextclient/ConnextClient.ts:212</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2289,7 +2311,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L202">lib/connextclient/ConnextClient.ts:202</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L205">lib/connextclient/ConnextClient.ts:205</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2307,7 +2329,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#totaloutboundamount">totalOutboundAmount</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L227">lib/connextclient/ConnextClient.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L230">lib/connextclient/ConnextClient.ts:230</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2331,7 +2353,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#tradinglimits">tradingLimits</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L523">lib/connextclient/ConnextClient.ts:523</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L543">lib/connextclient/ConnextClient.ts:543</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -2355,7 +2377,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#updatecapacity">updateCapacity</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L240">lib/connextclient/ConnextClient.ts:240</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L243">lib/connextclient/ConnextClient.ts:243</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2373,7 +2395,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#verifyconnection">verifyConnection</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L273">lib/connextclient/ConnextClient.ts:273</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L276">lib/connextclient/ConnextClient.ts:276</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2391,7 +2413,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#verifyconnectionwithtimeout">verifyConnectionWithTimeout</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/swaps/SwapClient.ts#L131">lib/swaps/SwapClient.ts:131</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapClient.ts#L131">lib/swaps/SwapClient.ts:131</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -2409,7 +2431,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_swaps_swapclient_.swapclient.html">SwapClient</a>.<a href="_swaps_swapclient_.swapclient.html#walletbalance">walletBalance</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/13da250/lib/connextclient/ConnextClient.ts#L534">lib/connextclient/ConnextClient.ts:534</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/connextclient/ConnextClient.ts#L554">lib/connextclient/ConnextClient.ts:554</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -2464,6 +2486,9 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
 								<a href="_connextclient_connextclient_.connextclient.html#finallock" class="tsd-kind-icon">final<wbr>Lock</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_connextclient_connextclient_.connextclient.html#getbalancepromises" class="tsd-kind-icon">get<wbr>Balance<wbr>Promises</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_connextclient_connextclient_.connextclient.html#host" class="tsd-kind-icon">host</a>
