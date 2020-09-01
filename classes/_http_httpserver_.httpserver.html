@@ -99,12 +99,10 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_http_httpserver_.httpserver.html#close" class="tsd-kind-icon">close</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_http_httpserver_.httpserver.html#incomingtransfer" class="tsd-kind-icon">incoming<wbr>Transfer</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_http_httpserver_.httpserver.html#listen" class="tsd-kind-icon">listen</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_http_httpserver_.httpserver.html#providepreimage" class="tsd-kind-icon">provide<wbr>Preimage</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_http_httpserver_.httpserver.html#processrequest" class="tsd-kind-icon">process<wbr>Request</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_http_httpserver_.httpserver.html#reqtojson" class="tsd-kind-icon">req<wbr>ToJson</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_http_httpserver_.httpserver.html#requestlistener" class="tsd-kind-icon">request<wbr>Listener</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_http_httpserver_.httpserver.html#resolveraidenhandler" class="tsd-kind-icon">resolve<wbr>Raiden<wbr>Handler</a></li>
 							</ul>
 						</section>
 					</div>
@@ -122,7 +120,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L10">lib/http/HttpServer.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L8">lib/http/HttpServer.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -147,7 +145,7 @@
 					<div class="tsd-signature tsd-kind-icon">http<wbr>Service<span class="tsd-signature-symbol">:</span> <a href="_http_httpservice_.httpservice.html" class="tsd-signature-type">HttpService</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L10">lib/http/HttpServer.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L8">lib/http/HttpServer.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -157,7 +155,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L12">lib/http/HttpServer.ts:12</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L10">lib/http/HttpServer.ts:10</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -167,7 +165,7 @@
 					<div class="tsd-signature tsd-kind-icon">server<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Server</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L9">lib/http/HttpServer.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L7">lib/http/HttpServer.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -184,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L191">lib/http/HttpServer.ts:191</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L119">lib/http/HttpServer.ts:119</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -192,32 +190,6 @@
 									<p>Stops listening for requests.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="incomingtransfer" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> incoming<wbr>Transfer</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">incoming<wbr>Transfer<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerResponse</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L66">lib/http/HttpServer.ts:66</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>req: <span class="tsd-signature-type">IncomingMessage</span></h5>
-								</li>
-								<li>
-									<h5>res: <span class="tsd-signature-type">ServerResponse</span></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
@@ -232,7 +204,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L174">lib/http/HttpServer.ts:174</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L102">lib/http/HttpServer.ts:102</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -254,16 +226,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="providepreimage" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> provide<wbr>Preimage</h3>
+					<a name="processrequest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> process<wbr>Request</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">provide<wbr>Preimage<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerResponse</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Request<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerResponse</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L94">lib/http/HttpServer.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L15">lib/http/HttpServer.ts:15</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -289,7 +261,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L146">lib/http/HttpServer.ts:146</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L74">lib/http/HttpServer.ts:74</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -312,33 +284,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L122">lib/http/HttpServer.ts:122</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>req: <span class="tsd-signature-type">IncomingMessage</span></h5>
-								</li>
-								<li>
-									<h5>res: <span class="tsd-signature-type">ServerResponse</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
-					<a name="resolveraidenhandler" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> resolve<wbr>Raiden<wbr>Handler</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">resolve<wbr>Raiden<wbr>Handler<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IncomingMessage</span>, res<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">ServerResponse</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/http/HttpServer.ts#L17">lib/http/HttpServer.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/http/HttpServer.ts#L53">lib/http/HttpServer.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -389,23 +335,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_http_httpserver_.httpserver.html#close" class="tsd-kind-icon">close</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_http_httpserver_.httpserver.html#incomingtransfer" class="tsd-kind-icon">incoming<wbr>Transfer</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_http_httpserver_.httpserver.html#listen" class="tsd-kind-icon">listen</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_http_httpserver_.httpserver.html#providepreimage" class="tsd-kind-icon">provide<wbr>Preimage</a>
+								<a href="_http_httpserver_.httpserver.html#processrequest" class="tsd-kind-icon">process<wbr>Request</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_http_httpserver_.httpserver.html#reqtojson" class="tsd-kind-icon">req<wbr>ToJson</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="_http_httpserver_.httpserver.html#requestlistener" class="tsd-kind-icon">request<wbr>Listener</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
-								<a href="_http_httpserver_.httpserver.html#resolveraidenhandler" class="tsd-kind-icon">resolve<wbr>Raiden<wbr>Handler</a>
 							</li>
 						</ul>
 					</li>

@@ -107,7 +107,7 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swaprecovery_.swaprecovery.html#pendingswaps" class="tsd-kind-icon">pending<wbr>Swaps</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swaprecovery_.swaprecovery.html#pendingswapstimer" class="tsd-kind-icon">pending<wbr>Swaps<wbr>Timer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swaprecovery_.swaprecovery.html#swapclientmanager" class="tsd-kind-icon">swap<wbr>Client<wbr>Manager</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="_swaps_swaprecovery_.swaprecovery.html#pending_swap_recheck_interval" class="tsd-kind-icon">PENDING_<wbr>SWAP_<wbr>RECHECK_<wbr>INTERVAL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="_swaps_swaprecovery_.swaprecovery.html#pending_swap_recheck_interval" class="tsd-kind-icon">PENDING_<wbr>SWAP_<wbr>RECHECK_<wbr>INTERVAL</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_swaps_swaprecovery_.swaprecovery.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_swaps_swaprecovery_.swaprecovery.html#errormonitor" class="tsd-kind-icon">error<wbr>Monitor</a></li>
 							</ul>
@@ -157,9 +157,14 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_backup_backup_.backup.html">Backup</a>.<a href="_backup_backup_.backup.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L23">lib/swaps/SwapRecovery.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L23">lib/swaps/SwapRecovery.ts:23</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The time in milliseconds between checks on the status of pending swaps.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
@@ -182,7 +187,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <a href="_logger_.logger.html" class="tsd-signature-type">Logger</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L25">lib/swaps/SwapRecovery.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L26">lib/swaps/SwapRecovery.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -192,7 +197,7 @@
 					<div class="tsd-signature tsd-kind-icon">pending<wbr>Swaps<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../interfaces/_db_types_.swapdealinstance.html" class="tsd-signature-type">SwapDealInstance</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L20">lib/swaps/SwapRecovery.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L22">lib/swaps/SwapRecovery.ts:22</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -207,7 +212,7 @@
 					<div class="tsd-signature tsd-kind-icon">pending<wbr>Swaps<wbr>Timer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">NodeJS.Timeout</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L21">lib/swaps/SwapRecovery.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L23">lib/swaps/SwapRecovery.ts:23</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -217,24 +222,19 @@
 					<div class="tsd-signature tsd-kind-icon">swap<wbr>Client<wbr>Manager<span class="tsd-signature-symbol">:</span> <a href="_swaps_swapclientmanager_.swapclientmanager.html" class="tsd-signature-type">SwapClientManager</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L25">lib/swaps/SwapRecovery.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L26">lib/swaps/SwapRecovery.ts:26</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="pending_swap_recheck_interval" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> PENDING_<wbr>SWAP_<wbr>RECHECK_<wbr>INTERVAL</h3>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> PENDING_<wbr>SWAP_<wbr>RECHECK_<wbr>INTERVAL</h3>
 					<div class="tsd-signature tsd-kind-icon">PENDING_<wbr>SWAP_<wbr>RECHECK_<wbr>INTERVAL<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">300000</span><span class="tsd-signature-symbol"> = 300000</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L23">lib/swaps/SwapRecovery.ts:23</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L19">lib/swaps/SwapRecovery.ts:19</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The time in milliseconds between checks on the status of pending swaps.</p>
-						</div>
-					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 					<a name="defaultmaxlisteners" class="tsd-anchor"></a>
@@ -326,7 +326,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L29">lib/swaps/SwapRecovery.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L30">lib/swaps/SwapRecovery.ts:30</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -343,7 +343,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L103">lib/swaps/SwapRecovery.ts:103</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L104">lib/swaps/SwapRecovery.ts:104</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L46">lib/swaps/SwapRecovery.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L47">lib/swaps/SwapRecovery.ts:47</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -390,7 +390,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L73">lib/swaps/SwapRecovery.ts:73</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L74">lib/swaps/SwapRecovery.ts:74</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -420,7 +420,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L11">lib/swaps/SwapRecovery.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L11">lib/swaps/SwapRecovery.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -464,7 +464,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L50">lib/swaps/SwapRecovery.ts:50</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L51">lib/swaps/SwapRecovery.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -508,7 +508,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L42">lib/swaps/SwapRecovery.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L43">lib/swaps/SwapRecovery.ts:43</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -619,7 +619,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L10">lib/swaps/SwapRecovery.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L10">lib/swaps/SwapRecovery.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -822,7 +822,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L153">lib/swaps/SwapRecovery.ts:153</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L154">lib/swaps/SwapRecovery.ts:154</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -944,7 +944,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/29ffcf3/lib/swaps/SwapRecovery.ts#L35">lib/swaps/SwapRecovery.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/aa3027a6/lib/swaps/SwapRecovery.ts#L36">lib/swaps/SwapRecovery.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1020,7 +1020,7 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_swaps_swaprecovery_.swaprecovery.html#swapclientmanager" class="tsd-kind-icon">swap<wbr>Client<wbr>Manager</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="_swaps_swaprecovery_.swaprecovery.html#pending_swap_recheck_interval" class="tsd-kind-icon">PENDING_<wbr>SWAP_<wbr>RECHECK_<wbr>INTERVAL</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
@@ -1140,6 +1140,9 @@
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
 			</ul>
 		</div>
 	</div>
