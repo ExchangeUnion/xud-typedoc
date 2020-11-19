@@ -81,6 +81,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_seedutil_.html#decipher" class="tsd-kind-icon">decipher</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_seedutil_.html#derivechild" class="tsd-kind-icon">derive<wbr>Child</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_seedutil_.html#encipher" class="tsd-kind-icon">encipher</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_seedutil_.html#generate" class="tsd-kind-icon">generate</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_utils_seedutil_.html#keystore" class="tsd-kind-icon">keystore</a></li>
@@ -97,7 +98,7 @@
 					<div class="tsd-signature tsd-kind-icon">exec<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">__promisify__</span><span class="tsd-signature-symbol"> = promisify(childProcessExec)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1882adef/lib/utils/seedutil.ts#L9">lib/utils/seedutil.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/utils/seedutil.ts#L9">lib/utils/seedutil.ts:9</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -112,7 +113,7 @@
 					<div class="tsd-signature tsd-kind-icon">seedutil<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = path.join(__dirname, &#x27;..&#x27;, &#x27;..&#x27;, &#x27;seedutil&#x27;, &#x27;seedutil&#x27;)</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1882adef/lib/utils/seedutil.ts#L6">lib/utils/seedutil.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/utils/seedutil.ts#L6">lib/utils/seedutil.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -129,7 +130,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1882adef/lib/utils/seedutil.ts#L45">lib/utils/seedutil.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/utils/seedutil.ts#L46">lib/utils/seedutil.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -143,33 +144,59 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="encipher" class="tsd-anchor"></a>
-					<h3>encipher</h3>
+					<a name="derivechild" class="tsd-anchor"></a>
+					<h3>derive<wbr>Child</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">encipher<span class="tsd-signature-symbol">(</span>mnemonic<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">derive<wbr>Child<span class="tsd-signature-symbol">(</span>mnemonic<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, clientType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1882adef/lib/utils/seedutil.ts#L34">lib/utils/seedutil.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/utils/seedutil.ts#L57">lib/utils/seedutil.ts:57</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mnemonic: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>clientType: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="encipher" class="tsd-anchor"></a>
+					<h3>encipher</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">encipher<span class="tsd-signature-symbol">(</span>decipheredSeedHex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/utils/seedutil.ts#L34">lib/utils/seedutil.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Executes the seedutil tool to encipher a seed mnemonic into bytes.</p>
+									<p>Executes the seedutil tool to encipher a deciphered seed hex string into a mnemonic</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>mnemonic: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+									<h5>decipheredSeedHex: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>the 24 seed recovery mnemonic</p>
+										<p>the deciphered seed in hex format</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Buffer</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -183,7 +210,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1882adef/lib/utils/seedutil.ts#L56">lib/utils/seedutil.ts:56</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/utils/seedutil.ts#L69">lib/utils/seedutil.ts:69</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -200,7 +227,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1882adef/lib/utils/seedutil.ts#L18">lib/utils/seedutil.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/utils/seedutil.ts#L18">lib/utils/seedutil.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -257,6 +284,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_utils_seedutil_.html#decipher" class="tsd-kind-icon">decipher</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="_utils_seedutil_.html#derivechild" class="tsd-kind-icon">derive<wbr>Child</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
 						<a href="_utils_seedutil_.html#encipher" class="tsd-kind-icon">encipher</a>

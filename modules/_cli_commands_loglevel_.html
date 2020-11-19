@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;cli/commands/executeswap&quot; | xud</title>
+	<title>&quot;cli/commands/loglevel&quot; | xud</title>
 	<meta name="description" content="Documentation for xud">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="_cli_commands_executeswap_.html">&quot;cli/commands/executeswap&quot;</a>
+					<a href="_cli_commands_loglevel_.html">&quot;cli/commands/loglevel&quot;</a>
 				</li>
 			</ul>
-			<h1>Module &quot;cli/commands/executeswap&quot;</h1>
+			<h1>Module &quot;cli/commands/loglevel&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,16 +73,15 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_executeswap_.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_executeswap_.html#describe" class="tsd-kind-icon">describe</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_loglevel_.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_loglevel_.html#describe" class="tsd-kind-icon">describe</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_cli_commands_executeswap_.html#builder" class="tsd-kind-icon">builder</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_cli_commands_executeswap_.html#displayswapsuccess" class="tsd-kind-icon">display<wbr>Swap<wbr>Success</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_cli_commands_executeswap_.html#handler" class="tsd-kind-icon">handler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_cli_commands_loglevel_.html#builder" class="tsd-kind-icon">builder</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_cli_commands_loglevel_.html#handler" class="tsd-kind-icon">handler</a></li>
 							</ul>
 						</section>
 					</div>
@@ -93,20 +92,20 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="command" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"executeswap &lt;pair_id&gt; &lt;order_id&gt; [quantity]"</span><span class="tsd-signature-symbol"> = &quot;executeswap &lt;pair_id&gt; &lt;order_id&gt; [quantity]&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"loglevel &lt;level&gt;"</span><span class="tsd-signature-symbol"> = &quot;loglevel &lt;level&gt;&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/executeswap.ts#L18">lib/cli/commands/executeswap.ts:18</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/loglevel.ts#L6">lib/cli/commands/loglevel.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="describe" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> describe</h3>
-					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> = undefined</span></div>
+					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"set the logging level for xud"</span><span class="tsd-signature-symbol"> = &quot;set the logging level for xud&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/executeswap.ts#L21">lib/cli/commands/executeswap.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/loglevel.ts#L8">lib/cli/commands/loglevel.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -117,13 +116,13 @@
 					<a name="builder" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> builder</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">builder<span class="tsd-signature-symbol">(</span>argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Argv</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Argv</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">builder<span class="tsd-signature-symbol">(</span>argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Argv</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Argv</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/executeswap.ts#L23">lib/cli/commands/executeswap.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/loglevel.ts#L10">lib/cli/commands/loglevel.ts:10</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -132,30 +131,7 @@
 									<h5>argv: <span class="tsd-signature-type">Argv</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Argv</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-					<a name="displayswapsuccess" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> display<wbr>Swap<wbr>Success</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<li class="tsd-signature tsd-kind-icon">display<wbr>Swap<wbr>Success<span class="tsd-signature-symbol">(</span>swap<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SwapSuccess.AsObject</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/executeswap.ts#L8">lib/cli/commands/executeswap.ts:8</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>swap: <span class="tsd-signature-type">SwapSuccess.AsObject</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Argv</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -169,7 +145,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/executeswap.ts#L35">lib/cli/commands/executeswap.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/cli/commands/loglevel.ts#L23">lib/cli/commands/loglevel.ts:23</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -191,26 +167,23 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="_cli_commands_executeswap_.html">&quot;cli/commands/executeswap&quot;</a>
+						<a href="_cli_commands_loglevel_.html">&quot;cli/commands/loglevel&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="_cli_commands_executeswap_.html#command" class="tsd-kind-icon">command</a>
+						<a href="_cli_commands_loglevel_.html#command" class="tsd-kind-icon">command</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="_cli_commands_executeswap_.html#describe" class="tsd-kind-icon">describe</a>
+						<a href="_cli_commands_loglevel_.html#describe" class="tsd-kind-icon">describe</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_cli_commands_executeswap_.html#builder" class="tsd-kind-icon">builder</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_cli_commands_executeswap_.html#displayswapsuccess" class="tsd-kind-icon">display<wbr>Swap<wbr>Success</a>
+						<a href="_cli_commands_loglevel_.html#builder" class="tsd-kind-icon">builder</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_cli_commands_executeswap_.html#handler" class="tsd-kind-icon">handler</a>
+						<a href="_cli_commands_loglevel_.html#handler" class="tsd-kind-icon">handler</a>
 					</li>
 				</ul>
 			</nav>

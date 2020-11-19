@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Owner | xud</title>
+	<title>LevelPriority | xud</title>
 	<meta name="description" content="Documentation for xud">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_constants_enums_.html">&quot;constants/enums&quot;</a>
+					<a href="../modules/_logger_.html">&quot;Logger&quot;</a>
 				</li>
 				<li>
-					<a href="_constants_enums_.owner.html">Owner</a>
+					<a href="_logger_.levelpriority.html">LevelPriority</a>
 				</li>
 			</ul>
-			<h1>Enumeration Owner</h1>
+			<h1>Enumeration LevelPriority</h1>
 		</div>
 	</div>
 </header>
@@ -76,9 +76,13 @@
 						<section class="tsd-index-section ">
 							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.owner.html#both" class="tsd-kind-icon">Both</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.owner.html#own" class="tsd-kind-icon">Own</a></li>
-								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_constants_enums_.owner.html#peer" class="tsd-kind-icon">Peer</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_logger_.levelpriority.html#alert" class="tsd-kind-icon">alert</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_logger_.levelpriority.html#debug" class="tsd-kind-icon">debug</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_logger_.levelpriority.html#error" class="tsd-kind-icon">error</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_logger_.levelpriority.html#info" class="tsd-kind-icon">info</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_logger_.levelpriority.html#trace" class="tsd-kind-icon">trace</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_logger_.levelpriority.html#verbose" class="tsd-kind-icon">verbose</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_logger_.levelpriority.html#warn" class="tsd-kind-icon">warn</a></li>
 							</ul>
 						</section>
 					</div>
@@ -87,32 +91,72 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Enumeration members</h2>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="both" class="tsd-anchor"></a>
-					<h3>Both</h3>
-					<div class="tsd-signature tsd-kind-icon">Both<span class="tsd-signature-symbol">:</span></div>
+					<a name="alert" class="tsd-anchor"></a>
+					<h3>alert</h3>
+					<div class="tsd-signature tsd-kind-icon">alert<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/constants/enums.ts#L19">lib/constants/enums.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/Logger.ts#L27">lib/Logger.ts:27</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="own" class="tsd-anchor"></a>
-					<h3>Own</h3>
-					<div class="tsd-signature tsd-kind-icon">Own<span class="tsd-signature-symbol">:</span></div>
+					<a name="debug" class="tsd-anchor"></a>
+					<h3>debug</h3>
+					<div class="tsd-signature tsd-kind-icon">debug<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/constants/enums.ts#L20">lib/constants/enums.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/Logger.ts#L32">lib/Logger.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
-					<a name="peer" class="tsd-anchor"></a>
-					<h3>Peer</h3>
-					<div class="tsd-signature tsd-kind-icon">Peer<span class="tsd-signature-symbol">:</span></div>
+					<a name="error" class="tsd-anchor"></a>
+					<h3>error</h3>
+					<div class="tsd-signature tsd-kind-icon">error<span class="tsd-signature-symbol">:</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/constants/enums.ts#L21">lib/constants/enums.ts:21</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/Logger.ts#L28">lib/Logger.ts:28</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="info" class="tsd-anchor"></a>
+					<h3>info</h3>
+					<div class="tsd-signature tsd-kind-icon">info<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/Logger.ts#L30">lib/Logger.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="trace" class="tsd-anchor"></a>
+					<h3>trace</h3>
+					<div class="tsd-signature tsd-kind-icon">trace<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/Logger.ts#L33">lib/Logger.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="verbose" class="tsd-anchor"></a>
+					<h3>verbose</h3>
+					<div class="tsd-signature tsd-kind-icon">verbose<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/Logger.ts#L31">lib/Logger.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="warn" class="tsd-anchor"></a>
+					<h3>warn</h3>
+					<div class="tsd-signature tsd-kind-icon">warn<span class="tsd-signature-symbol">:</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/78773d89/lib/Logger.ts#L29">lib/Logger.ts:29</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -125,65 +169,56 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="../modules/_constants_enums_.html">&quot;constants/enums&quot;</a>
+						<a href="../modules/_logger_.html">&quot;<wbr>Logger&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.disconnectionreason.html" class="tsd-kind-icon">Disconnection<wbr>Reason</a>
+						<a href="_logger_.context.html" class="tsd-kind-icon">Context</a>
 					</li>
 					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.orderside.html" class="tsd-kind-icon">Order<wbr>Side</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.orderingdirection.html" class="tsd-kind-icon">Ordering<wbr>Direction</a>
+						<a href="_logger_.level.html" class="tsd-kind-icon">Level</a>
 					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.owner.html" class="tsd-kind-icon">Owner</a>
+						<a href="_logger_.levelpriority.html" class="tsd-kind-icon">Level<wbr>Priority</a>
 						<ul>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_enums_.owner.html#both" class="tsd-kind-icon">Both</a>
+								<a href="_logger_.levelpriority.html#alert" class="tsd-kind-icon">alert</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_enums_.owner.html#own" class="tsd-kind-icon">Own</a>
+								<a href="_logger_.levelpriority.html#debug" class="tsd-kind-icon">debug</a>
 							</li>
 							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
-								<a href="_constants_enums_.owner.html#peer" class="tsd-kind-icon">Peer</a>
+								<a href="_logger_.levelpriority.html#error" class="tsd-kind-icon">error</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_logger_.levelpriority.html#info" class="tsd-kind-icon">info</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_logger_.levelpriority.html#trace" class="tsd-kind-icon">trace</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_logger_.levelpriority.html#verbose" class="tsd-kind-icon">verbose</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_logger_.levelpriority.html#warn" class="tsd-kind-icon">warn</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.reputationevent.html" class="tsd-kind-icon">Reputation<wbr>Event</a>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/_logger_.logger.html" class="tsd-kind-icon">Logger</a>
 					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.swapclienttype.html" class="tsd-kind-icon">Swap<wbr>Client<wbr>Type</a>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="../modules/_logger_.html#loggers" class="tsd-kind-icon">Loggers</a>
 					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.swapfailurereason.html" class="tsd-kind-icon">Swap<wbr>Failure<wbr>Reason</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.swapphase.html" class="tsd-kind-icon">Swap<wbr>Phase</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.swaprole.html" class="tsd-kind-icon">Swap<wbr>Role</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.swapstate.html" class="tsd-kind-icon">Swap<wbr>State</a>
-					</li>
-					<li class=" tsd-kind-enum tsd-parent-kind-module">
-						<a href="_constants_enums_.xunetwork.html" class="tsd-kind-icon">Xu<wbr>Network</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
-						<a href="../modules/_constants_enums_.html#magicvalsxunetwork" class="tsd-kind-icon">magic<wbr>Vals<wbr>XuNetwork</a>
-					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-module">
-						<a href="../modules/_constants_enums_.html#xunetworkmagicvals" class="tsd-kind-icon">xu<wbr>Network<wbr>Magic<wbr>Vals</a>
+					<li class=" tsd-kind-object-literal tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/_logger_.html#levelpriorities" class="tsd-kind-icon">Level<wbr>Priorities</a>
 					</li>
 				</ul>
 			</nav>
