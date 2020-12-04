@@ -100,10 +100,10 @@
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swapclientmanager_.swapclientmanager.html#inboundreservedamounts" class="tsd-kind-icon">inbound<wbr>Reserved<wbr>Amounts</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swapclientmanager_.swapclientmanager.html#loggers" class="tsd-kind-icon">loggers</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_swaps_swapclientmanager_.swapclientmanager.html#misconfiguredclients" class="tsd-kind-icon">misconfigured<wbr>Clients</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swapclientmanager_.swapclientmanager.html#models" class="tsd-kind-icon">models</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swapclientmanager_.swapclientmanager.html#outboundreservedamounts" class="tsd-kind-icon">outbound<wbr>Reserved<wbr>Amounts</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_swaps_swapclientmanager_.swapclientmanager.html#swapclients" class="tsd-kind-icon">swap<wbr>Clients</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swapclientmanager_.swapclientmanager.html#unitconverter" class="tsd-kind-icon">unit<wbr>Converter</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_swaps_swapclientmanager_.swapclientmanager.html#walletpassword" class="tsd-kind-icon">wallet<wbr>Password</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_swaps_swapclientmanager_.swapclientmanager.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_swaps_swapclientmanager_.swapclientmanager.html#errormonitor" class="tsd-kind-icon">error<wbr>Monitor</a></li>
 							</ul>
@@ -117,6 +117,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swapclientmanager_.swapclientmanager.html#addoutboundreservedamount" class="tsd-kind-icon">add<wbr>Outbound<wbr>Reserved<wbr>Amount</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_swaps_swapclientmanager_.swapclientmanager.html#bind" class="tsd-kind-icon">bind</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swapclientmanager_.swapclientmanager.html#canroutetopeer" class="tsd-kind-icon">can<wbr>Route<wbr>ToPeer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swapclientmanager_.swapclientmanager.html#changelndpasswords" class="tsd-kind-icon">change<wbr>Lnd<wbr>Passwords</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swapclientmanager_.swapclientmanager.html#checkswapcapacities" class="tsd-kind-icon">check<wbr>Swap<wbr>Capacities</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swapclientmanager_.swapclientmanager.html#close" class="tsd-kind-icon">close</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_swaps_swapclientmanager_.swapclientmanager.html#closechannel" class="tsd-kind-icon">close<wbr>Channel</a></li>
@@ -167,14 +168,14 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Swap<wbr>Client<wbr>Manager<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="_config_.config.html" class="tsd-signature-type">Config</a>, loggers<span class="tsd-signature-symbol">: </span><a href="../modules/_logger_.html#loggers" class="tsd-signature-type">Loggers</a>, unitConverter<span class="tsd-signature-symbol">: </span><a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_swaps_swapclientmanager_.swapclientmanager.html" class="tsd-signature-type">SwapClientManager</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Swap<wbr>Client<wbr>Manager<span class="tsd-signature-symbol">(</span>config<span class="tsd-signature-symbol">: </span><a href="_config_.config.html" class="tsd-signature-type">Config</a>, loggers<span class="tsd-signature-symbol">: </span><a href="../modules/_logger_.html#loggers" class="tsd-signature-type">Loggers</a>, unitConverter<span class="tsd-signature-symbol">: </span><a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a>, models<span class="tsd-signature-symbol">: </span><a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_swaps_swapclientmanager_.swapclientmanager.html" class="tsd-signature-type">SwapClientManager</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_backup_backup_.backup.html">Backup</a>.<a href="_backup_backup_.backup.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L53">lib/swaps/SwapClientManager.ts:53</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L53">lib/swaps/SwapClientManager.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -187,6 +188,9 @@
 								</li>
 								<li>
 									<h5>unitConverter: <a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a></h5>
+								</li>
+								<li>
+									<h5>models: <a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_swaps_swapclientmanager_.swapclientmanager.html" class="tsd-signature-type">SwapClientManager</a></h4>
@@ -202,7 +206,7 @@
 					<div class="tsd-signature tsd-kind-icon">config<span class="tsd-signature-symbol">:</span> <a href="_config_.config.html" class="tsd-signature-type">Config</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L56">lib/swaps/SwapClientManager.ts:56</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L56">lib/swaps/SwapClientManager.ts:56</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -212,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">connext<wbr>Client<span class="tsd-signature-symbol">:</span> <a href="_connextclient_connextclient_.connextclient.html" class="tsd-signature-type">ConnextClient</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L46">lib/swaps/SwapClientManager.ts:46</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L47">lib/swaps/SwapClientManager.ts:47</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -222,7 +226,7 @@
 					<div class="tsd-signature tsd-kind-icon">inbound<wbr>Reserved<wbr>Amounts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, number&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L51">lib/swaps/SwapClientManager.ts:51</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L51">lib/swaps/SwapClientManager.ts:51</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -237,7 +241,7 @@
 					<div class="tsd-signature tsd-kind-icon">loggers<span class="tsd-signature-symbol">:</span> <a href="../modules/_logger_.html#loggers" class="tsd-signature-type">Loggers</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L57">lib/swaps/SwapClientManager.ts:57</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L57">lib/swaps/SwapClientManager.ts:57</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -247,7 +251,17 @@
 					<div class="tsd-signature tsd-kind-icon">misconfigured<wbr>Clients<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Set</span><span class="tsd-signature-symbol">&lt;</span><a href="_swaps_swapclient_.swapclient.html" class="tsd-signature-type">SwapClient</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Set&lt;SwapClient&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L47">lib/swaps/SwapClientManager.ts:47</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L48">lib/swaps/SwapClientManager.ts:48</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="models" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> models</h3>
+					<div class="tsd-signature tsd-kind-icon">models<span class="tsd-signature-symbol">:</span> <a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L59">lib/swaps/SwapClientManager.ts:59</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -257,7 +271,7 @@
 					<div class="tsd-signature tsd-kind-icon">outbound<wbr>Reserved<wbr>Amounts<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, number&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L53">lib/swaps/SwapClientManager.ts:53</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L53">lib/swaps/SwapClientManager.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -272,7 +286,7 @@
 					<div class="tsd-signature tsd-kind-icon">swap<wbr>Clients<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_swaps_swapclient_.swapclient.html" class="tsd-signature-type">SwapClient</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, SwapClient&gt;()</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L45">lib/swaps/SwapClientManager.ts:45</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L46">lib/swaps/SwapClientManager.ts:46</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -287,17 +301,7 @@
 					<div class="tsd-signature tsd-kind-icon">unit<wbr>Converter<span class="tsd-signature-symbol">:</span> <a href="_utils_unitconverter_.unitconverter.html" class="tsd-signature-type">UnitConverter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L58">lib/swaps/SwapClientManager.ts:58</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="walletpassword" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagOptional">Optional</span> wallet<wbr>Password</h3>
-					<div class="tsd-signature tsd-kind-icon">wallet<wbr>Password<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L48">lib/swaps/SwapClientManager.ts:48</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L58">lib/swaps/SwapClientManager.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -346,7 +350,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L423">lib/swaps/SwapClientManager.ts:423</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L466">lib/swaps/SwapClientManager.ts:466</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -380,7 +384,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L256">lib/swaps/SwapClientManager.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L257">lib/swaps/SwapClientManager.ts:257</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -451,7 +455,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L250">lib/swaps/SwapClientManager.ts:250</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L251">lib/swaps/SwapClientManager.ts:251</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -477,7 +481,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L633">lib/swaps/SwapClientManager.ts:633</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L676">lib/swaps/SwapClientManager.ts:676</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -494,7 +498,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L614">lib/swaps/SwapClientManager.ts:614</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L657">lib/swaps/SwapClientManager.ts:657</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,6 +522,40 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="changelndpasswords" class="tsd-anchor"></a>
+					<h3>change<wbr>Lnd<wbr>Passwords</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">change<wbr>Lnd<wbr>Passwords<span class="tsd-signature-symbol">(</span>oldPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, newPassword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L411">lib/swaps/SwapClientManager.ts:411</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Changes the wallet passwords for all lnd clients by either calling ChangePassword
+										right away if lnd is in a WaitingUnlock state or, more often, by persisting the
+										current wallet password so that xud will try to automatically change it the next
+									time it is unlocked.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>oldPassword: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>newPassword: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="checkswapcapacities" class="tsd-anchor"></a>
 					<h3>check<wbr>Swap<wbr>Capacities</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -527,7 +565,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L202">lib/swaps/SwapClientManager.ts:202</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L203">lib/swaps/SwapClientManager.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -571,7 +609,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L497">lib/swaps/SwapClientManager.ts:497</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L540">lib/swaps/SwapClientManager.ts:540</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -594,7 +632,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L552">lib/swaps/SwapClientManager.ts:552</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L595">lib/swaps/SwapClientManager.ts:595</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -643,7 +681,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L519">lib/swaps/SwapClientManager.ts:519</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L562">lib/swaps/SwapClientManager.ts:562</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -669,7 +707,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L38">lib/swaps/SwapClientManager.ts:38</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L39">lib/swaps/SwapClientManager.ts:39</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -687,7 +725,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L39">lib/swaps/SwapClientManager.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L40">lib/swaps/SwapClientManager.ts:40</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -708,7 +746,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter.emit</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L40">lib/swaps/SwapClientManager.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L41">lib/swaps/SwapClientManager.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -761,7 +799,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L392">lib/swaps/SwapClientManager.ts:392</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L435">lib/swaps/SwapClientManager.ts:435</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -795,7 +833,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L246">lib/swaps/SwapClientManager.ts:246</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L247">lib/swaps/SwapClientManager.ts:247</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -818,7 +856,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L475">lib/swaps/SwapClientManager.ts:475</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L518">lib/swaps/SwapClientManager.ts:518</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -842,7 +880,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L460">lib/swaps/SwapClientManager.ts:460</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L503">lib/swaps/SwapClientManager.ts:503</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -883,7 +921,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L242">lib/swaps/SwapClientManager.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L243">lib/swaps/SwapClientManager.ts:243</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -906,7 +944,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L406">lib/swaps/SwapClientManager.ts:406</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L449">lib/swaps/SwapClientManager.ts:449</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -934,7 +972,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L401">lib/swaps/SwapClientManager.ts:401</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L444">lib/swaps/SwapClientManager.ts:444</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -962,13 +1000,13 @@
 					<a name="init" class="tsd-anchor"></a>
 					<h3>init</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span>models<span class="tsd-signature-symbol">: </span><a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">init<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L68">lib/swaps/SwapClientManager.ts:68</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L69">lib/swaps/SwapClientManager.ts:69</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -977,12 +1015,6 @@
 									and waits for the swap clients to initialize.</p>
 								</div>
 							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>models: <a href="../modules/_db_db_.html#models" class="tsd-signature-type">Models</a></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>A promise that resolves upon successful initialization, rejects otherwise.</p>
 						</li>
@@ -998,7 +1030,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L127">lib/swaps/SwapClientManager.ts:127</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L128">lib/swaps/SwapClientManager.ts:128</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1027,7 +1059,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L285">lib/swaps/SwapClientManager.ts:285</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L286">lib/swaps/SwapClientManager.ts:286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1072,7 +1104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L413">lib/swaps/SwapClientManager.ts:413</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L456">lib/swaps/SwapClientManager.ts:456</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1197,7 +1229,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L35">lib/swaps/SwapClientManager.ts:35</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L36">lib/swaps/SwapClientManager.ts:36</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1233,7 +1265,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L36">lib/swaps/SwapClientManager.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L37">lib/swaps/SwapClientManager.ts:37</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1272,7 +1304,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="_service_initservice_.initservice.html">InitService</a>.<a href="_service_initservice_.initservice.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L37">lib/swaps/SwapClientManager.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L38">lib/swaps/SwapClientManager.ts:38</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1370,7 +1402,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L582">lib/swaps/SwapClientManager.ts:582</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L625">lib/swaps/SwapClientManager.ts:625</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1533,7 +1565,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L448">lib/swaps/SwapClientManager.ts:448</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L491">lib/swaps/SwapClientManager.ts:491</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1636,7 +1668,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L276">lib/swaps/SwapClientManager.ts:276</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L277">lib/swaps/SwapClientManager.ts:277</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1683,7 +1715,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L270">lib/swaps/SwapClientManager.ts:270</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L271">lib/swaps/SwapClientManager.ts:271</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1709,7 +1741,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L264">lib/swaps/SwapClientManager.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L265">lib/swaps/SwapClientManager.ts:265</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1735,7 +1767,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L177">lib/swaps/SwapClientManager.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L178">lib/swaps/SwapClientManager.ts:178</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1758,7 +1790,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L334">lib/swaps/SwapClientManager.ts:334</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L332">lib/swaps/SwapClientManager.ts:332</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1795,7 +1827,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L145">lib/swaps/SwapClientManager.ts:145</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L146">lib/swaps/SwapClientManager.ts:146</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1819,7 +1851,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/eadf5d18/lib/swaps/SwapClientManager.ts#L529">lib/swaps/SwapClientManager.ts:529</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/swaps/SwapClientManager.ts#L572">lib/swaps/SwapClientManager.ts:572</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1922,6 +1954,9 @@
 								<a href="_swaps_swapclientmanager_.swapclientmanager.html#misconfiguredclients" class="tsd-kind-icon">misconfigured<wbr>Clients</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="_swaps_swapclientmanager_.swapclientmanager.html#models" class="tsd-kind-icon">models</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_swaps_swapclientmanager_.swapclientmanager.html#outboundreservedamounts" class="tsd-kind-icon">outbound<wbr>Reserved<wbr>Amounts</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -1929,9 +1964,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
 								<a href="_swaps_swapclientmanager_.swapclientmanager.html#unitconverter" class="tsd-kind-icon">unit<wbr>Converter</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_swaps_swapclientmanager_.swapclientmanager.html#walletpassword" class="tsd-kind-icon">wallet<wbr>Password</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
 								<a href="_swaps_swapclientmanager_.swapclientmanager.html#defaultmaxlisteners" class="tsd-kind-icon">default<wbr>Max<wbr>Listeners</a>
@@ -1956,6 +1988,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_swaps_swapclientmanager_.swapclientmanager.html#canroutetopeer" class="tsd-kind-icon">can<wbr>Route<wbr>ToPeer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_swaps_swapclientmanager_.swapclientmanager.html#changelndpasswords" class="tsd-kind-icon">change<wbr>Lnd<wbr>Passwords</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_swaps_swapclientmanager_.swapclientmanager.html#checkswapcapacities" class="tsd-kind-icon">check<wbr>Swap<wbr>Capacities</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;cli/commands/buy&quot; | xud</title>
+	<title>&quot;cli/commands/changepass&quot; | xud</title>
 	<meta name="description" content="Documentation for xud">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../index.html">Globals</a>
 				</li>
 				<li>
-					<a href="_cli_commands_buy_.html">&quot;cli/commands/buy&quot;</a>
+					<a href="_cli_commands_changepass_.html">&quot;cli/commands/changepass&quot;</a>
 				</li>
 			</ul>
-			<h1>Module &quot;cli/commands/buy&quot;</h1>
+			<h1>Module &quot;cli/commands/changepass&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -73,15 +73,16 @@
 						<section class="tsd-index-section ">
 							<h3>Variables</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_buy_.html#command" class="tsd-kind-icon">command</a></li>
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_buy_.html#describe" class="tsd-kind-icon">describe</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_changepass_.html#builder" class="tsd-kind-icon">builder</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_changepass_.html#command" class="tsd-kind-icon">command</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_cli_commands_changepass_.html#describe" class="tsd-kind-icon">describe</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_cli_commands_buy_.html#builder" class="tsd-kind-icon">builder</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_cli_commands_buy_.html#handler" class="tsd-kind-icon">handler</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module tsd-is-not-exported"><a href="_cli_commands_changepass_.html#formatoutput" class="tsd-kind-icon">format<wbr>Output</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_cli_commands_changepass_.html#handler" class="tsd-kind-icon">handler</a></li>
 							</ul>
 						</section>
 					</div>
@@ -90,47 +91,56 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Variables</h2>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="command" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> command</h3>
-					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"buy &lt;quantity&gt; &lt;pair_id&gt; &lt;price&gt; [order_id]"</span><span class="tsd-signature-symbol"> = &quot;buy &lt;quantity&gt; &lt;pair_id&gt; &lt;price&gt; [order_id]&quot;</span></div>
+					<a name="builder" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> builder</h3>
+					<div class="tsd-signature tsd-kind-icon">builder<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/buy.ts#L5">lib/cli/commands/buy.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/changepass.ts#L10">lib/cli/commands/changepass.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="command" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> command</h3>
+					<div class="tsd-signature tsd-kind-icon">command<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"changepass"</span><span class="tsd-signature-symbol"> = &quot;changepass&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/changepass.ts#L6">lib/cli/commands/changepass.ts:6</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
 					<a name="describe" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> describe</h3>
-					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"place a buy order"</span><span class="tsd-signature-symbol"> = &quot;place a buy order&quot;</span></div>
+					<div class="tsd-signature tsd-kind-icon">describe<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"change the password for an existing xud instance"</span><span class="tsd-signature-symbol"> = &quot;change the password for an existing xud instance&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/buy.ts#L7">lib/cli/commands/buy.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/changepass.ts#L8">lib/cli/commands/changepass.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="builder" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> builder</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">builder<span class="tsd-signature-symbol">(</span>argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Argv</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+					<a name="formatoutput" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> format<wbr>Output</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<li class="tsd-signature tsd-kind-icon">format<wbr>Output<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/buy.ts#L9">lib/cli/commands/buy.ts:9</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/changepass.ts#L12">lib/cli/commands/changepass.ts:12</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>argv: <span class="tsd-signature-type">Argv</span></h5>
-								</li>
-							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
@@ -139,22 +149,22 @@
 					<a name="handler" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> handler</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">handler<span class="tsd-signature-symbol">(</span>argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Arguments</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">handler<span class="tsd-signature-symbol">(</span>argv<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Arguments</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/buy.ts#L11">lib/cli/commands/buy.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/ExchangeUnion/xud/blob/1177ed44/lib/cli/commands/changepass.ts#L17">lib/cli/commands/changepass.ts:17</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>argv: <span class="tsd-signature-type">Arguments</span></h5>
+									<h5>argv: <span class="tsd-signature-type">Arguments</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -167,23 +177,26 @@
 						<a href="../index.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-module">
-						<a href="_cli_commands_buy_.html">&quot;cli/commands/buy&quot;</a>
+						<a href="_cli_commands_changepass_.html">&quot;cli/commands/changepass&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="_cli_commands_buy_.html#command" class="tsd-kind-icon">command</a>
+						<a href="_cli_commands_changepass_.html#builder" class="tsd-kind-icon">builder</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="_cli_commands_buy_.html#describe" class="tsd-kind-icon">describe</a>
+						<a href="_cli_commands_changepass_.html#command" class="tsd-kind-icon">command</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="_cli_commands_changepass_.html#describe" class="tsd-kind-icon">describe</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="_cli_commands_changepass_.html#formatoutput" class="tsd-kind-icon">format<wbr>Output</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_cli_commands_buy_.html#builder" class="tsd-kind-icon">builder</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_cli_commands_buy_.html#handler" class="tsd-kind-icon">handler</a>
+						<a href="_cli_commands_changepass_.html#handler" class="tsd-kind-icon">handler</a>
 					</li>
 				</ul>
 			</nav>
